@@ -46,7 +46,24 @@ class _SignUpState extends State<SignUp> {
                           borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
                       hintStyle: const TextStyle(color: Colors.grey),
-                      hintText: "firstname"),
+                      hintText: "name"),
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+            Center(
+              child: Container(
+                width: 300,
+                child: TextField(
+                  showCursor: false,
+                  textAlign: TextAlign.center,
+                  cursorColor: Colors.black.withOpacity(0.8),
+                  decoration: InputDecoration(
+                      focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                      iconColor: Colors.green,
+                      hintStyle: const TextStyle(color: Colors.grey),
+                      hintText: "email"),
                 ),
               ),
             ),
