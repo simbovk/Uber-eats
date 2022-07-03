@@ -96,7 +96,7 @@ class _SignUpState extends State<SignUp> {
                   decoration: InputDecoration(
                     suffixIcon: IconButton(onPressed: (){
 
-                    }, icon: Icon(Icons.remove_red_eye_outlined) , color: Colors.green),
+                    }, icon: Icon(Icons.remove_red_eye), color: Colors.green),
                       focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
