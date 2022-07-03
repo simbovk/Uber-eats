@@ -44,7 +44,8 @@ class _SignUpState extends State<SignUp> {
                   cursorColor: Colors.black.withOpacity(0.8),
                   decoration: InputDecoration(
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                          borderSide:
+                              BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText: "name"),
@@ -61,7 +62,8 @@ class _SignUpState extends State<SignUp> {
                   cursorColor: Colors.black.withOpacity(0.8),
                   decoration: InputDecoration(
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                          borderSide:
+                              BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText: "email"),
@@ -78,7 +80,8 @@ class _SignUpState extends State<SignUp> {
                   cursorColor: Colors.black.withOpacity(0.8),
                   decoration: InputDecoration(
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                          borderSide:
+                              BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText: "phonenumber"),
@@ -95,11 +98,17 @@ class _SignUpState extends State<SignUp> {
                   textAlign: TextAlign.center,
                   cursorColor: Colors.black.withOpacity(0.8),
                   decoration: InputDecoration(
-                    suffixIcon: IconButton(onPressed: (){
-                      showPass = !showPass;
-                    }, icon: Icon(Icons.remove_red_eye), color: Colors.green),
+                      suffixIcon: IconButton(
+                          onPressed: () {
+                            setState(() {
+                              showPass = !showPass;
+                            });
+                          },
+                          icon: Icon(Icons.remove_red_eye),
+                          color: Colors.green),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                          borderSide:
+                              BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText: "password"),
