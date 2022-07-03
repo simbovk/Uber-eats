@@ -34,11 +34,15 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
             SizedBox(height: 20),
-            const Center(
-              child: TextField(
-                decoration: InputDecoration(
-                    hintStyle: TextStyle(color: Colors.greenAccent),
-                    hintText: "name"),
+             Center(
+              child: Container(
+                width: 300,
+                child: TextField(
+                  cursorColor: Colors.green,
+                  decoration: InputDecoration(
+                      hintStyle: TextStyle(color: Colors.greenAccent),
+                      hintText: "name"),
+                ),
               ),
             ),
           ],
