@@ -38,9 +38,10 @@ class _SignUpState extends State<SignUp> {
               child: Container(
                 width: 300,
                 child: TextField(
+                  textAlign: TextAlign.center,
                   cursorColor: Colors.green,
                   decoration: InputDecoration(
-                      hintStyle: TextStyle(color: Colors.greenAccent),
+                      hintStyle: TextStyle(color: Colors.grey),
                       hintText: "name"),
                 ),
               ),
