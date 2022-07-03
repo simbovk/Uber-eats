@@ -12,6 +12,7 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+  bool showPass = false;
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -90,12 +91,12 @@ class _SignUpState extends State<SignUp> {
                 width: 300,
                 child: TextField(
                   showCursor: false,
-                  obscureText: false,
+                  obscureText: showPass,
                   textAlign: TextAlign.center,
                   cursorColor: Colors.black.withOpacity(0.8),
                   decoration: InputDecoration(
                     suffixIcon: IconButton(onPressed: (){
-
+                      showPass = !showPass;
                     }, icon: Icon(Icons.remove_red_eye), color: Colors.green),
                       focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.greenAccent[400]!)),
