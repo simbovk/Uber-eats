@@ -37,9 +37,10 @@ class _SignUpState extends State<SignUp> {
             Center(
               child: Container(
                 width: 300,
-                child: const TextField(
+                child: TextField(
                   textAlign: TextAlign.center,
-                  decoration: InputDecoration(
+                  cursorColor: Colors.black.withOpacity(0.5),
+                  decoration: const InputDecoration(
                       focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.green)),
                       iconColor: Colors.green,
