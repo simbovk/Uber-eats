@@ -93,6 +93,7 @@ class _SignUpState extends State<SignUp> {
                   textAlign: TextAlign.center,
                   cursorColor: Colors.black.withOpacity(0.8),
                   decoration: InputDecoration(
+                    icon: Icon(Icons.remove_red_eye , color: Colors.green),
                       focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
