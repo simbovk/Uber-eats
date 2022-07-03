@@ -15,15 +15,35 @@ class _SignUpState extends State<SignUp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World'),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                height: 100,
+                width: 250,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      opacity: 0.6,
+                      image: AssetImage("assets/images/uber_eats_logo.png"),
+                      fit: BoxFit.fill),
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+            const Center(
+              child: TextField(
+                decoration: InputDecoration(
+                    hintStyle: TextStyle(color: Colors.greenAccent),
+                    hintText: "name"),
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
-
-
