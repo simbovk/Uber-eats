@@ -38,14 +38,15 @@ class _SignUpState extends State<SignUp> {
               child: Container(
                 width: 300,
                 child: TextField(
+                  showCursor: false,
                   textAlign: TextAlign.center,
-                  cursorColor: Colors.black.withOpacity(0.5),
-                  decoration: const InputDecoration(
+                  cursorColor: Colors.black.withOpacity(0.8),
+                  decoration: InputDecoration(
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.green)),
+                          borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
-                      hintStyle: TextStyle(color: Colors.grey),
-                      hintText: "name"),
+                      hintStyle: const TextStyle(color: Colors.grey),
+                      hintText: "firstname"),
                 ),
               ),
             ),
