@@ -90,10 +90,13 @@ class _SignUpState extends State<SignUp> {
                 width: 300,
                 child: TextField(
                   showCursor: false,
+                  obscureText: false,
                   textAlign: TextAlign.center,
                   cursorColor: Colors.black.withOpacity(0.8),
                   decoration: InputDecoration(
-                    icon: Icon(Icons.remove_red_eye , color: Colors.green),
+                    suffixIcon: IconButton(onPressed: (){
+
+                    }, icon: Icon(Icons.remove_red_eye_outlined) , color: Colors.green),
                       focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
