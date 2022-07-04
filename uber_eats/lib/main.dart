@@ -115,6 +115,7 @@ class _SignUpState extends State<SignUp> {
                 ),
               ),
             ),
+            SizedBox(height: 20),
             SizedBox(
               height: 30,
               width: 100,
@@ -127,7 +128,7 @@ class _SignUpState extends State<SignUp> {
                   //     _controllerPhoneNumber.text,
                   //     _controllerEmail.text);
                 },
-                child: const Text('Sign in'),
+                child: const Text('Sign up'),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.black),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
