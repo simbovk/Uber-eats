@@ -23,15 +23,18 @@ class _SignUpState extends State<SignUp> {
           child: Column(
             children: [
               Center(
-                child: Container(
-                  height: 100,
-                  width: 250,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        opacity: 0.6,
-                        image: AssetImage("assets/images/uber_eats_logo.png"),
-                        fit: BoxFit.fill),
-                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 100),
+                  child: Container(
+                    height: 100,
+                    width: 250,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          opacity: 0.6,
+                          image: AssetImage("assets/images/uber_eats_logo.png"),
+                          fit: BoxFit.fill),
+                      borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    ),
                   ),
                 ),
               ),
