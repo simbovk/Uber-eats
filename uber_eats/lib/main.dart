@@ -119,7 +119,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 40),
               SizedBox(
                 height: 30,
                 width: 100,
@@ -142,6 +142,11 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
               ),
+              Row(
+                children: [
+                  
+                ],
+              )
             ],
           ),
         ),
