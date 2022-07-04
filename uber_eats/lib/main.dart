@@ -154,7 +154,7 @@ class _SignUpState extends State<SignUp> {
                       ),
                     ),
                      TextButton(
-                    child: const Text('login'),
+                    child: Text('login' , style: TextStyle(color: Colors.green.withOpacity(0.6)),),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
