@@ -143,14 +143,18 @@ class _SignUpState extends State<SignUp> {
                 ),
               ),
               SizedBox(height: 20),
-              Row(
-                children: [
-                  Center(
+              Center(
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 150),
                       child: Text(
-                    'already have an account?',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ],
+                        'already have an account?',
+                        style: TextStyle(color: Colors.blue.withOpacity(0.6)),
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
