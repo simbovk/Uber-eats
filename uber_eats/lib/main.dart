@@ -142,7 +142,6 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
               Center(
                 child: Row(
                   children: [
@@ -153,17 +152,14 @@ class _SignUpState extends State<SignUp> {
                         style: TextStyle(color: Colors.black.withOpacity(0.6)),
                       ),
                     ),
-                     TextButton(
-                    child: Text('login' , style: TextStyle(color: Colors.green.withOpacity(0.6)),),
-                    onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const Vorod(),
-                      //   ),
-                      // );
-                    },
-                  ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5),
+                      child: InkWell(
+                          child: Text(
+                        'login',
+                        style: TextStyle(color: Colors.green.withOpacity(0.6)),
+                      )),
+                    ),
                   ],
                 ),
               )
