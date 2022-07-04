@@ -142,17 +142,28 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Center(
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 150),
+                      padding: const EdgeInsets.only(left: 130),
                       child: Text(
                         'already have an account?',
-                        style: TextStyle(color: Colors.blue.withOpacity(0.6)),
+                        style: TextStyle(color: Colors.green.withOpacity(0.6)),
                       ),
                     ),
+                     TextButton(
+                    child: const Text('login'),
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const Vorod(),
+                      //   ),
+                      // );
+                    },
+                  ),
                   ],
                 ),
               )
