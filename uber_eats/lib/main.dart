@@ -115,6 +115,28 @@ class _SignUpState extends State<SignUp> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 30,
+              width: 100,
+              child: ElevatedButton(
+                onPressed: () {
+                  // sendInfoToServer(
+                  //     _controllerFirstName.text,
+                  //     _controllerLastName.text,
+                  //     _controllerPassword.text,
+                  //     _controllerPhoneNumber.text,
+                  //     _controllerEmail.text);
+                },
+                child: const Text('Sign in'),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.black),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                          side: const BorderSide(color: Colors.black))),
+                ),
+              ),
+            ),
           ],
         ),
       ),
