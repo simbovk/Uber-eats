@@ -150,7 +150,7 @@ class _SignUpState extends State<SignUp> {
                       padding: const EdgeInsets.only(left: 130),
                       child: Text(
                         'already have an account?',
-                        style: TextStyle(color: Colors.green.withOpacity(0.6)),
+                        style: TextStyle(color: Colors.black.withOpacity(0.6)),
                       ),
                     ),
                      TextButton(
