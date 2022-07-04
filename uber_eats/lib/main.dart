@@ -130,11 +130,11 @@ class _SignUpState extends State<SignUp> {
                 },
                 child: const Text('Sign up'),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.black),
+                  backgroundColor: MaterialStateProperty.all(Colors.green),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
-                          side: const BorderSide(color: Colors.black))),
+                          side: const BorderSide(color: Colors.green))),
                 ),
               ),
             ),
