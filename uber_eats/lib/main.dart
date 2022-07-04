@@ -43,7 +43,7 @@ class _SignUpState extends State<SignUp> {
                 child: Container(
                   width: 300,
                   child: TextField(
-                    showCursor: false,
+                    // showCursor: false,
                     textAlign: TextAlign.center,
                     cursorColor: Colors.black.withOpacity(0.8),
                     decoration: InputDecoration(
@@ -61,7 +61,7 @@ class _SignUpState extends State<SignUp> {
                 child: Container(
                   width: 300,
                   child: TextField(
-                    showCursor: false,
+                    // showCursor: false,
                     textAlign: TextAlign.center,
                     cursorColor: Colors.black.withOpacity(0.8),
                     decoration: InputDecoration(
@@ -79,7 +79,7 @@ class _SignUpState extends State<SignUp> {
                 child: Container(
                   width: 300,
                   child: TextField(
-                    showCursor: false,
+                    // showCursor: false,
                     textAlign: TextAlign.center,
                     cursorColor: Colors.black.withOpacity(0.8),
                     decoration: InputDecoration(
@@ -97,7 +97,7 @@ class _SignUpState extends State<SignUp> {
                 child: Container(
                   width: 300,
                   child: TextField(
-                    showCursor: false,
+                    // showCursor: false,
                     obscureText: showPass,
                     textAlign: TextAlign.center,
                     cursorColor: Colors.black.withOpacity(0.8),
