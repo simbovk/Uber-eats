@@ -17,18 +17,19 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          leading: ElevatedButton(
+        appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
+          ElevatedButton.icon(
             onPressed: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => SignUp()));
             },
-            child: Icon(
+            icon: Icon(
               Icons.account_circle_outlined,
+              size: 20,
             ),
+            label: Text('Enter'),
           ),
-        ),
+        ]),
         drawer: Drawer(
           child: ListView(
             children: <Widget>[
