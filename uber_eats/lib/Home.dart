@@ -19,9 +19,11 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
           ElevatedButton.icon(
-            style: ButtonStyle(
-              backgroundColor:  MaterialStateProperty.all(Colors.green),
-              foregroundColor:  MaterialStateProperty.all(Colors.white),
+            style: ElevatedButton.styleFrom(
+              primary: Colors.green,
+              shape: RoundedRectangleBorder(
+               borderRadius: new BorderRadius.circular(30.0),
+               ),
             ),
             onPressed: () {
               Navigator.push(
