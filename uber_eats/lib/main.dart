@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uber_eats/Home.dart';
 
 void main() {
   runApp(const SignUp());
@@ -125,6 +126,15 @@ class _SignUpState extends State<SignUp> {
                 width: 100,
                 child: ElevatedButton(
                   onPressed: () {
+                    onPressed:
+                    () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Home(),
+                        ),
+                      );
+                    };
                     // sendInfoToServer(
                     //     _controllerFirstName.text,
                     //     _controllerLastName.text,
