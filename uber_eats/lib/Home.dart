@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import 'main.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -17,50 +19,68 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
+          leading: ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => SignUp()));
+            },
+            child: Icon(
+              Icons.account_circle_outlined,
+            ),
+          ),
         ),
         drawer: Drawer(
           child: ListView(
             children: <Widget>[
               DrawerHeader(
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 130),
-                      child: Container(
+                  child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 130),
+                    child: Container(
                       height: 70,
                       width: 210,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
                             opacity: 0.6,
-                            image: AssetImage("assets/images/uber_eats_logo.png"),
+                            image:
+                                AssetImage("assets/images/uber_eats_logo.png"),
                             fit: BoxFit.fill),
                         borderRadius: BorderRadius.all(Radius.circular(8.0)),
                       ),
-          
-                  ),
                     ),
-                    SizedBox(height: 40,),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 180),
-                      child: Text('Amirali Vakili' , style: TextStyle(fontWeight: FontWeight.bold , fontSize:15),),
-                    )
-                  ],
-                )
-              ),
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 180),
+                    child: Text(
+                      'Amirali Vakili',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    ),
+                  )
+                ],
+              )),
               ListTile(
                 title: Text('Home'),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
-              Divider(color: Colors.green,),
+              Divider(
+                color: Colors.green,
+              ),
               ListTile(
                 title: Text('About'),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
-              Divider(color: Colors.green,),
+              Divider(
+                color: Colors.green,
+              ),
               ListTile(
                 title: Text('Contact'),
                 onTap: () {
