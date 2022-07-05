@@ -19,6 +19,10 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
           ElevatedButton.icon(
+            style: ButtonStyle(
+              backgroundColor:  MaterialStateProperty.all(Colors.green),
+              foregroundColor:  MaterialStateProperty.all(Colors.white),
+            ),
             onPressed: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => SignUp()));
@@ -29,7 +33,8 @@ class _HomeState extends State<Home> {
             ),
             label: Text('Enter'),
           ),
-        ]),
+        ]
+        ),
         drawer: Drawer(
           child: ListView(
             children: <Widget>[
