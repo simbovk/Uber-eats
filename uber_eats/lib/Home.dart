@@ -22,10 +22,24 @@ class _HomeState extends State<Home> {
           child: ListView(
             children: <Widget>[
               DrawerHeader(
-                child: Text('Uber Eats'),
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                ),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Container(
+                      height: 60,
+                      width: 130,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            opacity: 0.6,
+                            image: AssetImage("assets/images/uber_eats_logo.png"),
+                            fit: BoxFit.fill),
+                        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                      ),
+                  ),
+                    ),
+                  ],
+                )
               ),
               ListTile(
                 title: Text('Home'),
