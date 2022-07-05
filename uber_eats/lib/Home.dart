@@ -25,10 +25,10 @@ class _HomeState extends State<Home> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 160),
+                      padding: const EdgeInsets.only(right: 130),
                       child: Container(
-                      height: 50,
-                      width: 130,
+                      height: 70,
+                      width: 210,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
                             opacity: 0.6,
@@ -39,8 +39,11 @@ class _HomeState extends State<Home> {
           
                   ),
                     ),
-                    SizedBox(height: 20,),
-                    Text('Amirali Vakili' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20),)
+                    SizedBox(height: 40,),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 180),
+                      child: Text('Amirali Vakili' , style: TextStyle(fontWeight: FontWeight.bold , fontSize:15),),
+                    )
                   ],
                 )
               ),
