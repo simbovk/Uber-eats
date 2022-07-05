@@ -39,8 +39,8 @@ class _HomeState extends State<Home> {
           
                   ),
                     ),
-                    SizedBox(height: 10,),
-                    Text('Amirali Vakili' , style: TextStyle(),)
+                    SizedBox(height: 20,),
+                    Text('Amirali Vakili' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20),)
                   ],
                 )
               ),
