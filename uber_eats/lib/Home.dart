@@ -20,7 +20,10 @@ class _HomeState extends State<Home> {
         appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
+              surfaceTintColor: Colors.white,
               primary: Colors.green,
+              onPrimary: Colors.white,
+              shadowColor: Colors.white,
               shape: RoundedRectangleBorder(
                borderRadius: new BorderRadius.circular(30.0),
                ),
