@@ -25,9 +25,9 @@ class _HomeState extends State<Home> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 10),
+                      padding: const EdgeInsets.only(right: 160),
                       child: Container(
-                      height: 60,
+                      height: 50,
                       width: 130,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
@@ -36,8 +36,11 @@ class _HomeState extends State<Home> {
                             fit: BoxFit.fill),
                         borderRadius: BorderRadius.all(Radius.circular(8.0)),
                       ),
+          
                   ),
                     ),
+                    SizedBox(height: 10,),
+                    Text('Amirali Vakili' , style: TextStyle(),)
                   ],
                 )
               ),
