@@ -53,12 +53,14 @@ class _HomeState extends State<Home> {
                   Navigator.pop(context);
                 },
               ),
+              Divider(color: Colors.green,),
               ListTile(
                 title: Text('About'),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
+              Divider(color: Colors.green,),
               ListTile(
                 title: Text('Contact'),
                 onTap: () {
