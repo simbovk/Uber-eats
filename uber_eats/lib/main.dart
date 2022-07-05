@@ -126,22 +126,19 @@ class _SignUpState extends State<SignUp> {
                 width: 100,
                 child: ElevatedButton(
                   onPressed: () {
-                    onPressed:
-                    () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const Home(),
-                        ),
-                      );
-                    };
-                    // sendInfoToServer(
-                    //     _controllerFirstName.text,
-                    //     _controllerLastName.text,
-                    //     _controllerPassword.text,
-                    //     _controllerPhoneNumber.text,
-                    //     _controllerEmail.text);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Home(),
+                      ),
+                    );
                   },
+                  // sendInfoToServer(
+                  //     _controllerFirstName.text,
+                  //     _controllerLastName.text,
+                  //     _controllerPassword.text,
+                  //     _controllerPhoneNumber.text,
+                  //     _controllerEmail.text);
                   child: const Text('Sign up'),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.green),
