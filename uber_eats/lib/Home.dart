@@ -108,7 +108,7 @@ class _HomeState extends State<Home> {
                   child: Center(
                     child: Container(
                       decoration: BoxDecoration(
-                        color:  Colors.grey.withOpacity(0.4),
+                        color: Colors.grey.withOpacity(0.4),
                         borderRadius: BorderRadius.all(Radius.circular(12)),
                       ),
                       width: 390,
@@ -138,6 +138,50 @@ class _HomeState extends State<Home> {
                         ],
                       ),
                     ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Center(
+                  child: Row(
+                    children: [
+                      Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(left: 8),
+                            child: Container(
+                              child: GestureDetector(
+                                onTap: () {
+                                  // Navigator.push(
+                                  //   context,
+                                  //   MaterialPageRoute(
+                                  //     // builder: (context) => ,
+                                  //   ),
+                                  // );
+                                },
+                              ),
+                              decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          "assets/images/supermarkets.png"),
+                                      fit: BoxFit.fill),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8.0)),
+                                  color: Colors.black),
+                              height: 120,
+                              width: 120,
+                            ),
+                          ),
+                          const Text(
+                            'Supermarket',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic),
+                          )
+                        ],
+                      ),
+                    ],
                   ),
                 )
               ],
