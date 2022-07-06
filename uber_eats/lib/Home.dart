@@ -249,6 +249,103 @@ class _HomeState extends State<Home> {
                       fontSize: 22),
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
+              Expanded(
+                  child: ListView(
+                    // This next line does the trick.
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Column(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.only(left: 8),
+                                child: Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/sportclothes.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.black),
+                                  height: 120,
+                                  width: 120,
+                                ),
+                              ),
+                              const Text(
+                                'Sport Clothes\n+1000',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic),
+                              )
+                            ],
+                          ),
+                          Column(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.only(left: 48),
+                                child: Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/sportinggoods.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.black),
+                                  height: 120,
+                                  width: 120,
+                                ),
+                              ),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 48),
+                                child: Text(
+                                  'Sporting Goods\n+5000',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
+                                ),
+                              )
+                            ],
+                          ),
+                          Column(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.only(left: 48),
+                                child: Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/travel.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.black),
+                                  height: 120,
+                                  width: 120,
+                                ),
+                              ),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 48),
+                                child: Text(
+                                  'Travel&Camping\n+2000',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
             ],
           ),
         ),
