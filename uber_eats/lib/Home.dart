@@ -149,7 +149,7 @@ class _HomeState extends State<Home> {
                       Column(
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(left: 8),
+                            padding: const EdgeInsets.only(left: 20),
                             child: Container(
                               child: GestureDetector(
                                 onTap: () {
@@ -169,15 +169,21 @@ class _HomeState extends State<Home> {
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(8.0)),
                                   color: Colors.black),
-                              height: 120,
-                              width: 120,
+                              height: 150,
+                              width: 150,
                             ),
                           ),
-                          const Text(
-                            'Supermarket',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontStyle: FontStyle.italic),
+                          Center(
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 15),
+                              child: Text(
+                                'Supermarket',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                color: Colors.black.withOpacity(0.4)),
+                              ),
+                            ),
                           )
                         ],
                       ),
