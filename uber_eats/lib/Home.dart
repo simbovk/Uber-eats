@@ -299,18 +299,15 @@ class _HomeState extends State<Home> {
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
-                                      color: Colors.black),
+                                      color: Colors.white),
                                   height: 120,
                                   width: 120,
                                 ),
-                                const Padding(
-                                  padding: EdgeInsets.only(left:0),
-                                  child: Text(
-                                    'international',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
-                                  ),
+                                Text(
+                                  'International',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
                                 )
                               ],
                             ),
@@ -327,12 +324,12 @@ class _HomeState extends State<Home> {
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
-                                      color: Colors.black),
+                                      color: Colors.white),
                                   height: 120,
                                   width: 120,
                                 ),
                                 Text(
-                                  'Music\n+2000',
+                                  'Pasta',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic),
@@ -352,18 +349,15 @@ class _HomeState extends State<Home> {
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
-                                      color: Colors.black),
+                                      color: Colors.white),
                                   height: 120,
                                   width: 120,
                                 ),
-                                const Padding(
-                                  padding: EdgeInsets.only(left: 48),
-                                  child: Text(
-                                    'Handcrafts\n+2000',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
-                                  ),
+                                Text(
+                                  'Sea food',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
                                 )
                               ],
                             ),
