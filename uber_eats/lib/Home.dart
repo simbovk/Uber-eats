@@ -264,7 +264,7 @@ class _HomeState extends State<Home> {
                               Column(
                               children: <Widget>[
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 8),
+                                  padding: const EdgeInsets.only(left: 15),
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         image: DecorationImage(
@@ -273,40 +273,40 @@ class _HomeState extends State<Home> {
                                             fit: BoxFit.fill),
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(8.0)),
-                                        color: Colors.black),
+                                        color: Colors.white),
                                     height: 120,
                                     width: 120,
                                   ),
                                 ),
                                 const Text(
-                                  'Books\n+1000',
+                                  'fast food',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic),
                                 )
                               ],
                             ),
+                            SizedBox(
+                              width: 25,
+                            ),
                             Column(
                               children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 48),
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/images/internationalfood.png"),
-                                            fit: BoxFit.fill),
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(8.0)),
-                                        color: Colors.black),
-                                    height: 120,
-                                    width: 120,
-                                  ),
+                                Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/internationalfood.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.black),
+                                  height: 120,
+                                  width: 120,
                                 ),
                                 const Padding(
-                                  padding: EdgeInsets.only(left: 48),
+                                  padding: EdgeInsets.only(left:0),
                                   child: Text(
-                                    'Stationery\n+5000',
+                                    'international',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontStyle: FontStyle.italic),
@@ -314,50 +314,47 @@ class _HomeState extends State<Home> {
                                 )
                               ],
                             ),
-                            Column(
-                              children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 48),
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/images/pasta.png"),
-                                            fit: BoxFit.fill),
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(8.0)),
-                                        color: Colors.black),
-                                    height: 120,
-                                    width: 120,
-                                  ),
-                                ),
-                                const Padding(
-                                  padding: EdgeInsets.only(left: 48),
-                                  child: Text(
-                                    'Music\n+2000',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FontStyle.italic),
-                                  ),
-                                )
-                              ],
+                            SizedBox(
+                              width: 25,
                             ),
                             Column(
                               children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 48),
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/images/seafood.png"),
-                                            fit: BoxFit.fill),
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(8.0)),
-                                        color: Colors.black),
-                                    height: 120,
-                                    width: 120,
-                                  ),
+                                Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/pasta.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.black),
+                                  height: 120,
+                                  width: 120,
+                                ),
+                                Text(
+                                  'Music\n+2000',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
+                                )
+                              ],
+                            ),
+                            SizedBox(
+                              width: 25,
+                            ),
+                            Column(
+                              children: <Widget>[
+                                Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/seafood.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.black),
+                                  height: 120,
+                                  width: 120,
                                 ),
                                 const Padding(
                                   padding: EdgeInsets.only(left: 48),
