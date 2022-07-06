@@ -104,11 +104,20 @@ class _HomeState extends State<Home> {
         body:SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.search)),
-                  
-                ],
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Center(
+                  child: Container(
+                    width: 400,
+                    color: Colors.grey,
+                    child: Row(
+                      children: [
+                        IconButton(onPressed: (){}, icon: Icon(Icons.search , color: Colors.green,)),
+                        
+                      ],
+                    ),
+                  ),
+                ),
               )
             ],
           ),
