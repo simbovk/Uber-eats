@@ -447,8 +447,8 @@ class _HomeState extends State<Home> {
                           borderRadius:
                               BorderRadius.all(Radius.circular(8.0)),
                           color: Colors.white),
-                      height: 100,
-                      width: 200,
+                      height: 150,
+                      width: 350,
                     ),
                   ],
                 ),
