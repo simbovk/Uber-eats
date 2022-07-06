@@ -149,7 +149,7 @@ class _HomeState extends State<Home> {
                       Column(
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: const EdgeInsets.only(left: 30),
                             child: Container(
                               child: GestureDetector(
                                 onTap: () {
@@ -168,16 +168,60 @@ class _HomeState extends State<Home> {
                                       fit: BoxFit.fill),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(8.0)),
-                                  color: Colors.black),
+                                  color: Colors.white),
                               height: 150,
                               width: 150,
                             ),
                           ),
                           Center(
                             child: Padding(
-                              padding: const EdgeInsets.only(left: 15),
+                              padding: const EdgeInsets.only(left: 25),
                               child: Text(
                                 'Supermarket',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                color: Colors.black.withOpacity(0.4)),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        width: 30,
+                      ),
+                       Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20),
+                            child: Container(
+                              child: GestureDetector(
+                                onTap: () {
+                                  // Navigator.push(
+                                  //   context,
+                                  //   MaterialPageRoute(
+                                  //     // builder: (context) => ,
+                                  //   ),
+                                  // );
+                                },
+                              ),
+                              decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          "assets/images/resturants.png"),
+                                      fit: BoxFit.fill),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8.0)),
+                                  color: Colors.white),
+                              height: 150,
+                              width: 150,
+                            ),
+                          ),
+                          Center(
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 25),
+                              child: Text(
+                                'Resturant',
                                 style: TextStyle(
                                   fontSize: 20,
                                     fontWeight: FontWeight.bold,
