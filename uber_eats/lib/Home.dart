@@ -361,6 +361,56 @@ class _HomeState extends State<Home> {
                                 )
                               ],
                             ),
+                             SizedBox(
+                              width: 25,
+                            ),
+                            Column(
+                              children: <Widget>[
+                                Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/fried.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.white),
+                                  height: 120,
+                                  width: 120,
+                                ),
+                                Text(
+                                  'fried',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
+                                )
+                              ],
+                            ),
+                             SizedBox(
+                              width: 25,
+                            ),
+                            Column(
+                              children: <Widget>[
+                                Container(
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/images/other.png"),
+                                          fit: BoxFit.fill),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                      color: Colors.white),
+                                  height: 120,
+                                  width: 120,
+                                ),
+                                Text(
+                                  'Other',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
+                                )
+                              ],
+                            ),
                         ],
                       ),
                     ),
