@@ -112,8 +112,9 @@ class _HomeState extends State<Home> {
                     color: Colors.grey.withOpacity(0.4),
                     child: Row(
                       children: [
+                        Text('Search'),
+                        Spacer(),
                         IconButton(onPressed: (){}, icon: Icon(Icons.search , color: Colors.green,)),
-                        
                       ],
                     ),
                   ),
