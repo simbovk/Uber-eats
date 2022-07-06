@@ -236,13 +236,18 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 30,
               ),
-              Text(
-                'Categories',
-                textAlign: TextAlign.left,
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
+              Padding(
+                padding: const EdgeInsets.only(right: 270),
+                child: Text(
+                  'Categories',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black.withOpacity(0.6),
+                      fontSize: 22),
+                ),
               ),
             ],
           ),
