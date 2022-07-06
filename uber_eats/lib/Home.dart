@@ -148,27 +148,39 @@ class MySearchDelegate extends SearchDelegate {
   List<String> suggestion = ['food', 'supermarket', 'resturant'];
   @override
   List<Widget>? buildActions(BuildContext context) {
-    IconButton(
-        onPressed: () {
-          if (query.isEmpty) {
-            close(context, null);
-          } else {
-            query = '';
-          }
-        },
-        icon: Icon(Icons.clear_rounded));
+    return [
+      IconButton(
+          onPressed: () {
+            if (query.isEmpty) {
+              close(context, null);
+            } else {
+              query = '';
+            }
+          },
+          icon: Icon(
+            Icons.clear_rounded,
+            color: Colors.green,
+          ))
+    ];
   }
 
   @override
   Widget? buildLeading(BuildContext context) {
-    IconButton(
-        onPressed: () => close(context, null), icon: Icon(Icons.arrow_back));
+    return IconButton(
+        onPressed: () => close(context, null),
+        icon: Icon(
+          Icons.arrow_back,
+          color: Colors.green,
+        ));
   }
 
   @override
   Widget buildResults(BuildContext context) {
     return Center(
-      child: Text(query),
+      child: Text(
+        query,
+        style: TextStyle(fontSize: 20, color: Colors.black),
+      ),
     );
   }
 
