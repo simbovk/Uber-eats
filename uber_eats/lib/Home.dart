@@ -145,6 +145,7 @@ class _HomeState extends State<Home> {
 }
 
 class MySearchDelegate extends SearchDelegate {
+   List<String> suggestion = ['food', 'supermarket', 'resturant'];
   @override
   List<Widget>? buildActions(BuildContext context) {
     IconButton(
@@ -156,25 +157,35 @@ class MySearchDelegate extends SearchDelegate {
           }
         },
         icon: Icon(Icons.clear_rounded));
-    throw UnimplementedError();
   }
 
   @override
   Widget? buildLeading(BuildContext context) {
     IconButton(
         onPressed: () => close(context, null), icon: Icon(Icons.arrow_back));
-    throw UnimplementedError();
   }
 
   @override
   Widget buildResults(BuildContext context) {
-    // TODO: implement buildResults
-    throw UnimplementedError();
+    return Center(
+      child: Text(query),
+    );
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    // TODO: implement buildSuggestions
-    throw UnimplementedError();
+    List<String> suggestions = suggestion.where((suggest) {
+      final result = suggest.toLowerCase();
+      final input = query.toLowerCase();
+      return result.contains(input);
+    }).toList();
+    return ListView.builder(itemBuilder: (context, index) {
+      return ListTile(
+        title: Text(suggestions[index]),
+        onTap: () {
+          query = suggestions[index];
+        },
+      );
+    });
   }
 }
