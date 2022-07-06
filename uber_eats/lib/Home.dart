@@ -124,7 +124,9 @@ class _HomeState extends State<Home> {
                           Spacer(),
                           IconButton(
                               onPressed: () {
-                                showSearch(context: context, delegate: MySearchDelegate());
+                                showSearch(
+                                    context: context,
+                                    delegate: MySearchDelegate());
                               },
                               icon: Icon(
                                 Icons.search,
@@ -141,29 +143,38 @@ class _HomeState extends State<Home> {
     );
   }
 }
- class MySearchDelegate extends SearchDelegate{
+
+class MySearchDelegate extends SearchDelegate {
   @override
   List<Widget>? buildActions(BuildContext context) {
-    IconButton(onPressed: (){}, icon: Icon(Icons.clear_rounded));
+    IconButton(
+        onPressed: () {
+          if (query.isEmpty) {
+            close(context, null);
+          } else {
+            query = '';
+          }
+        },
+        icon: Icon(Icons.clear_rounded));
     throw UnimplementedError();
   }
- 
+
   @override
   Widget? buildLeading(BuildContext context) {
-    IconButton(onPressed: () => close(context, null), icon: Icon(Icons.arrow_back));
+    IconButton(
+        onPressed: () => close(context, null), icon: Icon(Icons.arrow_back));
     throw UnimplementedError();
   }
- 
+
   @override
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
     throw UnimplementedError();
   }
- 
+
   @override
   Widget buildSuggestions(BuildContext context) {
     // TODO: implement buildSuggestions
     throw UnimplementedError();
   }
-
- }
+}
