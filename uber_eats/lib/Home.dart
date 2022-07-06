@@ -118,12 +118,14 @@ class _HomeState extends State<Home> {
                               style: TextStyle(
                                   color: Colors.black.withOpacity(0.6),
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 16),
+                                  fontSize: 18),
                             ),
                           ),
                           Spacer(),
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                showSearch(context: context, delegate: MySearchDelegate());
+                              },
                               icon: Icon(
                                 Icons.search,
                                 color: Colors.green,
@@ -139,3 +141,29 @@ class _HomeState extends State<Home> {
     );
   }
 }
+ class MySearchDelegate extends SearchDelegate{
+  @override
+  List<Widget>? buildActions(BuildContext context) {
+    // TODO: implement buildActions
+    throw UnimplementedError();
+  }
+ 
+  @override
+  Widget? buildLeading(BuildContext context) {
+    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back));
+    throw UnimplementedError();
+  }
+ 
+  @override
+  Widget buildResults(BuildContext context) {
+    // TODO: implement buildResults
+    throw UnimplementedError();
+  }
+ 
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    // TODO: implement buildSuggestions
+    throw UnimplementedError();
+  }
+
+ }
