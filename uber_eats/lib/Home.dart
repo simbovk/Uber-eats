@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
+        appBar: AppBar(backgroundColor: Colors.green , actions: <Widget>[
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
               surfaceTintColor: Colors.white,
@@ -101,6 +101,18 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),
+        body:SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                  
+                ],
+              )
+            ],
+          ),
+        )
       ),
     );
   }
