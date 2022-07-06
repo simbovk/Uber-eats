@@ -371,7 +371,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         bottomNavigationBar: Container(
-          decoration: BoxDecoration(border: Border.all(color: Colors.black.withOpacity(0.6))),
+          decoration: BoxDecoration(border: Border.all(color: Colors.black.withOpacity(0.4))),
           child: BottomNavigationBar(
             fixedColor: Colors.green,
             unselectedItemColor: Colors.green,
