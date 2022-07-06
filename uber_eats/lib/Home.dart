@@ -144,13 +144,13 @@ class _HomeState extends State<Home> {
  class MySearchDelegate extends SearchDelegate{
   @override
   List<Widget>? buildActions(BuildContext context) {
-    // TODO: implement buildActions
+    IconButton(onPressed: (){}, icon: Icon(Icons.clear_rounded));
     throw UnimplementedError();
   }
  
   @override
   Widget? buildLeading(BuildContext context) {
-    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back));
+    IconButton(onPressed: () => close(context, null), icon: Icon(Icons.arrow_back));
     throw UnimplementedError();
   }
  
