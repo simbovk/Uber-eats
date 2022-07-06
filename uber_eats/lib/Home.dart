@@ -252,112 +252,129 @@ class _HomeState extends State<Home> {
               SizedBox(
                 height: 10,
               ),
-              Expanded(
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: <Widget>[
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        
-                        // Column(
-                        //   children: <Widget>[
-                        // //     Container(
-                        //       decoration: const BoxDecoration(
-                        //           image: DecorationImage(
-                        //               image: AssetImage(
-                        //                   "assets/images/fastfood.png"),
-                        //               fit: BoxFit.fill),
-                        //           borderRadius: BorderRadius.all(
-                        //               Radius.circular(8.0)),
-                        //           color: Colors.black),
-                        //       height: 120,
-                        //       width: 120,
-                        //     ),
-                        //     const Text(
-                        //       'fast food',
-                        //       style: TextStyle(
-                        //           fontWeight: FontWeight.bold,
-                        //           fontStyle: FontStyle.italic),
-                        //     )
-                        //   ],
-                        // ),
-                        // Column(
-                        //   children: <Widget>[
-                        //     Container(
-                        //       decoration: const BoxDecoration(
-                        //           image: DecorationImage(
-                        //               image: AssetImage(
-                        //                   "assets/images/pasta.png"),
-                        //               fit: BoxFit.fill),
-                        //           borderRadius: BorderRadius.all(
-                        //               Radius.circular(8.0)),
-                        //           color: Colors.black),
-                        //       height: 120,
-                        //       width: 120,
-                        //     ),
-                        //     const Padding(
-                        //       padding: EdgeInsets.only(left: 48),
-                        //       child: Text(
-                        //         'pasta',
-                        //         style: TextStyle(
-                        //             fontWeight: FontWeight.bold,
-                        //             fontStyle: FontStyle.italic),
-                        //       ),
-                        //     )
-                        //   ],
-                        // ),
-                        // Column(
-                        //   children: <Widget>[
-                        //     Container(
-                        //       decoration: const BoxDecoration(
-                        //           image: DecorationImage(
-                        //               image: AssetImage(
-                        //                   "assets/images/internationalfood.png"),
-                        //               fit: BoxFit.fill),
-                        //           borderRadius: BorderRadius.all(
-                        //               Radius.circular(8.0)),
-                        //           color: Colors.black),
-                        //       height: 120,
-                        //       width: 120,
-                        //     ),
-                        //     const Padding(
-                        //       padding: EdgeInsets.only(left: 48),
-                        //       child: Text(
-                        //         'international',
-                        //         style: TextStyle(
-                        //             fontWeight: FontWeight.bold,
-                        //             fontStyle: FontStyle.italic),
-                        //       ),
-                        //     )
-                        //   ],
-                        // ),
-                        // Column(
-                        //   children: <Widget>[
-                        //     Container(
-                        //       decoration: const BoxDecoration(
-                        //           image: DecorationImage(
-                        //               image: AssetImage(
-                        //                   "assets/images/seafood.png"),
-                        //               fit: BoxFit.fill),
-                        //           borderRadius: BorderRadius.all(
-                        //               Radius.circular(8.0)),
-                        //           color: Colors.black),
-                        //       height: 120,
-                        //       width: 120,
-                        //     ),
-                        //     const Text(
-                        //       'sea food',
-                        //       style: TextStyle(
-                        //           fontWeight: FontWeight.bold,
-                        //           fontStyle: FontStyle.italic),
-                        //     )
-                        //   ],
-                        // ),
-                      ],
-                    )
-                  ],
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: SizedBox(
+                      height: 200,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                              Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/fastfood.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.black),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                ),
+                                const Text(
+                                  'Books\n+1000',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic),
+                                )
+                              ],
+                            ),
+                            Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 48),
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/internationalfood.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.black),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 48),
+                                  child: Text(
+                                    'Stationery\n+5000',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 48),
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/pasta.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.black),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 48),
+                                  child: Text(
+                                    'Music\n+2000',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 48),
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/seafood.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.black),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 48),
+                                  child: Text(
+                                    'Handcrafts\n+2000',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                )
+                              ],
+                            ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
