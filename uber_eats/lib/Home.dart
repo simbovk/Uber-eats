@@ -295,7 +295,7 @@ class _HomeState extends State<Home> {
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
-                                              "assets/images/internationalfood.png"),
+                                              "assets/images/seafood.png"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
@@ -304,7 +304,7 @@ class _HomeState extends State<Home> {
                                   width: 120,
                                 ),
                                 Text(
-                                  'International',
+                                  'Sea food',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic),
@@ -345,7 +345,7 @@ class _HomeState extends State<Home> {
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
-                                              "assets/images/seafood.png"),
+                                              "assets/images/internationalfood.png"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
@@ -354,7 +354,7 @@ class _HomeState extends State<Home> {
                                   width: 120,
                                 ),
                                 Text(
-                                  'Sea food',
+                                  'International',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic),
@@ -411,7 +411,7 @@ class _HomeState extends State<Home> {
                                 )
                               ],
                             ),
-                            SizedBox(width: 20,)
+                            SizedBox(width: 10,)
                         ],
                       ),
                     ),
