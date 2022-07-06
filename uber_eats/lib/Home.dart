@@ -236,7 +236,71 @@ class _HomeState extends State<Home> {
                 )
               ],
             ),
-          )),
+          ),
+          bottomNavigationBar: Container(
+          decoration: BoxDecoration(border: Border.all(color: Colors.white)),
+          child: BottomNavigationBar(
+            fixedColor: Colors.green,
+            unselectedItemColor: Colors.green,
+            items: <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: IconButton(
+                  icon: const Icon(Icons.home),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => HomePage(),
+                    //   ),
+                    // );
+                  },
+                ),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                  icon: IconButton(
+                    icon: const Icon(Icons.category_outlined),
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const YourProduct(),
+                      //   ),
+                      // );
+                    },
+                  ),
+                  label: 'My Product'),
+              BottomNavigationBarItem(
+                  icon: IconButton(
+                    icon: const Icon(Icons.shopping_cart),
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const ShoppingCart(),
+                      //   ),
+                      // );
+                    },
+                  ),
+                  label: 'Shopping Cart'),
+              BottomNavigationBarItem(
+                  icon: IconButton(
+                    icon: const Icon(Icons.account_circle),
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const ProfilePage(),
+                      //   ),
+                      // );
+                    },
+                  ),
+                  label: 'Account'),
+            ],
+            //selectedItemColor: Colors.white,
+          ),
+        ),
+          ),
     );
   }
 }
