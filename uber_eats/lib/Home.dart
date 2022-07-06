@@ -109,7 +109,7 @@ class _HomeState extends State<Home> {
                 child: Center(
                   child: Container(
                     width: 400,
-                    color: Colors.grey,
+                    color: Colors.grey.withOpacity(0.4),
                     child: Row(
                       children: [
                         IconButton(onPressed: (){}, icon: Icon(Icons.search , color: Colors.green,)),
