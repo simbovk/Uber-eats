@@ -238,191 +238,201 @@ class _HomeState extends State<Home> {
               SizedBox(
                 height: 30,
               ),
-              Padding(
-                padding: const EdgeInsets.only(right: 270),
-                child: Text(
-                  'Categories',
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black.withOpacity(0.6),
-                      fontSize: 22),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                    child: SizedBox(
-                      height: 200,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        children: <Widget>[
-                              Column(
-                              children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 15),
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/images/fastfood.png"),
-                                            fit: BoxFit.fill),
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(8.0)),
-                                        color: Colors.white),
-                                    height: 120,
-                                    width: 120,
-                                  ),
-                                ),
-                                const Text(
-                                  'fast food',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              width: 25,
-                            ),
-                            Column(
-                              children: <Widget>[
-                                Container(
-                                  decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/images/seafood.png"),
-                                          fit: BoxFit.fill),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(8.0)),
-                                      color: Colors.white),
-                                  height: 120,
-                                  width: 120,
-                                ),
-                                Text(
-                                  'Sea food',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              width: 25,
-                            ),
-                            Column(
-                              children: <Widget>[
-                                Container(
-                                  decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/images/pasta.png"),
-                                          fit: BoxFit.fill),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(8.0)),
-                                      color: Colors.white),
-                                  height: 120,
-                                  width: 120,
-                                ),
-                                Text(
-                                  'Pasta',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              width: 25,
-                            ),
-                            Column(
-                              children: <Widget>[
-                                Container(
-                                  decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/images/internationalfood.png"),
-                                          fit: BoxFit.fill),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(8.0)),
-                                      color: Colors.white),
-                                  height: 120,
-                                  width: 120,
-                                ),
-                                Text(
-                                  'International',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic),
-                                )
-                              ],
-                            ),
-                             SizedBox(
-                              width: 25,
-                            ),
-                            Column(
-                              children: <Widget>[
-                                Container(
-                                  decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/images/fried.png"),
-                                          fit: BoxFit.fill),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(8.0)),
-                                      color: Colors.white),
-                                  height: 120,
-                                  width: 120,
-                                ),
-                                Text(
-                                  'fried',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic),
-                                )
-                              ],
-                            ),
-                             SizedBox(
-                              width: 25,
-                            ),
-                            Column(
-                              children: <Widget>[
-                                Container(
-                                  decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/images/other.png"),
-                                          fit: BoxFit.fill),
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(8.0)),
-                                      color: Colors.white),
-                                  height: 120,
-                                  width: 120,
-                                ),
-                                Text(
-                                  'Other',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic),
-                                )
-                              ],
-                            ),
-                            SizedBox(width: 10,)
-                        ],
+              Container(
+                color: Colors.grey.withOpacity(0.1),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 270 , top: 10),
+                      child: Text(
+                        'Categories',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black.withOpacity(0.8),
+                            fontSize: 22),
                       ),
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                            height: 150,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: <Widget>[
+                                Column(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 15),
+                                      child: Container(
+                                        decoration: const BoxDecoration(
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    "assets/images/fastfood.png"),
+                                                fit: BoxFit.fill),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(8.0)),
+                                            color: Colors.white),
+                                        height: 120,
+                                        width: 120,
+                                      ),
+                                    ),
+                                    const Text(
+                                      'fast food',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/seafood.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'Sea food',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/pasta.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'Pasta',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/internationalfood.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'International',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/fried.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'fried',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/other.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'Other',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
         ),
         bottomNavigationBar: Container(
-          decoration: BoxDecoration(border: Border.all(color: Colors.black.withOpacity(0.4))),
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.black.withOpacity(0.4))),
           child: BottomNavigationBar(
             fixedColor: Colors.green,
             unselectedItemColor: Colors.green,
