@@ -245,7 +245,7 @@ class _HomeState extends State<Home> {
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: IconButton(
-                  icon: const Icon(Icons.home),
+                  icon: const Icon(Icons.home_outlined),
                   onPressed: () {
                     // Navigator.push(
                     //   context,
@@ -259,20 +259,7 @@ class _HomeState extends State<Home> {
               ),
               BottomNavigationBarItem(
                   icon: IconButton(
-                    icon: const Icon(Icons.category_outlined),
-                    onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const YourProduct(),
-                      //   ),
-                      // );
-                    },
-                  ),
-                  label: 'My Product'),
-              BottomNavigationBarItem(
-                  icon: IconButton(
-                    icon: const Icon(Icons.shopping_cart),
+                    icon: const Icon(Icons.list_alt_outlined),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -282,10 +269,10 @@ class _HomeState extends State<Home> {
                       // );
                     },
                   ),
-                  label: 'Shopping Cart'),
+                  label: 'Orders'),
               BottomNavigationBarItem(
                   icon: IconButton(
-                    icon: const Icon(Icons.account_circle),
+                    icon: const Icon(Icons.account_circle_outlined),
                     onPressed: () {
                       // Navigator.push(
                       //   context,
@@ -295,7 +282,7 @@ class _HomeState extends State<Home> {
                       // );
                     },
                   ),
-                  label: 'Account'),
+                  label: 'My Account'),
             ],
             //selectedItemColor: Colors.white,
           ),
