@@ -107,18 +107,21 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.only(top: 20),
                   child: Center(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color:  Colors.grey.withOpacity(0.4),
+                        borderRadius: BorderRadius.all(Radius.circular(12)),
+                      ),
                       width: 400,
-                      color: Colors.grey.withOpacity(0.4),
                       child: Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 10),
                             child: Text(
-                              'Search',
+                              'Search in Uber Eats',
                               style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6),
+                                  color: Colors.black.withOpacity(0.3),
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 18),
+                                  fontSize: 17),
                             ),
                           ),
                           Spacer(),
