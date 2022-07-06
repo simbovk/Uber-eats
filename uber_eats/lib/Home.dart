@@ -33,8 +33,8 @@ class _HomeState extends State<Home> {
                     context, MaterialPageRoute(builder: (context) => SignUp()));
               },
               icon: Icon(
-                Icons.account_circle_outlined,
-                size: 20,
+                Icons.login,
+                size: 25,
               ),
               label: Text('Enter'),
             ),
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
                         color:  Colors.grey.withOpacity(0.4),
                         borderRadius: BorderRadius.all(Radius.circular(12)),
                       ),
-                      width: 400,
+                      width: 390,
                       child: Row(
                         children: [
                           Padding(
