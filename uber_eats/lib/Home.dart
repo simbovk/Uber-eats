@@ -145,7 +145,7 @@ class _HomeState extends State<Home> {
 }
 
 class MySearchDelegate extends SearchDelegate {
-   List<String> suggestion = ['food', 'supermarket', 'resturant'];
+  List<String> suggestion = ['food', 'supermarket', 'resturant'];
   @override
   List<Widget>? buildActions(BuildContext context) {
     IconButton(
@@ -179,13 +179,15 @@ class MySearchDelegate extends SearchDelegate {
       final input = query.toLowerCase();
       return result.contains(input);
     }).toList();
-    return ListView.builder(itemBuilder: (context, index) {
-      return ListTile(
-        title: Text(suggestions[index]),
-        onTap: () {
-          query = suggestions[index];
-        },
-      );
-    });
+    return ListView.builder(
+        itemCount: suggestions.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(suggestions[index]),
+            onTap: () {
+              query = suggestions[index];
+            },
+          );
+        });
   }
 }
