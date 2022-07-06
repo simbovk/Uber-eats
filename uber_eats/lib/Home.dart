@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/widgets.dart';
 
 import 'main.dart';
 
@@ -17,231 +18,236 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
-            ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-                surfaceTintColor: Colors.white,
-                primary: Colors.green,
-                onPrimary: Colors.white,
-                shadowColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(30.0),
+        appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
+          ElevatedButton.icon(
+            style: ElevatedButton.styleFrom(
+              surfaceTintColor: Colors.white,
+              primary: Colors.green,
+              onPrimary: Colors.white,
+              shadowColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: new BorderRadius.circular(30.0),
+              ),
+            ),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => SignUp()));
+            },
+            icon: Icon(
+              Icons.login,
+              size: 25,
+            ),
+            label: Text('Enter'),
+          ),
+        ]),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              DrawerHeader(
+                  child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 130),
+                    child: Container(
+                      height: 70,
+                      width: 210,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            opacity: 0.6,
+                            image:
+                                AssetImage("assets/images/uber_eats_logo.png"),
+                            fit: BoxFit.fill),
+                        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 180),
+                    child: Text(
+                      'Amirali Vakili',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    ),
+                  )
+                ],
+              )),
+              ListTile(
+                title: Text('Home'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(
+                color: Colors.green,
+              ),
+              ListTile(
+                title: Text('About'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(
+                color: Colors.green,
+              ),
+              ListTile(
+                title: Text('Contact'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ],
+          ),
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.4),
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                    ),
+                    width: 390,
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 10),
+                          child: Text(
+                            'Search in Uber Eats',
+                            style: TextStyle(
+                                color: Colors.black.withOpacity(0.3),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 17),
+                          ),
+                        ),
+                        Spacer(),
+                        IconButton(
+                            onPressed: () {
+                              showSearch(
+                                  context: context,
+                                  delegate: MySearchDelegate());
+                            },
+                            icon: Icon(
+                              Icons.search,
+                              color: Colors.green,
+                            )),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-              onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => SignUp()));
-              },
-              icon: Icon(
-                Icons.login,
-                size: 25,
+              SizedBox(
+                height: 20,
               ),
-              label: Text('Enter'),
-            ),
-          ]),
-          drawer: Drawer(
-            child: ListView(
-              children: <Widget>[
-                DrawerHeader(
-                    child: Column(
+              Center(
+                child: Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 130),
-                      child: Container(
-                        height: 70,
-                        width: 210,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                              opacity: 0.6,
-                              image: AssetImage(
-                                  "assets/images/uber_eats_logo.png"),
-                              fit: BoxFit.fill),
-                          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30),
+                          child: Container(
+                            child: GestureDetector(
+                              onTap: () {
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(
+                                //     // builder: (context) => ,
+                                //   ),
+                                // );
+                              },
+                            ),
+                            decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                        "assets/images/supermarkets.png"),
+                                    fit: BoxFit.fill),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(8.0)),
+                                color: Colors.white),
+                            height: 150,
+                            width: 150,
+                          ),
                         ),
-                      ),
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 25),
+                            child: Text(
+                              'Supermarket',
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black.withOpacity(0.4)),
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                     SizedBox(
-                      height: 40,
+                      width: 30,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 180),
-                      child: Text(
-                        'Amirali Vakili',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 15),
-                      ),
-                    )
-                  ],
-                )),
-                ListTile(
-                  title: Text('Home'),
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                ),
-                Divider(
-                  color: Colors.green,
-                ),
-                ListTile(
-                  title: Text('About'),
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                ),
-                Divider(
-                  color: Colors.green,
-                ),
-                ListTile(
-                  title: Text('Contact'),
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                ),
-              ],
-            ),
-          ),
-          body: SingleChildScrollView(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 20),
-                  child: Center(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey.withOpacity(0.4),
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
-                      ),
-                      width: 390,
-                      child: Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 10),
-                            child: Text(
-                              'Search in Uber Eats',
-                              style: TextStyle(
-                                  color: Colors.black.withOpacity(0.3),
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 17),
-                            ),
-                          ),
-                          Spacer(),
-                          IconButton(
-                              onPressed: () {
-                                showSearch(
-                                    context: context,
-                                    delegate: MySearchDelegate());
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20),
+                          child: Container(
+                            child: GestureDetector(
+                              onTap: () {
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(
+                                //     // builder: (context) => ,
+                                //   ),
+                                // );
                               },
-                              icon: Icon(
-                                Icons.search,
-                                color: Colors.green,
-                              )),
-                        ],
-                      ),
+                            ),
+                            decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                        "assets/images/resturants.png"),
+                                    fit: BoxFit.fill),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(8.0)),
+                                color: Colors.white),
+                            height: 150,
+                            width: 150,
+                          ),
+                        ),
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 25),
+                            child: Text(
+                              'Resturant',
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black.withOpacity(0.4)),
+                            ),
+                          ),
+                        )
+                      ],
                     ),
-                  ),
+                  ],
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                Center(
-                  child: Row(
-                    children: [
-                      Column(
-                        children: <Widget>[
-                          Padding(
-                            padding: const EdgeInsets.only(left: 30),
-                            child: Container(
-                              child: GestureDetector(
-                                onTap: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(
-                                  //     // builder: (context) => ,
-                                  //   ),
-                                  // );
-                                },
-                              ),
-                              decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          "assets/images/supermarkets.png"),
-                                      fit: BoxFit.fill),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(8.0)),
-                                  color: Colors.white),
-                              height: 150,
-                              width: 150,
-                            ),
-                          ),
-                          Center(
-                            child: Padding(
-                              padding: const EdgeInsets.only(left: 25),
-                              child: Text(
-                                'Supermarket',
-                                style: TextStyle(
-                                  fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                color: Colors.black.withOpacity(0.4)),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                       Column(
-                        children: <Widget>[
-                          Padding(
-                            padding: const EdgeInsets.only(right: 20),
-                            child: Container(
-                              child: GestureDetector(
-                                onTap: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(
-                                  //     // builder: (context) => ,
-                                  //   ),
-                                  // );
-                                },
-                              ),
-                              decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          "assets/images/resturants.png"),
-                                      fit: BoxFit.fill),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(8.0)),
-                                  color: Colors.white),
-                              height: 150,
-                              width: 150,
-                            ),
-                          ),
-                          Center(
-                            child: Padding(
-                              padding: const EdgeInsets.only(right: 25),
-                              child: Text(
-                                'Resturant',
-                                style: TextStyle(
-                                  fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                color: Colors.black.withOpacity(0.4)),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text('Categories'),
-              ],
-            ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Categories',
+                textAlign: TextAlign.left,
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
+              ),
+            ],
           ),
-          bottomNavigationBar: Container(
+        ),
+        bottomNavigationBar: Container(
           decoration: BoxDecoration(border: Border.all(color: Colors.white)),
           child: BottomNavigationBar(
             fixedColor: Colors.green,
@@ -291,7 +297,7 @@ class _HomeState extends State<Home> {
             //selectedItemColor: Colors.white,
           ),
         ),
-          ),
+      ),
     );
   }
 }
