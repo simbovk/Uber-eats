@@ -239,6 +239,7 @@ class _HomeState extends State<Home> {
                 height: 30,
               ),
               Container(
+                height: MediaQuery.of(context).size.height,
                 color: Colors.grey.withOpacity(0.1),
                 child: Column(
                   children: [
@@ -423,6 +424,31 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                       ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      child: GestureDetector(
+                        onTap: () {
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     // builder: (context) => ,
+                          //   ),
+                          // );
+                        },
+                      ),
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/images/adv1.png"),
+                              fit: BoxFit.fill),
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(8.0)),
+                          color: Colors.white),
+                      height: 100,
+                      width: 200,
                     ),
                   ],
                 ),
