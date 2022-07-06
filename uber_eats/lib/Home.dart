@@ -268,7 +268,7 @@ class _HomeState extends State<Home> {
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
-                                              "assets/images/sportclothes.png"),
+                                              "assets/images/fastfood.png"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
@@ -278,7 +278,7 @@ class _HomeState extends State<Home> {
                                 ),
                               ),
                               const Text(
-                                'Sport Clothes\n+1000',
+                                'fast food',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontStyle: FontStyle.italic),
@@ -293,7 +293,7 @@ class _HomeState extends State<Home> {
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
-                                              "assets/images/sportinggoods.png"),
+                                              "assets/images/pasta.png"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
@@ -305,7 +305,7 @@ class _HomeState extends State<Home> {
                               const Padding(
                                 padding: EdgeInsets.only(left: 48),
                                 child: Text(
-                                  'Sporting Goods\n+5000',
+                                  'pasta',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic),
@@ -321,7 +321,7 @@ class _HomeState extends State<Home> {
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
-                                              "assets/images/travel.png"),
+                                              "assets/images/internationalfood.png"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(8.0)),
@@ -333,7 +333,7 @@ class _HomeState extends State<Home> {
                               const Padding(
                                 padding: EdgeInsets.only(left: 48),
                                 child: Text(
-                                  'Travel&Camping\n+2000',
+                                  'international',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic),
