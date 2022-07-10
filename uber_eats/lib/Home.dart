@@ -450,8 +450,11 @@ class _HomeState extends State<Home> {
                       height: 150,
                       width: 350,
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 270 , top: 10),
+                      padding: const EdgeInsets.only(right: 200 , top: 10),
                       child: Text(
                         'News in Uber eats',
                         textAlign: TextAlign.left,
