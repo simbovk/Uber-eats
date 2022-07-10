@@ -75,6 +75,7 @@ flutter:
   - assets/images/starbucks.png
   - assets/images/mcdonald.png
   - assets/images/kfc.png
+  - assets/images/jo.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
