@@ -564,7 +564,7 @@ class _HomeState extends State<Home> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 310 , top: 10),
+                      padding: const EdgeInsets.only(right: 335 , top: 10),
                       child: Text(
                         'Best',
                         textAlign: TextAlign.left,
