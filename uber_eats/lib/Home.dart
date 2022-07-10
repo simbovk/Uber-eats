@@ -494,7 +494,7 @@ class _HomeState extends State<Home> {
                                       ),
                                     ),
                                     const Text(
-                                      'fast food',
+                                      'nook cafe',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
@@ -519,7 +519,7 @@ class _HomeState extends State<Home> {
                                       width: 120,
                                     ),
                                     Text(
-                                      'Sea food',
+                                      'artist cafe',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
@@ -544,82 +544,7 @@ class _HomeState extends State<Home> {
                                       width: 120,
                                     ),
                                     Text(
-                                      'Pasta',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Container(
-                                      decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  "assets/images/internationalfood.png"),
-                                              fit: BoxFit.fill),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(8.0)),
-                                          color: Colors.white),
-                                      height: 120,
-                                      width: 120,
-                                    ),
-                                    Text(
-                                      'International',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Container(
-                                      decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  "assets/images/fried.png"),
-                                              fit: BoxFit.fill),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(8.0)),
-                                          color: Colors.white),
-                                      height: 120,
-                                      width: 120,
-                                    ),
-                                    Text(
-                                      'fried',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Container(
-                                      decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  "assets/images/other.png"),
-                                              fit: BoxFit.fill),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(8.0)),
-                                          color: Colors.white),
-                                      height: 120,
-                                      width: 120,
-                                    ),
-                                    Text(
-                                      'Other',
+                                      'chaibar cafe',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
