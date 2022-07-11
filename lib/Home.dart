@@ -730,7 +730,113 @@ class _HomeState extends State<Home> {
                 color: Colors.grey.withOpacity(0.15),
                 child: Column(
                   children:[
-                    
+                    Padding(
+                      padding: const EdgeInsets.only(right: 200, top: 10),
+                      child: Text(
+                        'With Offers',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black.withOpacity(0.8),
+                            fontSize: 22),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                            height: 150,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: <Widget>[
+                                Column(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 15),
+                                      child: Container(
+                                        decoration: const BoxDecoration(
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    "assets/images/nookcafe.png"),
+                                                fit: BoxFit.fill),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(8.0)),
+                                            color: Colors.white),
+                                        height: 120,
+                                        width: 120,
+                                      ),
+                                    ),
+                                    const Text(
+                                      'nook cafe',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/artistcafe.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'artist cafe',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/chaibarcafe.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'chaibar cafe',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ]
                 ),
               ),
