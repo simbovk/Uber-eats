@@ -240,7 +240,7 @@ class _HomeState extends State<Home> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height - 18,
-                color: Colors.grey.withOpacity(0.2),
+                color: Colors.grey.withOpacity(0.15),
                 child: Column(
                   children: [
                     Padding(
@@ -721,6 +721,18 @@ class _HomeState extends State<Home> {
                     color: Colors.white),
                 height: 150,
                 width: 350,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height,
+                color: Colors.grey.withOpacity(0.15),
+                child: Column(
+                  children:[
+                    
+                  ]
+                ),
               ),
             ],
           ),
