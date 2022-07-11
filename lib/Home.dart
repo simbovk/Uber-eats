@@ -239,12 +239,12 @@ class _HomeState extends State<Home> {
                 height: 30,
               ),
               Container(
-                height: MediaQuery.of(context).size.height + 200,
-                color: Colors.grey.withOpacity(0.1),
+                height: MediaQuery.of(context).size.height - 18,
+                color: Colors.grey.withOpacity(0.2),
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 270 , top: 10),
+                      padding: const EdgeInsets.only(right: 270, top: 10),
                       child: Text(
                         'Categories',
                         textAlign: TextAlign.left,
@@ -441,11 +441,9 @@ class _HomeState extends State<Home> {
                       ),
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage(
-                                  "assets/images/adv1.png"),
+                              image: AssetImage("assets/images/adv1.png"),
                               fit: BoxFit.fill),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(8.0)),
+                          borderRadius: BorderRadius.all(Radius.circular(8.0)),
                           color: Colors.white),
                       height: 150,
                       width: 350,
@@ -454,7 +452,7 @@ class _HomeState extends State<Home> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 200 , top: 10),
+                      padding: const EdgeInsets.only(right: 200, top: 10),
                       child: Text(
                         'News in Uber eats',
                         textAlign: TextAlign.left,
@@ -564,7 +562,7 @@ class _HomeState extends State<Home> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 335 , top: 10),
+                      padding: const EdgeInsets.only(right: 335, top: 10),
                       child: Text(
                         'Best',
                         textAlign: TextAlign.left,
@@ -661,7 +659,7 @@ class _HomeState extends State<Home> {
                                     )
                                   ],
                                 ),
-                                 SizedBox(
+                                SizedBox(
                                   width: 25,
                                 ),
                                 Column(
@@ -698,30 +696,31 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       height: 10,
                     ),
-                    Container(
-                      child: GestureDetector(
-                        onTap: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //     // builder: (context) => ,
-                          //   ),
-                          // );
-                        },
-                      ),
-                      decoration: const BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage(
-                                  "assets/images/adv2.png"),
-                              fit: BoxFit.fill),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(8.0)),
-                          color: Colors.white),
-                      height: 150,
-                      width: 350,
-                    ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                child: GestureDetector(
+                  onTap: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     // builder: (context) => ,
+                    //   ),
+                    // );
+                  },
+                ),
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/images/adv2.png"),
+                        fit: BoxFit.fill),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    color: Colors.white),
+                height: 150,
+                width: 350,
               ),
             ],
           ),
