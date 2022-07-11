@@ -731,7 +731,7 @@ class _HomeState extends State<Home> {
                 child: Column(
                   children:[
                     Padding(
-                      padding: const EdgeInsets.only(right: 200, top: 10),
+                      padding: const EdgeInsets.only(right: 270, top: 10),
                       child: Text(
                         'With Offers',
                         textAlign: TextAlign.left,
