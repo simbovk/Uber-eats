@@ -749,7 +749,7 @@ class _HomeState extends State<Home> {
                       children: [
                         Expanded(
                           child: SizedBox(
-                            height: 150,
+                            height: 160,
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: <Widget>[
@@ -771,7 +771,7 @@ class _HomeState extends State<Home> {
                                       ),
                                     ),
                                     const Text(
-                                      'iced coffee with syrup\nstarbucks',
+                                      'iced coffee\nstarbucks',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
@@ -787,7 +787,7 @@ class _HomeState extends State<Home> {
                                       decoration: const BoxDecoration(
                                           image: DecorationImage(
                                               image: AssetImage(
-                                                  "assets/images/artistcafe.png"),
+                                                  "assets/images/skinnylattestarbucks.png"),
                                               fit: BoxFit.fill),
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(8.0)),
@@ -796,7 +796,7 @@ class _HomeState extends State<Home> {
                                       width: 120,
                                     ),
                                     Text(
-                                      'artist cafe',
+                                      'vannila latte\nstarbucks',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
