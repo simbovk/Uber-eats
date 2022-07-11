@@ -239,7 +239,7 @@ class _HomeState extends State<Home> {
                 height: 30,
               ),
               Container(
-                height: MediaQuery.of(context).size.height,
+                height: MediaQuery.of(context).size.height + 200,
                 color: Colors.grey.withOpacity(0.1),
                 child: Column(
                   children: [
