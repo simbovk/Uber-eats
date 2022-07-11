@@ -695,6 +695,31 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      child: GestureDetector(
+                        onTap: () {
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     // builder: (context) => ,
+                          //   ),
+                          // );
+                        },
+                      ),
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/images/adv2.png"),
+                              fit: BoxFit.fill),
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(8.0)),
+                          color: Colors.white),
+                      height: 150,
+                      width: 350,
+                    ),
                   ],
                 ),
               ),
