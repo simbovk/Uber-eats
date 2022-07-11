@@ -761,7 +761,7 @@ class _HomeState extends State<Home> {
                                         decoration: const BoxDecoration(
                                             image: DecorationImage(
                                                 image: AssetImage(
-                                                    "assets/images/nookcafe.png"),
+                                                    "assets/images/icedcoffeewithsyrupstarbucks.png"),
                                                 fit: BoxFit.fill),
                                             borderRadius: BorderRadius.all(
                                                 Radius.circular(8.0)),
@@ -771,7 +771,7 @@ class _HomeState extends State<Home> {
                                       ),
                                     ),
                                     const Text(
-                                      'nook cafe',
+                                      'iced coffee with syrup\nstarbucks',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
