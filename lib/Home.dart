@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                 DrawerHeader(
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('assets/images/'),
+                        image: AssetImage('assets/images/fiftyShades.jpg'),
                         fit: BoxFit.cover,
                       ),
                     ),
