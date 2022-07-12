@@ -837,6 +837,113 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
+                     Padding(
+                      padding: const EdgeInsets.only(right: 270, top: 10),
+                      child: Text(
+                        'Free Shipping',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black.withOpacity(0.8),
+                            fontSize: 22),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                            height: 160,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: <Widget>[
+                                Column(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 15),
+                                      child: Container(
+                                        decoration: const BoxDecoration(
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    "assets/images/icedcoffeewithsyrupstarbucks.png"),
+                                                fit: BoxFit.fill),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(8.0)),
+                                            color: Colors.white),
+                                        height: 120,
+                                        width: 120,
+                                      ),
+                                    ),
+                                    const Text(
+                                      'iced coffee\nstarbucks',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/skinnylattestarbucks.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'vannila latte\nstarbucks',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Column(
+                                  children: <Widget>[
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/images/nonfatmochastarbucks.png"),
+                                              fit: BoxFit.fill),
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(8.0)),
+                                          color: Colors.white),
+                                      height: 120,
+                                      width: 120,
+                                    ),
+                                    Text(
+                                      'nonfat mocha\nstarbucks',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ]
                 ),
               ),
