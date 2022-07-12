@@ -66,17 +66,17 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 DrawerHeader(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(30),
-                          bottomLeft: Radius.circular(30)),
-                      border: Border(
-                        bottom: BorderSide(
-                          color: Colors.white,
-                          width: 1,
-                        ),
-                      ),
+                      // borderRadius: BorderRadius.only(
+                      //     bottomRight: Radius.circular(30),
+                      //     bottomLeft: Radius.circular(30)),
+                      // border: Border(
+                      //   bottom: BorderSide(
+                      //     color: Colors,
+                      //     width: 1,
+                      //   ),
+                      // ),
                       image: DecorationImage(
-                        // opacity: 0.8,
+                        opacity: 0.8,
                         image: AssetImage('assets/images/fiftyShades.jpg'),
                         fit: BoxFit.cover,
                       ),
@@ -87,37 +87,49 @@ class _HomeState extends State<Home> {
                           height: 40,
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 150),
+                          padding: const EdgeInsets.only(right: 120 , top: 50),
                           child: Text(
                             'Amirali Vakili',
+                            textAlign: TextAlign.left,
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
                                 color: Colors.white),
                           ),
+                        ),
+                         Padding(
+                          padding: const EdgeInsets.only(right: 95, top: 5),
+                          child: Text(
+                            '+98 939 306 8161',
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                                color: Colors.black.withOpacity(0.6)),
+                          ),
                         )
                       ],
                     )),
                 ListTile(
-                  title: Text('My Orders'),
+                  title: Text('My Orders' , style: TextStyle(color: Colors.white , fontWeight: FontWeight.bold, fontSize: 20)),
                   onTap: () {
                     Navigator.pop(context);
                   },
                 ),
                 Divider(
-                  color: Colors.green,
+                  color: Colors.white,
                 ),
                 ListTile(
-                  title: Text('About'),
+                  title: Text('About' , style: TextStyle(color: Colors.white , fontWeight: FontWeight.bold, fontSize: 20),),
                   onTap: () {
                     Navigator.pop(context);
                   },
                 ),
                 Divider(
-                  color: Colors.green,
+                  color: Colors.white,
                 ),
                 ListTile(
-                  title: Text('Contact'),
+                  title: Text('Contact' , style: TextStyle(color: Colors.white , fontWeight: FontWeight.bold, fontSize: 20)),
                   onTap: () {
                     Navigator.pop(context);
                   },
