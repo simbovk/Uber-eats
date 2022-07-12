@@ -19,6 +19,20 @@ class _HomeState extends State<Home> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 30),
+            child: Container(
+              height: 50,
+              width: 160,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    opacity: 0.6,
+                    image: AssetImage("assets/images/uber_eats_logo.png"),
+                    fit: BoxFit.fill),
+                borderRadius: BorderRadius.all(Radius.circular(8.0)),
+              ),
+            ),
+          ),
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
               fixedSize: Size(100, 20),
@@ -43,7 +57,7 @@ class _HomeState extends State<Home> {
         ]),
         drawer: Drawer(
           // shape: ShapeBorder(),
-            child: ListView(
+          child: ListView(
             children: <Widget>[
               DrawerHeader(
                   child: Column(
@@ -730,66 +744,39 @@ class _HomeState extends State<Home> {
               Container(
                 height: MediaQuery.of(context).size.height - 370,
                 color: Colors.grey.withOpacity(0.15),
-                child: Column(
-                  children:[
-                    Padding(
-                      padding: const EdgeInsets.only(right: 270, top: 10),
-                      child: Text(
-                        'With Offers',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black.withOpacity(0.8),
-                            fontSize: 22),
-                      ),
+                child: Column(children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 270, top: 10),
+                    child: Text(
+                      'With Offers',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black.withOpacity(0.8),
+                          fontSize: 22),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(
-                          child: SizedBox(
-                            height: 160,
-                            child: ListView(
-                              scrollDirection: Axis.horizontal,
-                              children: <Widget>[
-                                Column(
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.only(left: 15),
-                                      child: Container(
-                                        decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    "assets/images/icedcoffeewithsyrupstarbucks.png"),
-                                                fit: BoxFit.fill),
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(8.0)),
-                                            color: Colors.white),
-                                        height: 120,
-                                        width: 120,
-                                      ),
-                                    ),
-                                    const Text(
-                                      'iced coffee\nstarbucks',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Container(
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: SizedBox(
+                          height: 160,
+                          child: ListView(
+                            scrollDirection: Axis.horizontal,
+                            children: <Widget>[
+                              Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 15),
+                                    child: Container(
                                       decoration: const BoxDecoration(
                                           image: DecorationImage(
                                               image: AssetImage(
-                                                  "assets/images/skinnylattestarbucks.png"),
+                                                  "assets/images/icedcoffeewithsyrupstarbucks.png"),
                                               fit: BoxFit.fill),
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(8.0)),
@@ -797,106 +784,106 @@ class _HomeState extends State<Home> {
                                       height: 120,
                                       width: 120,
                                     ),
-                                    Text(
-                                      'vannila latte\nstarbucks',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Container(
-                                      decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  "assets/images/nonfatmochastarbucks.png"),
-                                              fit: BoxFit.fill),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(8.0)),
-                                          color: Colors.white),
-                                      height: 120,
-                                      width: 120,
-                                    ),
-                                    Text(
-                                      'nonfat mocha\nstarbucks',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                )
-                              ],
-                            ),
+                                  ),
+                                  const Text(
+                                    'iced coffee\nstarbucks',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 25,
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/skinnylattestarbucks.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.white),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                  Text(
+                                    'vannila latte\nstarbucks',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 25,
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/nonfatmochastarbucks.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.white),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                  Text(
+                                    'nonfat mocha\nstarbucks',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 10,
+                              )
+                            ],
                           ),
                         ),
-                      ],
-                    ),
-                     Padding(
-                      padding: const EdgeInsets.only(right: 250, top: 10),
-                      child: Text(
-                        'Free Shipping',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black.withOpacity(0.8),
-                            fontSize: 22),
                       ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 250, top: 10),
+                    child: Text(
+                      'Free Shipping',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black.withOpacity(0.8),
+                          fontSize: 22),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(
-                          child: SizedBox(
-                            height: 160,
-                            child: ListView(
-                              scrollDirection: Axis.horizontal,
-                              children: <Widget>[
-                                Column(
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.only(left: 15),
-                                      child: Container(
-                                        decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    "assets/images/hamburgermc.png"),
-                                                fit: BoxFit.fill),
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(8.0)),
-                                            color: Colors.white),
-                                        height: 120,
-                                        width: 120,
-                                      ),
-                                    ),
-                                    const Text(
-                                      'Hamburger\nMcdonalds',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Container(
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: SizedBox(
+                          height: 160,
+                          child: ListView(
+                            scrollDirection: Axis.horizontal,
+                            children: <Widget>[
+                              Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 15),
+                                    child: Container(
                                       decoration: const BoxDecoration(
                                           image: DecorationImage(
                                               image: AssetImage(
-                                                  "assets/images/mcdoublemc.png"),
+                                                  "assets/images/hamburgermc.png"),
                                               fit: BoxFit.fill),
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(8.0)),
@@ -904,50 +891,75 @@ class _HomeState extends State<Home> {
                                       height: 120,
                                       width: 120,
                                     ),
-                                    Text(
-                                      'Mc-Double\nMcdonalds',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Container(
-                                      decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  "assets/images/cheeseburgermc.png"),
-                                              fit: BoxFit.fill),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(8.0)),
-                                          color: Colors.white),
-                                      height: 120,
-                                      width: 120,
-                                    ),
-                                    Text(
-                                      'Cheese burger\nMcdonalds',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontStyle: FontStyle.italic),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                )
-                              ],
-                            ),
+                                  ),
+                                  const Text(
+                                    'Hamburger\nMcdonalds',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 25,
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/mcdoublemc.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.white),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                  Text(
+                                    'Mc-Double\nMcdonalds',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 25,
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                    decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/cheeseburgermc.png"),
+                                            fit: BoxFit.fill),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.white),
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                  Text(
+                                    'Cheese burger\nMcdonalds',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                width: 10,
+                              )
+                            ],
                           ),
                         ),
-                      ],
-                    ),
-                  ]
-                ),
+                      ),
+                    ],
+                  ),
+                ]),
               ),
             ],
           ),
