@@ -838,7 +838,7 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                      Padding(
-                      padding: const EdgeInsets.only(right: 270, top: 10),
+                      padding: const EdgeInsets.only(right: 250, top: 10),
                       child: Text(
                         'Free Shipping',
                         textAlign: TextAlign.left,
