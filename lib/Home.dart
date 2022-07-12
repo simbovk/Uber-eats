@@ -26,10 +26,10 @@ class _HomeState extends State<Home> {
               width: 160,
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                    opacity: 0.6,
-                    image: AssetImage("assets/images/uber_eats_logo.png"),
+                    // opacity: 0.6,
+                    image: AssetImage("assets/images/uberEatsLogo.PNG"),
                     fit: BoxFit.fill),
-                borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                // borderRadius: BorderRadius.all(Radius.circular(8.0)),
               ),
             ),
           ),
@@ -64,38 +64,44 @@ class _HomeState extends State<Home> {
             child: ListView(
               children: <Widget>[
                 DrawerHeader(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                     child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 130),
-                      child: Container(
-                        height: 70,
-                        width: 210,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                              opacity: 0.6,
-                              image: AssetImage(
-                                  "assets/images/uber_eats_logo.png"),
-                              fit: BoxFit.fill),
-                          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                      children: [
+                        // Padding(
+                        //   padding: const EdgeInsets.only(right: 130),
+                        //   child: Container(
+                        //     height: 70,
+                        //     width: 210,
+                        //     decoration: const BoxDecoration(
+                        //       image: DecorationImage(
+                        //           opacity: 0.6,
+                        //           image: AssetImage(
+                        //               "assets/images/uber_eats_logo.png"),
+                        //           fit: BoxFit.fill),
+                        //       borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                        //     ),
+                        //   ),
+                        // ),
+                        SizedBox(
+                          height: 40,
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 180),
-                      child: Text(
-                        'Amirali Vakili',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 15),
-                      ),
-                    )
-                  ],
-                )),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 180),
+                          // child: Text(
+                          //   'Amirali Vakili',
+                          //   style: TextStyle(
+                          //       fontWeight: FontWeight.bold, fontSize: 15),
+                          // ),
+                        )
+                      ],
+                    )),
                 ListTile(
-                  title: Text('Home'),
+                  title: Text('My Orders'),
                   onTap: () {
                     Navigator.pop(context);
                   },
