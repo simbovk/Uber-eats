@@ -18,15 +18,16 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
+        appBar: AppBar(backgroundColor: Colors.white, actions: <Widget>[
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
+              fixedSize: Size(100, 20),
               surfaceTintColor: Colors.white,
               primary: Colors.green,
               onPrimary: Colors.white,
               shadowColor: Colors.white,
               shape: RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(30.0),
+                borderRadius: new BorderRadius.circular(25.0),
               ),
             ),
             onPressed: () {
@@ -41,7 +42,8 @@ class _HomeState extends State<Home> {
           ),
         ]),
         drawer: Drawer(
-          child: ListView(
+          // shape: ShapeBorder(),
+            child: ListView(
             children: <Widget>[
               DrawerHeader(
                   child: Column(
