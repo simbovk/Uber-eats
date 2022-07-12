@@ -59,44 +59,42 @@ class _HomeState extends State<Home> {
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(35), bottomRight: Radius.circular(35)),
           child: Drawer(
+            backgroundColor: Colors.green,
             width: 250,
             // shape: ShapeBorder(),
             child: ListView(
               children: <Widget>[
                 DrawerHeader(
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(30),
+                          bottomLeft: Radius.circular(30)),
+                      border: Border(
+                        bottom: BorderSide(
+                          color: Colors.white,
+                          width: 1,
+                        ),
+                      ),
                       image: DecorationImage(
+                        // opacity: 0.8,
                         image: AssetImage('assets/images/fiftyShades.jpg'),
                         fit: BoxFit.cover,
                       ),
                     ),
                     child: Column(
                       children: [
-                        // Padding(
-                        //   padding: const EdgeInsets.only(right: 130),
-                        //   child: Container(
-                        //     height: 70,
-                        //     width: 210,
-                        //     decoration: const BoxDecoration(
-                        //       image: DecorationImage(
-                        //           opacity: 0.6,
-                        //           image: AssetImage(
-                        //               "assets/images/uber_eats_logo.png"),
-                        //           fit: BoxFit.fill),
-                        //       borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                        //     ),
-                        //   ),
-                        // ),
                         SizedBox(
                           height: 40,
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 180),
-                          // child: Text(
-                          //   'Amirali Vakili',
-                          //   style: TextStyle(
-                          //       fontWeight: FontWeight.bold, fontSize: 15),
-                          // ),
+                          padding: const EdgeInsets.only(right: 150),
+                          child: Text(
+                            'Amirali Vakili',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                                color: Colors.white),
+                          ),
                         )
                       ],
                     )),
