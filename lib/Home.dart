@@ -868,7 +868,7 @@ class _HomeState extends State<Home> {
                                         decoration: const BoxDecoration(
                                             image: DecorationImage(
                                                 image: AssetImage(
-                                                    "assets/images/icedcoffeewithsyrupstarbucks.png"),
+                                                    "assets/images/hamburgermc.png"),
                                                 fit: BoxFit.fill),
                                             borderRadius: BorderRadius.all(
                                                 Radius.circular(8.0)),
@@ -878,7 +878,7 @@ class _HomeState extends State<Home> {
                                       ),
                                     ),
                                     const Text(
-                                      'iced coffee\nstarbucks',
+                                      'Hamburger\nMcdonalds',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
@@ -894,7 +894,7 @@ class _HomeState extends State<Home> {
                                       decoration: const BoxDecoration(
                                           image: DecorationImage(
                                               image: AssetImage(
-                                                  "assets/images/skinnylattestarbucks.png"),
+                                                  "assets/images/mcdoublemc.png"),
                                               fit: BoxFit.fill),
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(8.0)),
@@ -903,7 +903,7 @@ class _HomeState extends State<Home> {
                                       width: 120,
                                     ),
                                     Text(
-                                      'vannila latte\nstarbucks',
+                                      'Mc-Double\nMcdonalds',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
@@ -919,7 +919,7 @@ class _HomeState extends State<Home> {
                                       decoration: const BoxDecoration(
                                           image: DecorationImage(
                                               image: AssetImage(
-                                                  "assets/images/nonfatmochastarbucks.png"),
+                                                  "assets/images/cheeseburgermc.png"),
                                               fit: BoxFit.fill),
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(8.0)),
@@ -928,7 +928,7 @@ class _HomeState extends State<Home> {
                                       width: 120,
                                     ),
                                     Text(
-                                      'nonfat mocha\nstarbucks',
+                                      'Cheese burger\nMcdonalds',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic),
