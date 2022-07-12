@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.white, actions: <Widget>[
+        appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
               fixedSize: Size(100, 20),
