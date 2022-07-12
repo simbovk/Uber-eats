@@ -80,6 +80,9 @@ flutter:
   - assets/images/icedcoffeewithsyrupstarbucks.png
   - assets/images/skinnylattestarbucks.png
   - assets/images/nonfatmochastarbucks.png
+  - assets/images/hamburgermc.png
+  - assets/images/cheeseburgermc.png
+  - assets/images/mcdoublemc.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
