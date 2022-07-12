@@ -83,7 +83,7 @@ flutter:
   - assets/images/hamburgermc.png
   - assets/images/cheeseburgermc.png
   - assets/images/mcdoublemc.png
-   - assets/images/uberEatsLogo.png
+  - assets/images/uberEatsLogo.PNG
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
