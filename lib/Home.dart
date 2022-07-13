@@ -112,7 +112,7 @@ class _HomeState extends State<Home> {
                     )),
                 ListTile(
                   title: Text('My Orders' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
-                  trailing : Icon(Icons.list_alt_outlined , color: Colors.green , size: 20),
+                  trailing : Icon(Icons.list_alt_outlined , color: Colors.green , size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -122,6 +122,7 @@ class _HomeState extends State<Home> {
                 ),
                 ListTile(
                   title: Text('About' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20),),
+                  trailing : Icon(Icons.question_mark_rounded , color: Colors.green , size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -131,6 +132,7 @@ class _HomeState extends State<Home> {
                 ),
                 ListTile(
                   title: Text('Contact' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
+                  trailing : Icon(Icons.phone , color: Colors.green , size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
