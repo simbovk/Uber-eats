@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     // opacity: 0.6,
-                    image: AssetImage("assets/images/uberEatsLogo.PNG"),
+                    image: AssetImage("assets/images/uberEatsLogo.jpeg"),
                     fit: BoxFit.fill),
                 // borderRadius: BorderRadius.all(Radius.circular(8.0)),
               ),
@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(35), bottomRight: Radius.circular(35)),
           child: Drawer(
-            backgroundColor: Colors.green,
+            backgroundColor: Colors.black.withOpacity(0.5),
             width: 250,
             // shape: ShapeBorder(),
             child: ListView(
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
                       ],
                     )),
                 ListTile(
-                  title: Text('My Orders' , style: TextStyle(color: Colors.white , fontWeight: FontWeight.bold, fontSize: 20)),
+                  title: Text('My Orders' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                 ),
                 ListTile(
-                  title: Text('About' , style: TextStyle(color: Colors.white , fontWeight: FontWeight.bold, fontSize: 20),),
+                  title: Text('About' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20),),
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -129,7 +129,7 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                 ),
                 ListTile(
-                  title: Text('Contact' , style: TextStyle(color: Colors.white , fontWeight: FontWeight.bold, fontSize: 20)),
+                  title: Text('Contact' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
                   onTap: () {
                     Navigator.pop(context);
                   },
