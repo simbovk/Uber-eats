@@ -18,23 +18,39 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.green.withOpacity(0.8), actions: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(right: 30),
-            child: Container(
-              height: 50,
-              width: 160,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                    // opacity: 0.6,
-                    image: AssetImage("assets/images/uberEatsLogo.jpeg"),
-                    fit: BoxFit.fill),
-                // borderRadius: BorderRadius.all(Radius.circular(8.0)),
+        appBar: AppBar(
+            backgroundColor: Colors.green.withOpacity(0.8),
+            actions: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Center(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ),
-           IconButton(icon: const Icon(Icons.shopping_basket_sharp), onPressed: () {}),
-        ]),
+              // Padding(
+              //   padding: const EdgeInsets.only(right: 30),
+              //   child: Container(
+              //     height: 50,
+              //     width: 160,
+              //     decoration: const BoxDecoration(
+              //       image: DecorationImage(
+              //           // opacity: 0.6,
+              //           image: AssetImage("assets/images/uberEatsLogo.jpeg"),
+              //           fit: BoxFit.fill),
+              //       // borderRadius: BorderRadius.all(Radius.circular(8.0)),
+              //     ),
+              //   ),
+              // ),
+              IconButton(
+                  icon: const Icon(Icons.shopping_basket_sharp),
+                  onPressed: () {}),
+            ]),
         drawer: ClipRRect(
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(35), bottomRight: Radius.circular(35)),
@@ -67,7 +83,7 @@ class _HomeState extends State<Home> {
                           height: 40,
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 120 , top: 50),
+                          padding: const EdgeInsets.only(right: 120, top: 50),
                           child: Text(
                             'Amirali Vakili',
                             textAlign: TextAlign.left,
@@ -77,7 +93,7 @@ class _HomeState extends State<Home> {
                                 color: Colors.white),
                           ),
                         ),
-                         Padding(
+                        Padding(
                           padding: const EdgeInsets.only(right: 95, top: 5),
                           child: Text(
                             '+98 939 306 8161',
@@ -91,8 +107,12 @@ class _HomeState extends State<Home> {
                       ],
                     )),
                 ListTile(
-                  title: Text('My Resturant' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
-                  trailing : Icon(Icons.store , color: Colors.green , size: 25),
+                  title: Text('My Resturant',
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20)),
+                  trailing: Icon(Icons.store, color: Colors.green, size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -101,8 +121,15 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                 ),
                 ListTile(
-                  title: Text('About' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20),),
-                  trailing : Icon(Icons.question_mark_rounded , color: Colors.green , size: 25),
+                  title: Text(
+                    'About',
+                    style: TextStyle(
+                        color: Colors.green,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                  ),
+                  trailing: Icon(Icons.question_mark_rounded,
+                      color: Colors.green, size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -111,8 +138,12 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                 ),
                 ListTile(
-                  title: Text('Contact' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
-                  trailing : Icon(Icons.phone , color: Colors.green , size: 25),
+                  title: Text('Contact',
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20)),
+                  trailing: Icon(Icons.phone, color: Colors.green, size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -121,8 +152,13 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                 ),
                 ListTile(
-                  title: Text('Log out' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
-                  trailing : Icon(Icons.logout_rounded , color: Colors.green , size: 25),
+                  title: Text('Log out',
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20)),
+                  trailing:
+                      Icon(Icons.logout_rounded, color: Colors.green, size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
