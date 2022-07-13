@@ -85,7 +85,7 @@ flutter:
   - assets/images/mcdoublemc.png
   - assets/images/uberEatsLogo.PNG
   - assets/images/fiftyShades.jpg
-
+  - assets/images/uberEatsLogo.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
