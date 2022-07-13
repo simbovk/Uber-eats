@@ -33,27 +33,7 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          ElevatedButton.icon(
-            style: ElevatedButton.styleFrom(
-              fixedSize: Size(100, 20),
-              surfaceTintColor: Colors.white,
-              primary: Colors.green,
-              onPrimary: Colors.white,
-              shadowColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(25.0),
-              ),
-            ),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => SignUp()));
-            },
-            icon: Icon(
-              Icons.login,
-              size: 25,
-            ),
-            label: Text('Enter'),
-          ),
+           IconButton(icon: const Icon(Icons.shopping_basket_sharp), onPressed: () {}),
         ]),
         drawer: ClipRRect(
           borderRadius: BorderRadius.only(
@@ -111,8 +91,8 @@ class _HomeState extends State<Home> {
                       ],
                     )),
                 ListTile(
-                  title: Text('My Orders' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
-                  trailing : Icon(Icons.list_alt_outlined , color: Colors.green , size: 25),
+                  title: Text('My Resturant' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
+                  trailing : Icon(Icons.store , color: Colors.green , size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
