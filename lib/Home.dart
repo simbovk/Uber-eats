@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.black, actions: <Widget>[
+        appBar: AppBar(backgroundColor: Colors.green.withOpacity(0.8), actions: <Widget>[
           Padding(
             padding: const EdgeInsets.only(right: 30),
             child: Container(
@@ -113,6 +113,16 @@ class _HomeState extends State<Home> {
                 ListTile(
                   title: Text('Contact' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
                   trailing : Icon(Icons.phone , color: Colors.green , size: 25),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
+                Divider(
+                  color: Colors.white,
+                ),
+                ListTile(
+                  title: Text('Log out' , style: TextStyle(color: Colors.green , fontWeight: FontWeight.bold, fontSize: 20)),
+                  trailing : Icon(Icons.logout_rounded , color: Colors.green , size: 25),
                   onTap: () {
                     Navigator.pop(context);
                   },
