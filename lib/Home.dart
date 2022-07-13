@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.green, actions: <Widget>[
+        appBar: AppBar(backgroundColor: Colors.black, actions: <Widget>[
           Padding(
             padding: const EdgeInsets.only(right: 30),
             child: Container(
