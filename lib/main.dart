@@ -169,6 +169,14 @@ class _SignUpState extends State<SignUp> {
                     Padding(
                       padding: const EdgeInsets.only(left: 5),
                       child: InkWell(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignUp(),
+                            ),
+                          );
+                        },
                           child: Text(
                         'login',
                         style: TextStyle(color: Colors.green.withOpacity(0.6)),
