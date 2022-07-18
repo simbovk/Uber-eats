@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uber_eats/Account.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -1059,12 +1060,12 @@ class _HomeState extends State<Home> {
                   icon: IconButton(
                     icon: const Icon(Icons.account_circle_outlined),
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const ProfilePage(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const MyAccount(),
+                        ),
+                      );
                     },
                   ),
                   label: 'My Account'),
