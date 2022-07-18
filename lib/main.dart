@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uber_eats/Home.dart';
+import 'package:uber_eats/Login.dart';
 
 void main() {
   runApp(
@@ -173,7 +174,7 @@ class _SignUpState extends State<SignUp> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const SignUp(),
+                              builder: (context) => const Login(),
                             ),
                           );
                         },
