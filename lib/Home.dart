@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/widgets.dart';
-
-import 'main.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -118,9 +113,6 @@ class _HomeState extends State<Home> {
                     Navigator.pop(context);
                   },
                 ),
-                Divider(
-                  color: Colors.white,
-                ),
                 ListTile(
                   title: Text(
                     'About',
@@ -135,9 +127,6 @@ class _HomeState extends State<Home> {
                     Navigator.pop(context);
                   },
                 ),
-                Divider(
-                  color: Colors.white,
-                ),
                 ListTile(
                   title: Text('Contact',
                       style: TextStyle(
@@ -151,6 +140,7 @@ class _HomeState extends State<Home> {
                 ),
                 Divider(
                   color: Colors.white,
+                  height: 30,
                 ),
                 ListTile(
                   title: Text('Log out',
