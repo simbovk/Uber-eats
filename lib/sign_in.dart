@@ -104,10 +104,9 @@ class _SignInPageState extends State<SignIn> {
                           (route) => false);
                     },
                     child: const Text(
-                      " Sign Up",
+                      'Sign Up',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.white,
                         fontSize: 18,
                       ),
                     ),
@@ -120,7 +119,6 @@ class _SignInPageState extends State<SignIn> {
                   'Forgot Password ?',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
                     fontSize: 17,
                   ),
                 ),
