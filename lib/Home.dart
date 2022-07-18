@@ -17,14 +17,14 @@ class _HomeState extends State<Home> {
             backgroundColor: Colors.green.withOpacity(0.8),
             actions: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(right: 120),
+                padding: const EdgeInsets.only(right: 100),
                 child: Center(
                   child: Container(
                     height: 25,
-                    width: 85,
+                    width: 105,
                     child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black.withOpacity(0.4),
+                        primary: Colors.black.withOpacity(0.3),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
                         ),
@@ -32,7 +32,6 @@ class _HomeState extends State<Home> {
                       label: Text(
                         'Adress',
                         style: TextStyle(
-                          fontSize: 16,
                           color: Colors.green,
                         ),
                       ),

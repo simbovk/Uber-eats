@@ -143,7 +143,7 @@ class _SignUpState extends State<SignUp> {
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18.0),
-                            side: const BorderSide(color: Colors.white))),
+                            side: const BorderSide(color: Colors.green))),
                   ),
                   onPressed: () {
                     Navigator.push(
