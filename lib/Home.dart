@@ -19,12 +19,22 @@ class _HomeState extends State<Home> {
               Padding(
                 padding: const EdgeInsets.only(right: 120),
                 child: Center(
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.arrow_drop_down_rounded,
-                      color: Colors.white,
-                      semanticLabel: 'Adress',
+                  child: Container(
+                    height: 25,
+                    width: 85,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.black.withOpacity(0.4),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(32.0),
+                        ),
+                      ),
+                      onPressed: () {},
+                      child: Icon(
+                        Icons.arrow_drop_down_rounded,
+                        color: Colors.white,
+                        semanticLabel: 'Adress',
+                      ),
                     ),
                   ),
                 ),
