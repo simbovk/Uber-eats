@@ -14,6 +14,6 @@ class _MyAccountState extends State<MyAccount> {
       home: Scaffold(
         
       ),
-    )
+    );
   }
 }
