@@ -19,7 +19,7 @@ class RoundedAppBar extends StatelessWidget implements PreferredSizeWidget {
                   bottom: width / 2 - preferredSize.height / 2),                    
                 child: new DecoratedBox(
                   decoration: new BoxDecoration(
-                    color: Colors.orange,
+                    color: Colors.green.withOpacity(0.8),
                     shape: BoxShape.circle,
                     boxShadow: [
                       new BoxShadow(color: Colors.black54, blurRadius: 10.0)
