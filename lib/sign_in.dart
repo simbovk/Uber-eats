@@ -1,9 +1,3 @@
-// import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-// import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
-// import 'package:firebase_app_web/services/auth_service.dart';
-// import 'package:firebase_app_web/screens/signUp_page.dart';
-// import 'package:firebase_app_web/screens/home_page.dart';
-// import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter/material.dart';
 import 'Home.dart';
 import 'main.dart';
@@ -17,7 +11,7 @@ class SignIn extends StatefulWidget {
 class _SignInPageState extends State<SignIn> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-  bool circular = false;
+  bool circular = false, passwordObscure = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +26,7 @@ class _SignInPageState extends State<SignIn> {
                 "Sign In",
                 style: TextStyle(
                   fontSize: 35,
-                  color: Colors.white,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -45,13 +39,50 @@ class _SignInPageState extends State<SignIn> {
                 style: TextStyle(color: Colors.white, fontSize: 18),
               ),
               const SizedBox(height: 10),
-              textItem("Email", emailController, false),
-              const SizedBox(
-                height: 15,
-              ),
-              textItem("Password", passwordController, true),
+              textItem("Email", emailController),
               const SizedBox(height: 15),
-              colorButton("Sign Up"),
+              SizedBox(
+                width: MediaQuery.of(context).size.width - 70,
+                height: 55,
+                child: TextFormField(
+                  controller: passwordController,
+                  obscureText: passwordObscure,
+                  style: const TextStyle(fontSize: 17),
+                  decoration: InputDecoration(
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        passwordObscure
+                            ? Icons.visibility
+                            : Icons.visibility_off,
+                      ),
+                      color: Colors.green,
+                      onPressed: () {
+                        setState(() {
+                          passwordObscure = !passwordObscure;
+                        });
+                      },
+                    ),
+                    labelText: 'Password',
+                    labelStyle: const TextStyle(fontSize: 17),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: const BorderSide(
+                        width: 1.5,
+                        color: Colors.amber,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: const BorderSide(
+                        width: 1,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 15),
+              colorButton('Sign Up'),
               const SizedBox(height: 15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -68,7 +99,7 @@ class _SignInPageState extends State<SignIn> {
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
-                            builder: (builder) => const SignUp(),
+                            builder: (context) => const SignUp(),
                           ),
                           (route) => false);
                     },
@@ -138,24 +169,16 @@ class _SignInPageState extends State<SignIn> {
     );
   }
 
-  Widget textItem(
-      String name, TextEditingController controller, bool obscureText) {
+  Widget textItem(String name, TextEditingController controller) {
     return SizedBox(
       width: MediaQuery.of(context).size.width - 70,
       height: 55,
       child: TextFormField(
         controller: controller,
-        obscureText: obscureText,
-        style: const TextStyle(
-          fontSize: 17,
-          color: Colors.white,
-        ),
+        style: const TextStyle(fontSize: 17),
         decoration: InputDecoration(
           labelText: name,
-          labelStyle: const TextStyle(
-            fontSize: 17,
-            color: Colors.white,
-          ),
+          labelStyle: const TextStyle(fontSize: 17),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
             borderSide: const BorderSide(
@@ -179,11 +202,6 @@ class _SignInPageState extends State<SignIn> {
     return InkWell(
       onTap: () async {
         try {
-          // firebase_auth.UserCredential userCredential =
-          // await firebaseAuth.signInWithEmailAndPassword(
-          //     email: _emailController.text,
-          //     password: _passwordController.text);
-          // print(userCredential.user.email);
           setState(() {
             circular = false;
           });
@@ -218,7 +236,7 @@ class _SignInPageState extends State<SignIn> {
               : Text(
                   name,
                   style: const TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 20,
                   ),
                 ),
