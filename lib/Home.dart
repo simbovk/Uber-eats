@@ -22,18 +22,25 @@ class _HomeState extends State<Home> {
                   child: Container(
                     height: 25,
                     width: 85,
-                    child: ElevatedButton(
+                    child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
                         primary: Colors.black.withOpacity(0.4),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(32.0),
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                      ),
+                      label: Text(
+                        'Adress',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.green,
                         ),
                       ),
                       onPressed: () {},
-                      child: Icon(
+                      icon: Icon(
                         Icons.arrow_drop_down_rounded,
                         color: Colors.white,
-                        semanticLabel: 'Adress',
+                        //semanticLabel: 'Adress',
                       ),
                     ),
                   ),
