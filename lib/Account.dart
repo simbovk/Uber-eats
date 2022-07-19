@@ -20,7 +20,21 @@ class _MyAccountState extends State<MyAccount> {
         elevation: 0,
         actions: [Icon(Icons.dehaze_sharp)],
       ),
-      body: ,),
+      body: SafeArea(
+          child: Column(
+        children: [
+          ClipPath(
+            clipper: RoundShape(),
+            child: Container(
+              height: 40,
+              color: Colors.lightGreen,
+            ),
+          ),
+          Center(
+            child: Text('Body'),
+          ),
+        ],
+      )),),
     );
   }
 }
