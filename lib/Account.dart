@@ -19,26 +19,30 @@ class _MyAccountState extends State<MyAccount> {
           backgroundColor: Colors.green.withOpacity(0.8),
           elevation: 0,
           actions: [
-            Padding(
-              padding: const EdgeInsets.only(bottom: 110),
-              child: Row(
-                children: [
-                  IconButton(
-                    padding: EdgeInsets.only(right: 330),
-                    icon: Icon(Icons.arrow_back_ios),
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 110),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        padding: EdgeInsets.only(right: 330),
+                        icon: Icon(Icons.arrow_back_ios),
+                        onPressed: () {
+                          //like drawer
+                        },
+                      ),
+                      IconButton(
+                        // padding: ,
+                        icon: Icon(Icons.menu),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
                   ),
-                 IconButton(
-                    // padding: ,
-                    icon: Icon(Icons.menu),
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                  ),
-                ],
-              ),
+                )
+              ],
             )
           ],
         ),
