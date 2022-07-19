@@ -38,49 +38,16 @@ class _MyAccountState extends State<MyAccount> {
                       },
                     ),
                   ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10),
-                  child: Text(
-                    'Amirali Vakili',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  ),
-                ),
+                )
               ],
             )
           ],
         ),
-        body: SafeArea(
-            child: Column(
+        body: Column(
           children: [
-            ClipPath(
-              clipper: RoundShape(),
-              child: Container(
-                height: 35,
-                color: Colors.green.withOpacity(0.8),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(right: 200),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 50),
-                    child: Text(
-                      'Account',
-                      style: TextStyle(
-                          color: Colors.green, fontWeight: FontWeight.bold , fontSize: 18),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Text('+98 939 305 8161' , style: TextStyle(fontSize: 15),),
-                  ),
-                ],
-              ),
-            )
+            
           ],
-        )),
+        ) ,
       ),
     );
   }
