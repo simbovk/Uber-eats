@@ -34,9 +34,12 @@ class _MyAccountState extends State<MyAccount> {
                   //   ),
                   // );
                 },
-                child: Text(
-                  'login',
-                  style: TextStyle(color: Colors.green.withOpacity(0.6)),
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 10 , top: 15),
+                  child: Text(
+                    'Edit',
+                    style: TextStyle(color: Colors.black , fontSize: 20),
+                  ),
                 )),
           ],
         ),
