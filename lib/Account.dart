@@ -15,10 +15,16 @@ class _MyAccountState extends State<MyAccount> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text('Round AppBar')),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          title: Center(child: Text('Amirali Vakili')),
           backgroundColor: Colors.lightGreen,
           elevation: 0,
-          actions: [Icon(Icons.dehaze_sharp)],
+          actions: [Icon(Icons.more_vert)],
         ),
         body: SafeArea(
             child: Column(
@@ -29,9 +35,6 @@ class _MyAccountState extends State<MyAccount> {
                 height: 40,
                 color: Colors.lightGreen,
               ),
-            ),
-            Center(
-              child: Text('Body'),
             ),
           ],
         )),
