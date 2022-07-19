@@ -41,7 +41,10 @@ class _MyAccountState extends State<MyAccount> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
-                  child: Text('Amirali Vakili' , style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  child: Text(
+                    'Amirali Vakili',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ),
               ],
             )
@@ -57,6 +60,16 @@ class _MyAccountState extends State<MyAccount> {
                 color: Colors.green.withOpacity(0.8),
               ),
             ),
+            Column(
+              children: [
+                Text(
+                  'Account',
+                  style: TextStyle(
+                      color: Colors.green, fontWeight: FontWeight.bold),
+                ),
+                Text('+98 939 305 8161'),
+              ],
+            )
           ],
         )),
       ),
