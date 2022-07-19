@@ -22,9 +22,23 @@ class _MyAccountState extends State<MyAccount> {
             },
           ),
           title: Center(child: Text('Amirali Vakili')),
-          backgroundColor: Colors.lightGreen,
+          backgroundColor: Colors.green.withOpacity(0.8),
           elevation: 0,
-          actions: [Icon(Icons.more_vert)],
+          actions: [
+            InkWell(
+                onTap: () {
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const Login(),
+                  //   ),
+                  // );
+                },
+                child: Text(
+                  'login',
+                  style: TextStyle(color: Colors.green.withOpacity(0.6)),
+                )),
+          ],
         ),
         body: SafeArea(
             child: Column(
@@ -32,8 +46,8 @@ class _MyAccountState extends State<MyAccount> {
             ClipPath(
               clipper: RoundShape(),
               child: Container(
-                height: 40,
-                color: Colors.lightGreen,
+                height: 35,
+                color: Colors.green.withOpacity(0.8),
               ),
             ),
           ],
