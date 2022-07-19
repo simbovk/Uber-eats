@@ -15,8 +15,8 @@ class _MyAccountState extends State<MyAccount> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 90,
-          backgroundColor: Colors.green.withOpacity(0.8),
+          toolbarHeight: 50,
+          backgroundColor: Colors.white,
           elevation: 0,
           actions: [
             Column(
@@ -25,14 +25,14 @@ class _MyAccountState extends State<MyAccount> {
                   children: [
                     IconButton(
                       padding: EdgeInsets.only(right: 330),
-                      icon: Icon(Icons.arrow_back_ios),
+                      icon: Icon(Icons.arrow_back_ios , color: Colors.green,),
                       onPressed: () {
                         Navigator.pop(context);
                       },
                     ),
                     IconButton(
                       // padding: ,
-                      icon: Icon(Icons.menu),
+                      icon: Icon(Icons.menu , color: Colors.green,),
                       onPressed: () {
                         // like drawer
                       },
@@ -45,7 +45,7 @@ class _MyAccountState extends State<MyAccount> {
         ),
         body: Column(
           children: [
-            
+
           ],
         ) ,
       ),
