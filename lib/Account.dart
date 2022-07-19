@@ -21,7 +21,7 @@ class _MyAccountState extends State<MyAccount> {
               Navigator.pop(context);
             },
           ),
-          title: Center(child: Text('Amirali Vakili')),
+          title: Center(child: Text('Profile')),
           backgroundColor: Colors.green.withOpacity(0.8),
           elevation: 0,
           actions: [
@@ -38,7 +38,7 @@ class _MyAccountState extends State<MyAccount> {
                   padding: const EdgeInsets.only(right: 10 , top: 15),
                   child: Text(
                     'Edit',
-                    style: TextStyle(color: Colors.black , fontSize: 20),
+                    style: TextStyle(color: Colors.white , fontSize: 20),
                   ),
                 )),
           ],
