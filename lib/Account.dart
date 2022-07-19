@@ -15,7 +15,7 @@ class _MyAccountState extends State<MyAccount> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 150,
+          toolbarHeight: 90,
           backgroundColor: Colors.green.withOpacity(0.8),
           elevation: 0,
           actions: [
@@ -40,7 +40,7 @@ class _MyAccountState extends State<MyAccount> {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 10 , right: 220),
+                  padding: const EdgeInsets.only(top: 10),
                   child: Text('Amirali Vakili' , style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 ),
               ],
