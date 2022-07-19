@@ -27,14 +27,14 @@ class _MyAccountState extends State<MyAccount> {
                       padding: EdgeInsets.only(right: 330),
                       icon: Icon(Icons.arrow_back_ios),
                       onPressed: () {
-                        //like drawer
+                        Navigator.pop(context);
                       },
                     ),
                     IconButton(
                       // padding: ,
                       icon: Icon(Icons.menu),
                       onPressed: () {
-                        Navigator.pop(context);
+                        // like drawer
                       },
                     ),
                   ],
