@@ -21,27 +21,28 @@ class _MyAccountState extends State<MyAccount> {
           actions: [
             Column(
               children: [
+                Row(
+                  children: [
+                    IconButton(
+                      padding: EdgeInsets.only(right: 330),
+                      icon: Icon(Icons.arrow_back_ios),
+                      onPressed: () {
+                        //like drawer
+                      },
+                    ),
+                    IconButton(
+                      // padding: ,
+                      icon: Icon(Icons.menu),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ],
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 110),
-                  child: Row(
-                    children: [
-                      IconButton(
-                        padding: EdgeInsets.only(right: 330),
-                        icon: Icon(Icons.arrow_back_ios),
-                        onPressed: () {
-                          //like drawer
-                        },
-                      ),
-                      IconButton(
-                        // padding: ,
-                        icon: Icon(Icons.menu),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                      ),
-                    ],
-                  ),
-                )
+                  padding: const EdgeInsets.only(top: 10 , right: 220),
+                  child: Text('Amirali Vakili' , style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                ),
               ],
             )
           ],
