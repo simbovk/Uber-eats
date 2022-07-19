@@ -15,35 +15,30 @@ class _MyAccountState extends State<MyAccount> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 200,
+          toolbarHeight: 150,
           backgroundColor: Colors.green.withOpacity(0.8),
           elevation: 0,
           actions: [
-            Row(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.arrow_back_ios),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                ),
-                InkWell(
-                    onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const Login(),
-                      //   ),
-                      // );
+            Padding(
+              padding: const EdgeInsets.only(bottom: 110),
+              child: Row(
+                children: [
+                  IconButton(
+                    padding: EdgeInsets.only(right: 330),
+                    icon: Icon(Icons.arrow_back_ios),
+                    onPressed: () {
+                      Navigator.pop(context);
                     },
-                    child: Padding(
-                      padding: const EdgeInsets.only(right: 10, top: 15),
-                      child: Text(
-                        'Edit',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    )),
-              ],
+                  ),
+                 IconButton(
+                    // padding: ,
+                    icon: Icon(Icons.menu),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ],
+              ),
             )
           ],
         ),
