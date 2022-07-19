@@ -15,32 +15,36 @@ class _MyAccountState extends State<MyAccount> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back_ios),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-          title: Center(child: Text('Profile')),
+          toolbarHeight: 200,
           backgroundColor: Colors.green.withOpacity(0.8),
           elevation: 0,
           actions: [
-            InkWell(
-                onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => const Login(),
-                  //   ),
-                  // );
-                },
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 10 , top: 15),
-                  child: Text(
-                    'Edit',
-                    style: TextStyle(color: Colors.white , fontSize: 20),
-                  ),
-                )),
+            Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.arrow_back_ios),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+                InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const Login(),
+                      //   ),
+                      // );
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 10, top: 15),
+                      child: Text(
+                        'Edit',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    )),
+              ],
+            )
           ],
         ),
         body: SafeArea(
