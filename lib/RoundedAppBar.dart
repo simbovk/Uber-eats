@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RoundedAppBar extends StatelessWidget implements PreferredSizeWidget {
+  String title = 'Amirali Vakili';
   @override
   Widget build(BuildContext context) {
     return new SizedBox.fromSize(

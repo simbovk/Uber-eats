@@ -14,8 +14,13 @@ class _MyAccountState extends State<MyAccount> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar:RoundedAppBar(),
+          appBar: AppBar(
+        title: Center(child: Text('Round AppBar')),
+        backgroundColor: Colors.lightGreen,
+        elevation: 0,
+        actions: [Icon(Icons.dehaze_sharp)],
       ),
+      body: ,),
     );
   }
 }
