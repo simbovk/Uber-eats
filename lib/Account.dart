@@ -44,7 +44,17 @@ class _MyAccountState extends State<MyAccount> {
         ),
         body: Column(
           children: [
-            IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios_rounded, color: Colors.green, size: 35,),),
+            FlatButton(
+                onPressed: () => {},
+                padding: EdgeInsets.all(10.0),
+                child: Row( 
+                  children: <Widget>[
+                    Text("Amirali Vakili"),
+                    Spacer(),
+                    Icon(Icons.arrow_forward_ios_rounded),
+                  ],
+                ),
+              ),
           ],
         ) ,
       ),
