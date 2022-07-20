@@ -59,7 +59,7 @@ class _ChangePassState extends State<ChangePass> {
               'Change Password',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             )),
-            SizedBox(height: 20,),
+            SizedBox(height: 50,),
             Center(
               child: Container(
                 width: 350,
@@ -86,7 +86,7 @@ class _ChangePassState extends State<ChangePass> {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 50,),
             Center(
               child: Container(
                 width: 350,
@@ -113,6 +113,46 @@ class _ChangePassState extends State<ChangePass> {
                 ),
               ),
             ),
+            SizedBox(
+                height: 350,
+              ),
+              Divider(
+                color: Colors.black.withOpacity(1),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+            SizedBox(
+                height: 40,
+                width: 300,
+                child: ElevatedButton(
+                  // sendInfoToServer(
+                  //     _controllerFirstName.text,
+                  //     _controllerLastName.text,
+                  //     _controllerPassword.text,
+                  //     _controllerPhoneNumber.text,
+                  //     _controllerEmail.text);
+                  child: const Text(
+                    'Submit',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.green),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                            side: const BorderSide(color: Colors.green))),
+                  ),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => const Home(),
+                    //   ),
+                    // );
+                  },
+                ),
+              ),
           ],
         )),
       ),
