@@ -141,10 +141,10 @@ Widget info() {
           //                   );
           //                 },
           child: Text(
-        'login',
-        style: TextStyle(color: Colors.green.withOpacity(0.6)),
+        'Change Password',
+        style: TextStyle(color: Colors.green.withOpacity(0.6) , fontWeight: FontWeight.bold , fontSize: 15),
       )),
-      SizedBox(height: 130),
+      SizedBox(height: 40),
       SizedBox(
         height: 40,
         width: 300,
