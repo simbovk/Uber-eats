@@ -76,6 +76,7 @@ Widget info() {
         ),
       ),
       SizedBox(height: 30),
+      Text('lastname'),
       Center(
         child: Container(
           width: 350,
@@ -93,6 +94,7 @@ Widget info() {
         ),
       ),
       SizedBox(height: 30),
+      Text('phonenumber'),
       Center(
         child: Container(
           width: 350,
@@ -110,6 +112,7 @@ Widget info() {
         ),
       ),
       SizedBox(height: 30),
+      Text('email'),
       Center(
         child: Container(
           width: 350,
