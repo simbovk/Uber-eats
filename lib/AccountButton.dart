@@ -47,13 +47,13 @@ class _AccountButtonState extends State<AccountButton> {
             )
           ],
         ),
-        body: info(),
+        body: SingleChildScrollView(child: info)
       ),
     );
   }
 }
 
-Widget info() {
+Widget get info {
   return Column(
     children: [
       Text(
