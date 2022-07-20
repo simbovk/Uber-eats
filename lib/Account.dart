@@ -218,6 +218,57 @@ class _MyAccountState extends State<MyAccount> {
             ),
           ],
         ),
+         bottomNavigationBar: Container(
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.black.withOpacity(0.4))),
+          child: BottomNavigationBar(
+            selectedItemColor: Colors.green,
+            unselectedItemColor: Colors.black,
+            items: <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: IconButton(
+                  icon: const Icon(Icons.home_outlined),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => HomePage(),
+                    //   ),
+                    // );
+                  },
+                ),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                  icon: IconButton(
+                    icon: const Icon(Icons.list_alt_outlined),
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const ShoppingCart(),
+                      //   ),
+                      // );
+                    },
+                  ),
+                  label: 'Orders'),
+              BottomNavigationBarItem(
+                  icon: IconButton(
+                    icon: const Icon(Icons.account_circle_outlined),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const MyAccount(),
+                        ),
+                      );
+                    },
+                  ),
+                  label: 'My Account'),
+            ],
+            //selectedItemColor: Colors.white,
+          ),
+        ),
       ),
     );
   }
