@@ -62,7 +62,7 @@ Widget info() {
         child: Container(
           width: 350,
           child: TextFormField(
-            initialValue: 'Amirali Vakili',
+            initialValue: 'Amirali',
             textAlign: TextAlign.center,
             cursorColor: Colors.black.withOpacity(0.8),
              decoration: InputDecoration(
@@ -70,42 +70,59 @@ Widget info() {
                     borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                 iconColor: Colors.green,
                 hintStyle: const TextStyle(color: Colors.grey),
-                hintText: "name"),
+                hintText: "firstname"),
           )
         ),
       ),
-      SizedBox(height: 20),
+      SizedBox(height: 30),
       Center(
         child: Container(
-          width: 300,
-          child: TextField(
-            // showCursor: false,
+          width: 350,
+          child: TextFormField(
+            initialValue: 'Vakili',
             textAlign: TextAlign.center,
             cursorColor: Colors.black.withOpacity(0.8),
-            decoration: InputDecoration(
+             decoration: InputDecoration(
                 focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                 iconColor: Colors.green,
                 hintStyle: const TextStyle(color: Colors.grey),
-                hintText: "email"),
-          ),
+                hintText: "lastname"),
+          )
         ),
       ),
-      SizedBox(height: 20),
+      SizedBox(height: 30),
       Center(
         child: Container(
-          width: 300,
-          child: TextField(
-            // showCursor: false,
+          width: 350,
+          child: TextFormField(
+            initialValue: '09393058161',
             textAlign: TextAlign.center,
             cursorColor: Colors.black.withOpacity(0.8),
-            decoration: InputDecoration(
+             decoration: InputDecoration(
                 focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.greenAccent[400]!)),
                 iconColor: Colors.green,
                 hintStyle: const TextStyle(color: Colors.grey),
                 hintText: "phonenumber"),
-          ),
+          )
+        ),
+      ),
+      SizedBox(height: 30),
+      Center(
+        child: Container(
+          width: 350,
+          child: TextFormField(
+            initialValue: '',
+            textAlign: TextAlign.center,
+            cursorColor: Colors.black.withOpacity(0.8),
+             decoration: InputDecoration(
+                focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                iconColor: Colors.green,
+                hintStyle: const TextStyle(color: Colors.grey),
+                hintText: "email"),
+          )
         ),
       ),
       SizedBox(height: 40),
