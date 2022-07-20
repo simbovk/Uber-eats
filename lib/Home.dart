@@ -1022,57 +1022,25 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),
-        bottomNavigationBar: Container(
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.black.withOpacity(0.4))),
-          child: BottomNavigationBar(
-            selectedItemColor: Colors.green,
-            unselectedItemColor: Colors.black,
-            items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                icon: IconButton(
-                  icon: const Icon(Icons.home_outlined),
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => HomePage(),
-                    //   ),
-                    // );
-                  },
-                ),
-                label: 'Home',
-              ),
-              BottomNavigationBarItem(
-                  icon: IconButton(
-                    icon: const Icon(Icons.list_alt_outlined),
-                    onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const ShoppingCart(),
-                      //   ),
-                      // );
-                    },
-                  ),
-                  label: 'Orders'),
-              BottomNavigationBarItem(
-                  icon: IconButton(
-                    icon: const Icon(Icons.account_circle_outlined),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const MyAccount(),
-                        ),
-                      );
-                    },
-                  ),
-                  label: 'My Account'),
-            ],
-            //selectedItemColor: Colors.white,
-          ),
-        ),
+        bottomNavigationBar:BottomNavigationBar(
+         onTap: (index) {
+            _changeTab(index);
+          },
+          currentIndex: _currentIndex,
+          items: const [
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
+              label: 'Orders',
+              icon: Icon(Icons.menu_book_outlined),
+            ),
+            BottomNavigationBarItem(
+              label: 'Account',
+              icon: Icon(Icons.person),
+            ),
+          ]),
       ),
     );
   }
