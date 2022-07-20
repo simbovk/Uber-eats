@@ -14,11 +14,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     late List<Widget> _pages;
-  late Widget _home;
-  late Widget _orders;
-  late Widget _account;
-  late int _currentIndex;
-  late Widget _currentPage;
+  Widget _home;
+ Widget _orders;
+ Widget _account;
+   int _currentIndex = 0;
+   Widget _currentPage;
 
   @override
   void initState() {
@@ -1050,6 +1050,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         bottomNavigationBar:BottomNavigationBar(
+          selectedItemColor: Colors.green,
          onTap: (index) {
             _changeTab(index);
           },
