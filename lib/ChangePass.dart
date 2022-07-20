@@ -47,6 +47,11 @@ class _ChangePassState extends State<ChangePass> {
             )
           ],
         ),
+        body: SingleChildScrollView(child: Column(
+          children: [
+            
+          ],
+        )),
       ),
     );
   }
