@@ -58,6 +58,7 @@ Widget info() {
     children: [
       Text('Account Information' , style: TextStyle(fontSize: 25 , fontWeight: FontWeight.bold),),
       SizedBox(height: 30),
+      Text('firstname'),
       Center(
         child: Container(
           width: 350,
