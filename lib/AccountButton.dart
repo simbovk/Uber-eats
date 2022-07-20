@@ -11,6 +11,7 @@ class _AccountButtonState extends State<AccountButton> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: info(),
       ),
