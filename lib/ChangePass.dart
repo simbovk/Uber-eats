@@ -62,7 +62,7 @@ class _ChangePassState extends State<ChangePass> {
             SizedBox(height: 20,),
             Center(
               child: Container(
-                width: 300,
+                width: 350,
                 child: TextField(
                   // showCursor: false,
                   obscureText: showPass,
@@ -82,7 +82,34 @@ class _ChangePassState extends State<ChangePass> {
                               BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
                       hintStyle: const TextStyle(color: Colors.grey),
-                      hintText: "password"),
+                      hintText: "last password"),
+                ),
+              ),
+            ),
+            SizedBox(height: 20,),
+            Center(
+              child: Container(
+                width: 350,
+                child: TextField(
+                  // showCursor: false,
+                  obscureText: showPass,
+                  textAlign: TextAlign.center,
+                  cursorColor: Colors.black.withOpacity(0.8),
+                  decoration: InputDecoration(
+                      suffixIcon: IconButton(
+                          onPressed: () {
+                            setState(() {
+                              showPass = !showPass;
+                            });
+                          },
+                          icon: Icon(Icons.remove_red_eye),
+                          color: Colors.green),
+                      focusedBorder: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.greenAccent[400]!)),
+                      iconColor: Colors.green,
+                      hintStyle: const TextStyle(color: Colors.grey),
+                      hintText: "new password"),
                 ),
               ),
             ),
