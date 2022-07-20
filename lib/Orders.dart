@@ -12,6 +12,6 @@ class _OrdersState extends State<Orders> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(),
-    )
+    );
   }
 }
