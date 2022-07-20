@@ -14,30 +14,31 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     late List<Widget> _pages;
-  Widget _home;
- Widget _orders;
- Widget _account;
-   int _currentIndex = 0;
-   Widget _currentPage;
+    Widget _home;
+    Widget _orders;
+    Widget _account;
+    int _currentIndex = 0;
+    Widget _currentPage;
 
-  @override
-  void initState() {
-    super.initState();
-    _home = const Home();
-    _orders = const Orders();
-    // _account = Page3(changePage: _changeTab);
-    _account = const MyAccount();
-    _pages = [_home, _orders, _account];
-    _currentIndex = 0;
-    _currentPage = _home;
-  }
+    @override
+    void initState() {
+      super.initState();
+      _home = const Home();
+      _orders = const Orders();
+      // _account = Page3(changePage: _changeTab);
+      _account = const MyAccount();
+     _pages = [_home, _orders, _account];
+      _currentIndex = 0;
+      _currentPage = _home;
+    }
 
-  void _changeTab(int index) {
-    setState(() {
-      _currentIndex = index;
-      _currentPage = _pages[index];
-    });
-  }
+    void _changeTab(int index) {
+      setState(() {
+        _currentIndex = index;
+        _currentPage = _pages[index];
+      });
+    }
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -1049,26 +1050,26 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),
-        bottomNavigationBar:BottomNavigationBar(
-          selectedItemColor: Colors.green,
-         onTap: (index) {
-            _changeTab(index);
-          },
-          currentIndex: _currentIndex,
-          items: const [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home),
-            ),
-            BottomNavigationBarItem(
-              label: 'Orders',
-              icon: Icon(Icons.menu_book_outlined),
-            ),
-            BottomNavigationBarItem(
-              label: 'Account',
-              icon: Icon(Icons.person),
-            ),
-          ]),
+        bottomNavigationBar: BottomNavigationBar(
+            selectedItemColor: Colors.green,
+            onTap: (index) {
+              _changeTab(index);
+            },
+            currentIndex: _currentIndex,
+            items: const [
+              BottomNavigationBarItem(
+                label: 'Home',
+                icon: Icon(Icons.home),
+              ),
+              BottomNavigationBarItem(
+                label: 'Orders',
+                icon: Icon(Icons.menu_book_outlined),
+              ),
+              BottomNavigationBarItem(
+                label: 'Account',
+                icon: Icon(Icons.person),
+              ),
+            ]),
       ),
     );
   }
