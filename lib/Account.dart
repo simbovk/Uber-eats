@@ -15,42 +15,52 @@ class _MyAccountState extends State<MyAccount> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0,
-          actions: [
-            Column(
-              children: [
-                Row(
-                  children: [
-                    IconButton(
-                      padding: const EdgeInsets.only(right: 330),
-                      icon: const Icon(
-                        Icons.arrow_back,
-                        color: Colors.green,
-                      ),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                    ),
-                    IconButton(
-                      // padding: ,
-                      icon: const Icon(
-                        Icons.shopping_basket_rounded,
-                        color: Colors.green,
-                      ),
-                      onPressed: () {
-                        // like drawer
-                      },
-                    ),
-                  ],
-                )
-              ],
-            )
-          ],
-        ),
+        // appBar: AppBar(
+        //   backgroundColor: Colors.white,
+        //   elevation: 0,
+        //   actions: [
+        //     Column(
+        //       children: [
+        //         Row(
+        //           children: [
+        //             IconButton(
+        //               padding: const EdgeInsets.only(right: 330),
+        //               icon: const Icon(
+        //                 Icons.arrow_back,
+        //                 color: Colors.green,
+        //               ),
+        //               onPressed: () {
+        //                 Navigator.pop(context);
+        //               },
+        //             ),
+        //             IconButton(
+        //               // padding: ,
+        //               icon: const Icon(
+        //                 Icons.shopping_basket_rounded,
+        //                 color: Colors.green,
+        //               ),
+        //               onPressed: () {
+        //                 // like drawer
+        //               },
+        //             ),
+        //           ],
+        //         )
+        //       ],
+        //     )
+        //   ],
+        // ),
         body: Column(
           children: [
+            IconButton(
+              padding: const EdgeInsets.only(right: 330),
+              icon: const Icon(
+                Icons.arrow_back,
+                color: Colors.green,
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
             FlatButton(
               onPressed: () => {
                 Navigator.push(
