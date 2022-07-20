@@ -49,7 +49,9 @@ class _ChangePassState extends State<ChangePass> {
         ),
         body: SingleChildScrollView(child: Column(
           children: [
-            
+            SizedBox(height: 50,),
+            Center(child: Text('Change Password' , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)),
+
           ],
         )),
       ),
