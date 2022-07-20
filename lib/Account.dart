@@ -52,7 +52,7 @@ class _MyAccountState extends State<MyAccount> {
           children: [
             FlatButton(
               onPressed: () => {},
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
                   Column(
@@ -80,10 +80,10 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
-            Center(child: Divider(color: Colors.black.withOpacity(0.5),indent: 15,endIndent: 20,)),
+            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
             FlatButton(
               onPressed: () => {},
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
                   Icon(Icons.attach_money , color: Colors.green,size: 25,),
@@ -102,10 +102,10 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
-            Center(child: Divider(color: Colors.black.withOpacity(0.5),indent: 15,endIndent: 20,)),
+            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
             FlatButton(
               onPressed: () => {},
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
                   Icon(Icons.restaurant_menu_outlined , color: Colors.green,size: 25,),
