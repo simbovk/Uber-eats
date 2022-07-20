@@ -16,9 +16,8 @@ class _AccountButtonState extends State<AccountButton> {
   }
 }
 
-class Info extends Widget {
-  @override
-  Element createElement() {
-    return createElement();
-  }
+Widget info() {
+  return Column(
+    
+  );
 }
