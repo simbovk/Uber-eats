@@ -80,20 +80,17 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
-            Center(child: Divider(color: Colors.black.withOpacity(0.5),indent: 20,endIndent: 20,)),
+            Center(child: Divider(color: Colors.black.withOpacity(0.5),indent: 15,endIndent: 20,)),
             FlatButton(
               onPressed: () => {},
               padding: const EdgeInsets.all(10.0),
               child: Row(
                 children: <Widget>[
-                  Column(
-                    children: [
-                      const Text(
-                        "Uber Vallet",
-                        style: const TextStyle(
-                            fontSize: 18),
-                      ),
-                    ],
+                  Icon(Icons.attach_money , color: Colors.green,),
+                  const Text(
+                    "Uber Vallet",
+                    style: const TextStyle(
+                        fontSize: 18),
                   ),
                   const Spacer(),
                   const Icon(
