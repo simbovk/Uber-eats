@@ -1,4 +1,3 @@
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 
@@ -138,7 +137,7 @@ class _AccountButtonState extends State<AccountButton> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ChangePass(),
+                        builder: (context) => const ChangePass(),
                       ),
                     );
                   },
