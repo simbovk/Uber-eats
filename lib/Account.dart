@@ -80,6 +80,7 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
+            Center(child: Divider(color: Colors.black.withOpacity(0.5),indent: 20,endIndent: 20,)),
             FlatButton(
               onPressed: () => {},
               padding: const EdgeInsets.all(10.0),
