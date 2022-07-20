@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uber_eats/AccountButton.dart';
 import 'package:uber_eats/RoundedAppBar.dart';
 
 class MyAccount extends StatefulWidget {
@@ -51,7 +52,14 @@ class _MyAccountState extends State<MyAccount> {
         body: Column(
           children: [
             FlatButton(
-              onPressed: () => {},
+              onPressed: () => {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AccountButton(),
+                  ),
+                )
+              },
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
@@ -80,18 +88,28 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
-            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            Center(
+                child: Divider(
+              color: Colors.black.withOpacity(0.2),
+              indent: 15,
+              endIndent: 20,
+            )),
             FlatButton(
               onPressed: () => {},
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.payment_rounded , color: Colors.green,size: 25,),
-                  SizedBox(width: 5,),
+                  Icon(
+                    Icons.payment_rounded,
+                    color: Colors.green,
+                    size: 25,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
                   const Text(
                     "Uber Vallet",
-                    style: const TextStyle(
-                        fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                   const Spacer(),
                   const Icon(
@@ -102,18 +120,28 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
-            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            Center(
+                child: Divider(
+              color: Colors.black.withOpacity(0.2),
+              indent: 15,
+              endIndent: 20,
+            )),
             FlatButton(
               onPressed: () => {},
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.restaurant_menu_outlined , color: Colors.green,size: 25,),
-                  SizedBox(width: 5,),
+                  Icon(
+                    Icons.restaurant_menu_outlined,
+                    color: Colors.green,
+                    size: 25,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
                   const Text(
                     "My Favorite Resturant",
-                    style: const TextStyle(
-                        fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                   const Spacer(),
                   const Icon(
@@ -124,18 +152,28 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
-            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            Center(
+                child: Divider(
+              color: Colors.black.withOpacity(0.2),
+              indent: 15,
+              endIndent: 20,
+            )),
             FlatButton(
               onPressed: () => {},
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.list_alt_outlined , color: Colors.green,size: 25,),
-                  SizedBox(width: 5,),
+                  Icon(
+                    Icons.list_alt_outlined,
+                    color: Colors.green,
+                    size: 25,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
                   const Text(
                     "List Of Payments",
-                    style: const TextStyle(
-                        fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                   const Spacer(),
                   const Icon(
@@ -146,18 +184,28 @@ class _MyAccountState extends State<MyAccount> {
                 ],
               ),
             ),
-             Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            Center(
+                child: Divider(
+              color: Colors.black.withOpacity(0.2),
+              indent: 15,
+              endIndent: 20,
+            )),
             FlatButton(
               onPressed: () => {},
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.logout_rounded , color: Colors.green,size: 25,),
-                  SizedBox(width: 5,),
+                  Icon(
+                    Icons.logout_rounded,
+                    color: Colors.green,
+                    size: 25,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
                   const Text(
                     "Log out",
-                    style: const TextStyle(
-                        fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                   const Spacer(),
                   const Icon(
