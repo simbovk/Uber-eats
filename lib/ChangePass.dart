@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({Key? key}) : super(key: key);
+class ChangePass extends StatefulWidget {
+  const ChangePass({Key? key}) : super(key: key);
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<ChangePass> createState() => _ChangePassState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _ChangePassState extends State<ChangePass> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(),
     );
   }
