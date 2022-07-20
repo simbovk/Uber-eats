@@ -56,79 +56,94 @@ class _AccountButtonState extends State<AccountButton> {
 Widget info() {
   return Column(
     children: [
-      Text('Account Information' , style: TextStyle(fontSize: 25 , fontWeight: FontWeight.bold),),
+      Text(
+        'Account Information',
+        style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+      ),
       SizedBox(height: 30),
       Text('firstname'),
       Center(
         child: Container(
-          width: 350,
-          child: TextFormField(
-            initialValue: 'Amirali',
-            textAlign: TextAlign.center,
-            cursorColor: Colors.black.withOpacity(0.8),
-             decoration: InputDecoration(
-                focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.greenAccent[400]!)),
-                iconColor: Colors.green,
-                hintStyle: const TextStyle(color: Colors.grey),
-                hintText: "firstname"),
-          )
-        ),
+            width: 350,
+            child: TextFormField(
+              initialValue: 'Amirali',
+              textAlign: TextAlign.center,
+              cursorColor: Colors.black.withOpacity(0.8),
+              decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                  iconColor: Colors.green,
+                  hintStyle: const TextStyle(color: Colors.grey),
+                  hintText: "firstname"),
+            )),
       ),
       SizedBox(height: 50),
       Text('lastname'),
       Center(
         child: Container(
-          width: 350,
-          child: TextFormField(
-            initialValue: 'Vakili',
-            textAlign: TextAlign.center,
-            cursorColor: Colors.black.withOpacity(0.8),
-             decoration: InputDecoration(
-                focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.greenAccent[400]!)),
-                iconColor: Colors.green,
-                hintStyle: const TextStyle(color: Colors.grey),
-                hintText: "lastname"),
-          )
-        ),
+            width: 350,
+            child: TextFormField(
+              initialValue: 'Vakili',
+              textAlign: TextAlign.center,
+              cursorColor: Colors.black.withOpacity(0.8),
+              decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                  iconColor: Colors.green,
+                  hintStyle: const TextStyle(color: Colors.grey),
+                  hintText: "lastname"),
+            )),
       ),
       SizedBox(height: 50),
       Text('phonenumber'),
       Center(
         child: Container(
-          width: 350,
-          child: TextFormField(
-            initialValue: '09393058161',
-            textAlign: TextAlign.center,
-            cursorColor: Colors.black.withOpacity(0.8),
-             decoration: InputDecoration(
-                focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.greenAccent[400]!)),
-                iconColor: Colors.green,
-                hintStyle: const TextStyle(color: Colors.grey),
-                hintText: "phonenumber"),
-          )
-        ),
+            width: 350,
+            child: TextFormField(
+              initialValue: '09393058161',
+              textAlign: TextAlign.center,
+              cursorColor: Colors.black.withOpacity(0.8),
+              decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                  iconColor: Colors.green,
+                  hintStyle: const TextStyle(color: Colors.grey),
+                  hintText: "phonenumber"),
+            )),
       ),
       SizedBox(height: 50),
       Text('email'),
       Center(
         child: Container(
-          width: 350,
-          child: TextFormField(
-            initialValue: '',
-            textAlign: TextAlign.center,
-            cursorColor: Colors.black.withOpacity(0.8),
-             decoration: InputDecoration(
-                focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.greenAccent[400]!)),
-                iconColor: Colors.green,
-                hintStyle: const TextStyle(color: Colors.grey),
-                hintText: "email"),
-          )
-        ),
+            width: 350,
+            child: TextFormField(
+              initialValue: '',
+              textAlign: TextAlign.center,
+              cursorColor: Colors.black.withOpacity(0.8),
+              decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.greenAccent[400]!)),
+                  iconColor: Colors.green,
+                  hintStyle: const TextStyle(color: Colors.grey),
+                  hintText: "email"),
+            )),
       ),
+      SizedBox(
+        height: 40,
+      ),
+      InkWell(
+          //  onTap: (){
+          //                   Navigator.push(
+          //                     context,
+          //                     MaterialPageRoute(
+          //                       builder: (context) => const Login(),
+          //                     ),
+          //                   );
+          //                 },
+          child: Text(
+        'login',
+        style: TextStyle(color: Colors.green.withOpacity(0.6)),
+      )),
       SizedBox(height: 130),
       SizedBox(
         height: 40,
@@ -140,7 +155,10 @@ Widget info() {
           //     _controllerPassword.text,
           //     _controllerPhoneNumber.text,
           //     _controllerEmail.text);
-          child: const Text('Submit Changes' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 15),),
+          child: const Text(
+            'Submit Changes',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+          ),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.green),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
