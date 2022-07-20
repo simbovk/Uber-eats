@@ -75,7 +75,7 @@ Widget info() {
           )
         ),
       ),
-      SizedBox(height: 30),
+      SizedBox(height: 50),
       Text('lastname'),
       Center(
         child: Container(
@@ -93,7 +93,7 @@ Widget info() {
           )
         ),
       ),
-      SizedBox(height: 30),
+      SizedBox(height: 50),
       Text('phonenumber'),
       Center(
         child: Container(
@@ -111,7 +111,7 @@ Widget info() {
           )
         ),
       ),
-      SizedBox(height: 30),
+      SizedBox(height: 50),
       Text('email'),
       Center(
         child: Container(
@@ -129,10 +129,10 @@ Widget info() {
           )
         ),
       ),
-      SizedBox(height: 40),
+      SizedBox(height: 130),
       SizedBox(
-        height: 30,
-        width: 100,
+        height: 40,
+        width: 300,
         child: ElevatedButton(
           // sendInfoToServer(
           //     _controllerFirstName.text,
@@ -140,12 +140,12 @@ Widget info() {
           //     _controllerPassword.text,
           //     _controllerPhoneNumber.text,
           //     _controllerEmail.text);
-          child: const Text('Submit'),
+          child: const Text('Submit Changes' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 15),),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.green),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
+                    borderRadius: BorderRadius.circular(10.0),
                     side: const BorderSide(color: Colors.green))),
           ),
           onPressed: () {
