@@ -114,13 +114,13 @@ class _ChangePassState extends State<ChangePass> {
               ),
             ),
             SizedBox(
-                height: 350,
+                height: 310,
               ),
               Divider(
-                color: Colors.black.withOpacity(1),
+                color: Colors.black.withOpacity(0.1),
               ),
               SizedBox(
-                height: 20,
+                height: 30,
               ),
             SizedBox(
                 height: 40,
