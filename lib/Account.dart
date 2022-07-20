@@ -49,9 +49,9 @@ class _MyAccountState extends State<MyAccount> {
                 padding: EdgeInsets.all(10.0),
                 child: Row( 
                   children: <Widget>[
-                    Text("Amirali Vakili"),
+                    Text("Amirali Vakili" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),),
                     Spacer(),
-                    Icon(Icons.arrow_forward_ios_rounded),
+                    Icon(Icons.arrow_forward_ios_rounded , size: 35, color: Colors.green,),
                   ],
                 ),
               ),
