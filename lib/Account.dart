@@ -87,6 +87,7 @@ class _MyAccountState extends State<MyAccount> {
               child: Row(
                 children: <Widget>[
                   Icon(Icons.attach_money , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
                   const Text(
                     "Uber Vallet",
                     style: const TextStyle(
@@ -107,7 +108,8 @@ class _MyAccountState extends State<MyAccount> {
               padding: const EdgeInsets.all(10.0),
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.attach_money , color: Colors.green,size: 25,),
+                  Icon(Icons.restaurant_menu_outlined , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
                   const Text(
                     "My Favorite Resturant",
                     style: const TextStyle(
