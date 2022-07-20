@@ -86,7 +86,7 @@ class _MyAccountState extends State<MyAccount> {
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.attach_money , color: Colors.green,size: 25,),
+                  Icon(Icons.payment_rounded , color: Colors.green,size: 25,),
                   SizedBox(width: 5,),
                   const Text(
                     "Uber Vallet",
@@ -112,6 +112,50 @@ class _MyAccountState extends State<MyAccount> {
                   SizedBox(width: 5,),
                   const Text(
                     "My Favorite Resturant",
+                    style: const TextStyle(
+                        fontSize: 18),
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
+            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            FlatButton(
+              onPressed: () => {},
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.list_alt_outlined , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
+                  const Text(
+                    "List Of Payments",
+                    style: const TextStyle(
+                        fontSize: 18),
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
+             Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            FlatButton(
+              onPressed: () => {},
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.logout_rounded , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
+                  const Text(
+                    "Log out",
                     style: const TextStyle(
                         fontSize: 18),
                   ),
