@@ -109,7 +109,7 @@ class _MyAccountState extends State<MyAccount> {
                 children: <Widget>[
                   Icon(Icons.attach_money , color: Colors.green,size: 25,),
                   const Text(
-                    "Uber Vallet",
+                    "My Favorite Resturant",
                     style: const TextStyle(
                         fontSize: 18),
                   ),
