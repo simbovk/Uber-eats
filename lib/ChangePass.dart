@@ -12,6 +12,6 @@ class _MyWidgetState extends State<MyWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(),
-    )
+    );
   }
 }
