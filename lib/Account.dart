@@ -23,15 +23,21 @@ class _MyAccountState extends State<MyAccount> {
                 Row(
                   children: [
                     IconButton(
-                      padding: EdgeInsets.only(right: 330),
-                      icon: Icon(Icons.arrow_back , color: Colors.green,),
+                      padding: const EdgeInsets.only(right: 330),
+                      icon: const Icon(
+                        Icons.arrow_back,
+                        color: Colors.green,
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },
                     ),
                     IconButton(
                       // padding: ,
-                      icon: Icon(Icons.shopping_basket_rounded , color: Colors.green,),
+                      icon: const Icon(
+                        Icons.shopping_basket_rounded,
+                        color: Colors.green,
+                      ),
                       onPressed: () {
                         // like drawer
                       },
@@ -45,18 +51,125 @@ class _MyAccountState extends State<MyAccount> {
         body: Column(
           children: [
             FlatButton(
-                onPressed: () => {},
-                padding: EdgeInsets.all(10.0),
-                child: Row( 
-                  children: <Widget>[
-                    Text("Amirali Vakili"),
-                    Spacer(),
-                    Icon(Icons.arrow_forward_ios_rounded),
-                  ],
-                ),
+              onPressed: () => {},
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: <Widget>[
+                  Column(
+                    children: [
+                      const Text(
+                        "Amirali Vakili",
+                        style: const TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        'See Your Information',
+                        style: TextStyle(fontSize: 14),
+                      )
+                    ],
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
               ),
+            ),
+            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            FlatButton(
+              onPressed: () => {},
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.payment_rounded , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
+                  const Text(
+                    "Uber Vallet",
+                    style: const TextStyle(
+                        fontSize: 18),
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
+            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            FlatButton(
+              onPressed: () => {},
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.restaurant_menu_outlined , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
+                  const Text(
+                    "My Favorite Resturant",
+                    style: const TextStyle(
+                        fontSize: 18),
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
+            Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            FlatButton(
+              onPressed: () => {},
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.list_alt_outlined , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
+                  const Text(
+                    "List Of Payments",
+                    style: const TextStyle(
+                        fontSize: 18),
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
+             Center(child: Divider(color: Colors.black.withOpacity(0.2),indent: 15,endIndent: 20,)),
+            FlatButton(
+              onPressed: () => {},
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.logout_rounded , color: Colors.green,size: 25,),
+                  SizedBox(width: 5,),
+                  const Text(
+                    "Log out",
+                    style: const TextStyle(
+                        fontSize: 18),
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
           ],
-        ) ,
+        ),
       ),
     );
   }
