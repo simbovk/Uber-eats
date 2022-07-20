@@ -86,7 +86,28 @@ class _MyAccountState extends State<MyAccount> {
               padding: const EdgeInsets.all(10.0),
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.attach_money , color: Colors.green,),
+                  Icon(Icons.attach_money , color: Colors.green,size: 25,),
+                  const Text(
+                    "Uber Vallet",
+                    style: const TextStyle(
+                        fontSize: 18),
+                  ),
+                  const Spacer(),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
+            Center(child: Divider(color: Colors.black.withOpacity(0.5),indent: 15,endIndent: 20,)),
+            FlatButton(
+              onPressed: () => {},
+              padding: const EdgeInsets.all(10.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.attach_money , color: Colors.green,size: 25,),
                   const Text(
                     "Uber Vallet",
                     style: const TextStyle(
