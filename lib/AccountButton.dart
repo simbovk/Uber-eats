@@ -102,7 +102,7 @@ Widget info() {
                   //     _controllerPassword.text,
                   //     _controllerPhoneNumber.text,
                   //     _controllerEmail.text);
-                  child: const Text('Sign up'),
+                  child: const Text('Submit'),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.green),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
