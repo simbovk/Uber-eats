@@ -48,38 +48,6 @@ class _AccountButtonState extends State<AccountButton> {
           ],
         ),
         body: info(),
-        bottomNavigationBar: Container(
-          //color: Colors.black,
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.black), color: Colors.white),
-          child: BottomNavigationBar(
-            fixedColor: Colors.white,
-            unselectedItemColor: Colors.white,
-            items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                  icon: ElevatedButton(
-                    onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const YourProduct(),
-                      //   ),
-                      // );
-                    },
-                    child: const Text('Submit Changes'),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.green),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                              side: const BorderSide(color: Colors.green))),
-                    ),
-                  ),
-                  label: 'Finish'),
-            ],
-            //selectedItemColor: Colors.white,
-          ),
-        ),
       ),
     );
   }
@@ -161,7 +129,7 @@ Widget info() {
             )),
       ),
       SizedBox(
-        height: 40,
+        height: 50,
       ),
       InkWell(
           //  onTap: (){
@@ -176,6 +144,40 @@ Widget info() {
         'Change Password',
         style: TextStyle(color: Colors.green.withOpacity(0.6) , fontWeight: FontWeight.bold , fontSize: 15),
       )),
+      SizedBox(height: 50,),
+      Divider(color: Colors.black.withOpacity(0.1),),
+      SizedBox(height: 20,),
+      SizedBox(
+        height: 40,
+        width: 300,
+        child: ElevatedButton(
+          // sendInfoToServer(
+          //     _controllerFirstName.text,
+          //     _controllerLastName.text,
+          //     _controllerPassword.text,
+          //     _controllerPhoneNumber.text,
+          //     _controllerEmail.text);
+          child: const Text(
+            'Submit Changes',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+          ),
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.green),
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    side: const BorderSide(color: Colors.green))),
+          ),
+          onPressed: () {
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) => const Home(),
+            //   ),
+            // );
+          },
+        ),
+      ),
     ],
   );
 }
