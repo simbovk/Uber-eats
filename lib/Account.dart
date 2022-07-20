@@ -23,15 +23,15 @@ class _MyAccountState extends State<MyAccount> {
                 Row(
                   children: [
                     IconButton(
-                      padding: EdgeInsets.only(right: 330),
-                      icon: Icon(Icons.arrow_back , color: Colors.green,),
+                      padding: const EdgeInsets.only(right: 330),
+                      icon: const Icon(Icons.arrow_back , color: Colors.green,),
                       onPressed: () {
                         Navigator.pop(context);
                       },
                     ),
                     IconButton(
                       // padding: ,
-                      icon: Icon(Icons.shopping_basket_rounded , color: Colors.green,),
+                      icon: const Icon(Icons.shopping_basket_rounded , color: Colors.green,),
                       onPressed: () {
                         // like drawer
                       },
@@ -46,12 +46,18 @@ class _MyAccountState extends State<MyAccount> {
           children: [
             FlatButton(
                 onPressed: () => {},
-                padding: EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Row( 
                   children: <Widget>[
-                    Text("Amirali Vakili" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),),
-                    Spacer(),
-                    Icon(Icons.arrow_forward_ios_rounded , size: 35, color: Colors.green,),
+                    Column(
+                      children: [
+                        const Text("Amirali Vakili" , style: const TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),),
+                        SizedBox(height: 5,),
+                        Text('See Your Information' , style: TextStyle(fontSize: 14),)
+                      ],
+                    ),
+                    const Spacer(),
+                    const Icon(Icons.arrow_forward_ios_rounded , size: 30, color: Colors.green,),
                   ],
                 ),
               ),
