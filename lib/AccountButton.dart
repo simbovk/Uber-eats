@@ -56,10 +56,11 @@ class _AccountButtonState extends State<AccountButton> {
 Widget info() {
   return Column(
     children: [
-      SizedBox(height: 10),
+      Text('Account Information' , style: TextStyle(fontSize: 25 , fontWeight: FontWeight.bold),),
+      SizedBox(height: 30),
       Center(
         child: Container(
-          width: 300,
+          width: 350,
           child: TextFormField(
             initialValue: 'Amirali Vakili',
             textAlign: TextAlign.center,
