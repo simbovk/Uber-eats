@@ -12,9 +12,7 @@ class MyAccount extends StatefulWidget {
 class _MyAccountState extends State<MyAccount> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return 
         // appBar: AppBar(
         //   backgroundColor: Colors.white,
         //   elevation: 0,
@@ -49,7 +47,7 @@ class _MyAccountState extends State<MyAccount> {
         //     )
         //   ],
         // ),
-        body: Column(
+        Column(
           children: [
             IconButton(
               padding: const EdgeInsets.only(right: 330),
@@ -227,9 +225,7 @@ class _MyAccountState extends State<MyAccount> {
               ),
             ),
           ],
-        ),
-      ),
-    );
+        );
   }
 }
 
