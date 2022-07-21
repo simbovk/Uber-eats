@@ -6,7 +6,6 @@ void main() => const MyApp();
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -127,7 +126,7 @@ class SignUpState extends State<SignUp> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                           borderSide:
-                          BorderSide(color: Colors.greenAccent[400]!)),
+                              BorderSide(color: Colors.greenAccent[400]!)),
                       iconColor: Colors.green,
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText: "         Password",
@@ -190,7 +189,7 @@ class SignUpState extends State<SignUp> {
                           child: Text(
                             'Sign in',
                             style:
-                            TextStyle(color: Colors.green.withOpacity(0.6)),
+                                TextStyle(color: Colors.green.withOpacity(0.6)),
                           ),
                           onPressed: () {
                             Navigator.pushReplacement(
