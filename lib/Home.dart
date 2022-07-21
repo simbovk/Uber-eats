@@ -12,39 +12,39 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  late List<Widget> _pages;
+  late Widget _home;
+  late Widget _orders;
+  late Widget _account;
+  late int _currentIndex;
+  late Widget _currentPage;
+  // _home = homePage();
+  // _orders = Orders();
+  // _account = MyAccount();
+  // _pages = [_home, _orders, _account];
+
+  @override
+  void initState() {
+    super.initState();
+    _home = const HomePage();
+    _orders = const Orders();
+    // _account = Page3(changePage: _changeTab);
+    _account = const MyAccount();
+    _pages = [_home, _orders, _account];
+    _currentIndex = 0;
+    _currentPage = _home;
+  }
+
+  void _changeTab(int index) {
+    setState(() {
+      _currentIndex = index;
+      // print(_currentIndex + 1);
+      _currentPage = _pages[_currentIndex];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    late List<Widget> _pages;
-    late Widget _home;
-    late Widget _orders;
-    late Widget _account;
-    late int _currentIndex;
-    late Widget _currentPage = HomePage();
-    // _home = homePage();
-    // _orders = Orders();
-    // _account = MyAccount();
-    // _pages = [_home, _orders, _account];
-
-    @override
-    void initState() {
-      super.initState();
-      _home = const HomePage();
-      _orders = const Orders();
-      // _account = Page3(changePage: _changeTab);
-      _account = const MyAccount();
-      _pages = [_home, _orders, _account];
-      _currentIndex = 0;
-      _currentPage = _home;
-    }
-
-    void _changeTab(int index) {
-      setState(() {
-        _currentIndex = index;
-        // print(_currentIndex + 1);
-        _currentPage = _pages[_currentIndex];
-      });
-    }
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
