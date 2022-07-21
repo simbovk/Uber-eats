@@ -18,25 +18,24 @@ class _HomeState extends State<Home> {
     Widget _home;
     Widget _orders;
     Widget _account;
-    int _currentIndex = 0;
-    Widget _currentPage = homePage();
-    _home = const homePage();
-    _orders = const Orders();
-    // _account = Page3(changePage: _changeTab);
-    _account = const MyAccount();
-    _pages = [_home, _orders, _account];
+    int _currentIndex;
+    Widget _currentPage;
+    // _home = homePage();
+    // _orders = Orders();
+    // _account = MyAccount();
+    // _pages = [_home, _orders, _account];
 
-    // @override
-    // void initState() {
-    //   super.initState();
-    //   _home = const homePage();
-    //   _orders = const Orders();
-    //   // _account = Page3(changePage: _changeTab);
-    //   _account = const MyAccount();
-    //   _pages = [_home, _orders, _account];
-    //   _currentIndex = 0;
-    //   _currentPage = _home;
-    // }
+    @override
+    void initState() {
+      super.initState();
+      _home = const homePage();
+      _orders = const Orders();
+      // _account = Page3(changePage: _changeTab);
+      _account = const MyAccount();
+      _pages = [_home, _orders, _account];
+      _currentIndex = 0;
+      _currentPage = _home;
+    }
 
     void _changeTab(int index) {
       setState(() {
