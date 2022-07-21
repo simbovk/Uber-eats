@@ -41,7 +41,8 @@ class _HomeState extends State<Home> {
     void _changeTab(int index) {
       setState(() {
         _currentIndex = index;
-        _currentPage = _pages[index];
+        // print(_currentIndex + 1);
+        _currentPage = _pages[_currentIndex];
       });
     }
 
@@ -213,6 +214,7 @@ class _HomeState extends State<Home> {
         bottomNavigationBar: BottomNavigationBar(
             selectedItemColor: Colors.green,
             onTap: (index) {
+              print(index);
               _changeTab(index);
             },
             currentIndex: _currentIndex,
