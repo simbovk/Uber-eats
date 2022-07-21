@@ -210,7 +210,10 @@ class _HomeState extends State<Home> {
                     Navigator.pop(context);
                   },
                 ),
-                const Divider(color: Colors.white),
+                const Divider(
+                  color: Colors.white,
+                  height: 30,
+                ),
                 ListTile(
                   title: const Text(
                     'Log out',
