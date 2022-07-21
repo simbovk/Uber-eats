@@ -15,11 +15,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     late List<Widget> _pages;
-    Widget _home;
-    Widget _orders;
-    Widget _account;
-    int _currentIndex;
-    Widget _currentPage;
+    late Widget _home;
+    late Widget _orders;
+    late Widget _account;
+    late int _currentIndex;
+    late Widget _currentPage = HomePage();
     // _home = homePage();
     // _orders = Orders();
     // _account = MyAccount();
@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
     @override
     void initState() {
       super.initState();
-      _home = const homePage();
+      _home = const HomePage();
       _orders = const Orders();
       // _account = Page3(changePage: _changeTab);
       _account = const MyAccount();
