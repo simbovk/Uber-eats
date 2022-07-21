@@ -49,16 +49,6 @@ class _MyAccountState extends State<MyAccount> {
         // ),
         Column(
           children: [
-            IconButton(
-              padding: const EdgeInsets.only(right: 330),
-              icon: const Icon(
-                Icons.arrow_back,
-                color: Colors.green,
-              ),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
             FlatButton(
               onPressed: () => {
                 Navigator.push(
