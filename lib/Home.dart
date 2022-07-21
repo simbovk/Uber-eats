@@ -213,7 +213,6 @@ class _HomeState extends State<Home> {
         bottomNavigationBar: BottomNavigationBar(
             selectedItemColor: Colors.green,
             onTap: (index) {
-              print(index);
               _changeTab(index);
             },
             currentIndex: _currentIndex,
