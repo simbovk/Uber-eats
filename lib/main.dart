@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:uber_eats/Home.dart';
-import 'package:uber_eats/Login.dart';
 
 void main() {
   runApp(
@@ -171,12 +170,12 @@ class _SignUpState extends State<SignUp> {
                       padding: const EdgeInsets.only(left: 5),
                       child: InkWell(
                         onTap: (){
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const Login(),
-                            ),
-                          );
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => const Login(),
+                          //   ),
+                          // );
                         },
                           child: Text(
                         'login',
