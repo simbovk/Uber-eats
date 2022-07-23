@@ -1,5 +1,6 @@
-import 'package:food_app/sign_in.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/sign_in.dart';
+
 import 'Home.dart';
 
 void main() {
@@ -166,26 +167,6 @@ class _MyAppState extends State<MyApp> {
                   child: const Text('Sign up'),
                 ),
               ),
-//                         child: TextButton(
-// >>>>>>> 7e96690456fd0183855699eddf1a8bf9eb146994
-//                           child: Text(
-//                             'Sign in',
-//                             style:
-//                                 TextStyle(color: Colors.green.withOpacity(0.6)),
-//                           ),
-//                           onPressed: () {
-//                             Navigator.pushReplacement(
-//                               context,
-//                               MaterialPageRoute(
-//                                 builder: (context) => const SignIn(),
-//                               ),
-//                             );
-//                           },
-//                         ),
-                      ),
-                    ),
-                  ],
-=======
                const SizedBox(height: 10),
               Center(
                 child: SizedBox(
@@ -222,7 +203,6 @@ class _MyAppState extends State<MyApp> {
                   //     _controllerPhoneNumber.text,
                   //     _controllerEmail.text);
                   child: const Text('Sign in'),
->>>>>>> account
                 ),
               ),
               ),
@@ -254,4 +234,6 @@ class _MyAppState extends State<MyApp> {
       );
   }
 }
+
+
 
