@@ -1,36 +1,31 @@
+import 'package:food_app/sign_in.dart';
 import 'package:flutter/material.dart';
-import 'sign_in.dart';
 import 'Home.dart';
 
-void main() => const MyApp();
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: MyApp(),
+  ));
+}
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
+
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SignUp(),
-    );
-  }
+  State<MyApp> createState() => _MyAppState();
 }
 
-class SignUp extends StatefulWidget {
-  const SignUp({Key? key}) : super(key: key);
-  @override
-  State<SignUp> createState() => SignUpState();
-}
-
-class SignUpState extends State<SignUp> {
-  bool showPass = true;
-
+class _MyAppState extends State<MyApp> {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
+    bool showPass = true;
+      return Scaffold(
+        body:  SingleChildScrollView(
+        child: Container(
+          //  height: MediaQuery.of(context).size.height,
+          // width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
               Center(
@@ -171,29 +166,6 @@ class SignUpState extends State<SignUp> {
                   child: const Text('Sign up'),
                 ),
               ),
-              const SizedBox(height: 10),
-              Center(
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 110),
-                      child: Text(
-                        'Already have an account?',
-                        style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: InkWell(
-                        onTap: (){
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const SignIn(),
-                            ),
-                          );
-                        },
-
 //                         child: TextButton(
 // >>>>>>> 7e96690456fd0183855699eddf1a8bf9eb146994
 //                           child: Text(
@@ -213,12 +185,73 @@ class SignUpState extends State<SignUp> {
                       ),
                     ),
                   ],
+=======
+               const SizedBox(height: 10),
+              Center(
+                child: SizedBox(
+                height: 30,
+                width: 100,
+                child: ElevatedButton(
+                  // sendInfoToServer(
+                  //     _controllerFirstName.text,
+                  //     _controllerLastName.text,
+                  //     _controllerPassword.text,
+                  //     _controllerPhoneNumber.text,
+                  //     _controllerEmail.text);
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.green),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: const BorderSide(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignIn(),
+                      ),
+                    );
+                  },
+                  // sendInfoToServer(
+                  //     _controllerFirstName.text,
+                  //     _controllerLastName.text,
+                  //     _controllerPassword.text,
+                  //     _controllerPhoneNumber.text,
+                  //     _controllerEmail.text);
+                  child: const Text('Sign in'),
+>>>>>>> account
                 ),
-              )
+              ),
+              ),
+
+// //                         child: TextButton(
+// //                           child: Text(
+// //                             'Sign in',
+// //                             style:
+// //                                 TextStyle(color: Colors.green.withOpacity(0.6)),
+// //                           ),
+// //                           onPressed: () {
+// //                             Navigator.pushReplacement(
+// //                               context,
+// //                               MaterialPageRoute(
+// //                                 builder: (context) => const SignIn(),
+// //                               ),
+// //                             );
+// //                           },
+// //                         ),
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               )
             ],
           ),
         ),
       ),
-    );
+      );
   }
 }
+
