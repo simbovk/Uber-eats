@@ -189,7 +189,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => const SignIn(),
