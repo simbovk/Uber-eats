@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Home.dart';
 import 'sign_in.dart';
-
+bool showPass = true;
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -21,9 +21,8 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    bool showPass = false;
-      return Scaffold(
-        body:  SingleChildScrollView(
+    return Scaffold(
+      body: SingleChildScrollView(
         child: Container(
           //  height: MediaQuery.of(context).size.height,
           // width: MediaQuery.of(context).size.width,
@@ -106,19 +105,18 @@ class _MyAppState extends State<MyApp> {
                 child: SizedBox(
                   width: 300,
                   child: TextField(
-                    obscureText: showPass,
                     textAlign: TextAlign.center,
                     cursorColor: Colors.black.withOpacity(0.8),
                     decoration: InputDecoration(
                       suffixIcon: IconButton(
-                        icon: Icon(
-                            showPass ? Icons.visibility : Icons.visibility_off),
-                        color: Colors.green,
                         onPressed: () {
                           setState(() {
                             showPass = !showPass;
                           });
                         },
+                        icon: Icon(
+                            showPass ? Icons.visibility : Icons.visibility_off),
+                        color: Colors.green,
                       ),
                       focusedBorder: UnderlineInputBorder(
                           borderSide:
@@ -127,13 +125,14 @@ class _MyAppState extends State<MyApp> {
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText: "         Password",
                     ),
+                     obscureText: showPass,
                   ),
                 ),
               ),
               const SizedBox(height: 40),
               SizedBox(
-                height: 30,
-                width: 100,
+                height: 32,
+                width: 130,
                 child: ElevatedButton(
                   // sendInfoToServer(
                   //     _controllerFirstName.text,
@@ -146,7 +145,7 @@ class _MyAppState extends State<MyApp> {
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18.0),
-                        side: const BorderSide(color: Colors.white),
+                        side: const BorderSide(color: Colors.green),
                       ),
                     ),
                   ),
@@ -164,47 +163,47 @@ class _MyAppState extends State<MyApp> {
                   //     _controllerPassword.text,
                   //     _controllerPhoneNumber.text,
                   //     _controllerEmail.text);
-                  child: const Text('Sign up'),
+                  child: const Text('Sign up' ,style: TextStyle(fontSize: 16),),
                 ),
               ),
-               const SizedBox(height: 10),
+              const SizedBox(height: 20),
               Center(
                 child: SizedBox(
-                height: 30,
-                width: 100,
-                child: ElevatedButton(
-                  // sendInfoToServer(
-                  //     _controllerFirstName.text,
-                  //     _controllerLastName.text,
-                  //     _controllerPassword.text,
-                  //     _controllerPhoneNumber.text,
-                  //     _controllerEmail.text);
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.green),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: const BorderSide(color: Colors.white),
+                  height: 32,
+                  width: 130,
+                  child: ElevatedButton(
+                    // sendInfoToServer(
+                    //     _controllerFirstName.text,
+                    //     _controllerLastName.text,
+                    //     _controllerPassword.text,
+                    //     _controllerPhoneNumber.text,
+                    //     _controllerEmail.text);
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.green),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                          side: const BorderSide(color: Colors.green),
+                        ),
                       ),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignIn(),
+                        ),
+                      );
+                    },
+                    // sendInfoToServer(
+                    //     _controllerFirstName.text,
+                    //     _controllerLastName.text,
+                    //     _controllerPassword.text,
+                    //     _controllerPhoneNumber.text,
+                    //     _controllerEmail.text);
+                    child: const Text('Sign in' , style: TextStyle(fontSize: 16),),
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SignIn(),
-                      ),
-                    );
-                  },
-                  // sendInfoToServer(
-                  //     _controllerFirstName.text,
-                  //     _controllerLastName.text,
-                  //     _controllerPassword.text,
-                  //     _controllerPhoneNumber.text,
-                  //     _controllerEmail.text);
-                  child: const Text('Sign in'),
                 ),
-              ),
               ),
 
 // //                         child: TextButton(
@@ -231,9 +230,6 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
       ),
-      );
+    );
   }
 }
-
-
-
