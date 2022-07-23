@@ -65,7 +65,8 @@ class _HomeState extends State<Home> {
                     label: const Text(
                       'Address',
                       style: TextStyle(
-                        color: Colors.green,
+                        color: Colors.white,
+                        fontSize: 12
                       ),
                     ),
                     onPressed: () {},
