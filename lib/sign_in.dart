@@ -31,92 +31,57 @@ class _SignInPageState extends State<SignIn> {
                 ),
               ),
               const SizedBox(height: 20),
-              buttonItem(
-                  'images/google.png', 'Continue with Google', 25, () {}),
-              const SizedBox(height: 10),
-              const Text(
-                "Or",
-                style: TextStyle(color: Colors.white, fontSize: 18),
-              ),
-              const SizedBox(height: 10),
-              textItem("Email", emailController),
-              const SizedBox(height: 15),
-              SizedBox(
-                width: MediaQuery.of(context).size.width - 70,
-                height: 55,
-                child: TextFormField(
-                  controller: passwordController,
-                  obscureText: passwordObscure,
-                  style: const TextStyle(fontSize: 17),
-                  decoration: InputDecoration(
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        passwordObscure
-                            ? Icons.visibility
-                            : Icons.visibility_off,
+              Center(
+                child: SizedBox(
+                  width: 300,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    cursorColor: Colors.black.withOpacity(0.8),
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.greenAccent[400]!),
                       ),
-                      color: Colors.green,
-                      onPressed: () {
-                        setState(() {
-                          passwordObscure = !passwordObscure;
-                        });
-                      },
-                    ),
-                    labelText: 'Password',
-                    labelStyle: const TextStyle(fontSize: 17),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15),
-                      borderSide: const BorderSide(
-                        width: 1.5,
-                        color: Colors.amber,
-                      ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15),
-                      borderSide: const BorderSide(
-                        width: 1,
-                        color: Colors.grey,
-                      ),
+                      iconColor: Colors.green,
+                      hintStyle: const TextStyle(color: Colors.grey),
+                      hintText: "Phone number",
                     ),
                   ),
                 ),
               ),
-              const SizedBox(height: 15),
-              colorButton('Sign Up'),
-              const SizedBox(height: 15),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Text(
-                    'Don\'t have an Account ?',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                  InkWell(
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const MyApp(),
-                        ),
-                      );
-                    },
-                    child: const Text(
-                      'Sign Up',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
+              const SizedBox(height: 20),
+              Center(
+                child: SizedBox(
+                  width: 300,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    cursorColor: Colors.black.withOpacity(0.8),
+                    decoration: InputDecoration(
+                      suffixIcon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            showPass = !showPass;
+                          });
+                        },
+                        icon: Icon(
+                            showPass ? Icons.visibility : Icons.visibility_off),
+                        color: Colors.green,
                       ),
+                      focusedBorder: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.greenAccent[400]!)),
+                      iconColor: Colors.green,
+                      hintStyle: const TextStyle(color: Colors.grey),
+                      hintText: "         Password",
                     ),
+                     obscureText: showPass,
                   ),
-                ],
+                ),
               ),
               const SizedBox(height: 10),
               TextButton(
                 child: const Text(
-                  'Forgot Password ?',
+                  'Forgot Password?',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 17,
