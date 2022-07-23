@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uber_eats/AccountButton.dart';
-import 'package:uber_eats/RoundedAppBar.dart';
+
+import 'AccountButton.dart';
+
 
 class MyAccount extends StatefulWidget {
   const MyAccount({Key? key}) : super(key: key);
