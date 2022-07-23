@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    bool showPass = true;
+    bool showPass = false;
       return Scaffold(
         body:  SingleChildScrollView(
         child: Container(
