@@ -117,6 +117,7 @@ class _SignInPageState extends State<SignIn> {
                   ),
                 ),
               ),
+              const SizedBox(height: 20),
               InkWell(
                 onTap: () {
                   Navigator.push(
