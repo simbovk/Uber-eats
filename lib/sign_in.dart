@@ -117,16 +117,22 @@ class _SignInPageState extends State<SignIn> {
                   ),
                 ),
               ),
-              TextButton(
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SignIn(),
+                    ),
+                  );
+                },
                 child: const Text(
-                  'Forgot Password?',
+                  "Forgot Password?",
                   style: TextStyle(
                     color: Colors.green,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 17,
+                    fontSize: 15,
                   ),
                 ),
-                onPressed: () {},
               ),
             ],
           ),
