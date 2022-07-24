@@ -117,7 +117,7 @@ class _SignInPageState extends State<SignIn> {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               InkWell(
                 onTap: () {
                   Navigator.push(
@@ -130,7 +130,7 @@ class _SignInPageState extends State<SignIn> {
                 child: const Text(
                   "Forgot Password?",
                   style: TextStyle(
-                    color: Colors.green,
+                    color: Colors.blue,
                     fontSize: 15,
                   ),
                 ),
