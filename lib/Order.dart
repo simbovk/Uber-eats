@@ -3,7 +3,10 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class Order extends StatefulWidget {
-  const Order({Key? key}) : super(key: key);
+
+  Order(String price ,String imagePath , String name, {Key? key}) : super(key: key){
+
+  }
 
   @override
   State<Order> createState() => _OrderState();
