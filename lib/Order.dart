@@ -50,18 +50,41 @@ class _OrderState extends State<Order> {
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 0),
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(imagePath), fit: BoxFit.fill),
-                borderRadius: BorderRadius.all(Radius.circular(8.0)),
-              ),
-              height: 150,
-              width: 150,
+            child: Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(imagePath), fit: BoxFit.fill),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  ),
+                  height: 150,
+                  width: 150,
+                ),
+                 Text(
+                  name,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                 Text(
+                  name,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 20 ,right: 20),
+            padding: const EdgeInsets.only(top: 20 ,right: 10),
+            child: Column(
+              children: [
+                Text(
+                  resturantName,
+                  style: TextStyle(fontWeight: FontWeight.bold , fontSize: 25 , color: Colors.green),
+                ),
+              ],
+            ),
+          ),
+           Padding(
+            padding: const EdgeInsets.only(top: 20 ,right: 0),
             child: Column(
               children: [
                 Text(
