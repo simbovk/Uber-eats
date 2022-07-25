@@ -38,63 +38,66 @@ class _OrderState extends State<Order> {
   }
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      width: MediaQuery.of(context).size.width - 50,
-       decoration: BoxDecoration(
-        color: Colors.grey.withOpacity(0.2),
-        borderRadius: BorderRadius.all(Radius.circular(8.0)),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 10),
-            child: Column(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(imagePath), fit: BoxFit.fill),
-                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+    return Padding(
+      padding: const EdgeInsets.only(left: 15),
+      child: Container(
+        height: 170,
+        width: MediaQuery.of(context).size.width - 50,
+         decoration: BoxDecoration(
+          color: Colors.grey.withOpacity(0.2),
+          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(imagePath), fit: BoxFit.fill),
+                      borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    ),
+                    height: 120,
+                    width: 120,
                   ),
-                  height: 120,
-                  width: 120,
-                ),
-                 Text(
-                  name,
-                  style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
-                ),
-              ],
+                   Text(
+                    name,
+                    style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
+                  ),
+                ],
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 20 ,right: 0),
-            child: Column(
-              children: [
-                Text(
-                  resturantName,
-                  style: TextStyle(fontWeight: FontWeight.bold , fontSize: 25 , color: Colors.green),
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(top: 20 ,right: 0),
+              child: Column(
+                children: [
+                  Text(
+                    resturantName,
+                    style: TextStyle(fontWeight: FontWeight.bold , fontSize: 25 , color: Colors.green),
+                  ),
+                ],
+              ),
             ),
-          ),
-           Padding(
-            padding: const EdgeInsets.only(top: 20 ,right: 0),
-            child: Column(
-              children: [
-                Text(
-                  resturantName,
-                  style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20 , color: Colors.green),
-                ),
-                Text(
-                  name,
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ],
+             Padding(
+              padding: const EdgeInsets.only(top: 20 ,right: 0),
+              child: Column(
+                children: [
+                  Text(
+                    resturantName,
+                    style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20 , color: Colors.green),
+                  ),
+                  Text(
+                    name,
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
