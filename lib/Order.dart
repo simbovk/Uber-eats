@@ -40,7 +40,7 @@ class _OrderState extends State<Order> {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      width: MediaQuery.of(context).size.width,
+      width: MediaQuery.of(context).size.width - 50,
        decoration: BoxDecoration(
         color: Colors.grey.withOpacity(0.2),
         borderRadius: BorderRadius.all(Radius.circular(8.0)),
