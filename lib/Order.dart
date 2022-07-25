@@ -39,12 +39,12 @@ class _OrderState extends State<Order> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(8.0)),
-      ),
-      color: Colors.grey.withOpacity(0.1),
       height: 200,
       width: MediaQuery.of(context).size.width,
+       decoration: BoxDecoration(
+        color: Colors.grey.withOpacity(0.5),
+        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
