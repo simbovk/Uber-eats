@@ -12,8 +12,12 @@ class _OrdersState extends State<Orders> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text('New Orders' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 16),),
+        Padding(
+          padding: const EdgeInsets.only(left: 10 , top: 5),
+          child: Text('New Orders' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 25),),
+        ),
       ],
     );
   }
 }
+
