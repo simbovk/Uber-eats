@@ -41,7 +41,7 @@ class _OrderState extends State<Order> {
     return Padding(
       padding: const EdgeInsets.only(left: 15),
       child: Container(
-        height: 170,
+        height: 200,
         width: MediaQuery.of(context).size.width - 50,
         decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.2),
@@ -105,12 +105,17 @@ class _OrderState extends State<Order> {
                   ),
                 ),
                 Spacer(),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 5),
-                  child: Text(
-                   'Ship:' + r'$' + '0.00',
-                    style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
-                  ),
+                Divider(color: Colors.black),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 5),
+                      child: Text(
+                       'Ship:' + r'$' + '0.00',
+                        style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
