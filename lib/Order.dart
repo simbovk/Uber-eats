@@ -1,20 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Order extends StatefulWidget {
   late String resturantName;
   late String price;
   late String name;
   late String imagePath;
-  late String recipie;
 
   Order(String resturantName, String price, String imagePath, String name,
-      String recipie,
       {Key? key})
       : super(key: key) {
-    this.recipie = recipie;
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
@@ -23,7 +17,7 @@ class Order extends StatefulWidget {
 
   @override
   State<Order> createState() =>
-      _OrderState(resturantName, price, imagePath, name , recipie);
+      _OrderState(resturantName, price, imagePath, name);
 }
 
 class _OrderState extends State<Order> {
@@ -31,11 +25,9 @@ class _OrderState extends State<Order> {
   late String price;
   late String name;
   late String imagePath;
-   late String recipie;
 
   _OrderState(
-      String resturantName, String price, String imagePath, String name , String recipie) {
-        this.recipie = recipie;
+      String resturantName, String price, String imagePath, String name) {
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
@@ -90,19 +82,22 @@ class _OrderState extends State<Order> {
                               fontSize: 18,
                               color: Colors.black),
                         ),
-                         Container(
-                           decoration: BoxDecoration(
-                             color: Colors.green.withOpacity(0.2),
-                             borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                           ),
-                           child: Text(
-                             'Not Delivered',
-                             style: TextStyle(
-                                 fontWeight: FontWeight.bold,
-                                 fontSize: 10,
-                                 color: Colors.green),
-                           ),
-                         ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.green.withOpacity(0.2),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(32.0)),
+                          ),
+                          child: Text(
+                            'Not Delivered',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 10,
+                                color: Colors.green),
+                          ),
+                        ),
+                        Text(
+                            'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup')
                       ],
                     ),
                   ],
