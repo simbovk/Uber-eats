@@ -48,6 +48,12 @@ class _OrderState extends State<Order> {
           Padding(
             padding: const EdgeInsets.only(left: 10),
             child: Container(
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/images/iphone13.png"),
+                      fit: BoxFit.fill),
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  color: Colors.black),
               height: 100,
               width: 100,
               child: Image.asset(imagePath),
