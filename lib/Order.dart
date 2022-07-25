@@ -49,7 +49,7 @@ class _OrderState extends State<Order> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 0),
+            padding: const EdgeInsets.only(top: 10),
             child: Column(
               children: [
                 Container(
@@ -58,8 +58,8 @@ class _OrderState extends State<Order> {
                         image: AssetImage(imagePath), fit: BoxFit.fill),
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
                   ),
-                  height: 150,
-                  width: 150,
+                  height: 120,
+                  width: 120,
                 ),
                  Text(
                   name,
