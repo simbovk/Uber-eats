@@ -46,19 +46,17 @@ class _OrderState extends State<Order> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 10),
+            padding: const EdgeInsets.only(left: 0),
             child: Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(imagePath),
                       fit: BoxFit.fill),
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  color: Colors.black),
-              height: 100,
-              width: 100,
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),),
+              height: 150,
+              width: 150,
             ),
           ),
-          const SizedBox(width: 10),
           Column(
             children: [
               Text(
