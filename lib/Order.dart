@@ -84,11 +84,11 @@ class _OrderState extends State<Order> {
                     Row(
                       children: [
                         Text(
-                          resturantName,
+                          name,
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 22,
-                              color: Colors.green),
+                              fontSize: 18,
+                              color: Colors.black),
                         ),
                          Container(
                            decoration: BoxDecoration(
