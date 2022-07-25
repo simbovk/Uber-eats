@@ -22,8 +22,12 @@ class Order extends StatefulWidget {
 }
 
 class _OrderState extends State<Order> {
+  _OrderState(String resturantName, String price, String imagePath, String name){
+
+  }
   @override
   Widget build(BuildContext context) {
+    
     return Container();
   }
 }

@@ -18,7 +18,7 @@ class _OrdersState extends State<Orders> {
           padding: const EdgeInsets.only(left: 10 , top: 5),
           child: Text('New Orders' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 25),),
         ),
-        Order(),
+        Order('Star Bucks' , '3.99' , 'assets/images/skinnylattestarbucks.png' , 'Skinny Latte'),
       ],
     );
   }
