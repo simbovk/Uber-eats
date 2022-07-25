@@ -10,6 +10,10 @@ class Orders extends StatefulWidget {
 class _OrdersState extends State<Orders> {
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      children: [
+        Text('New Orders' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 16),),
+      ],
+    );
   }
 }
