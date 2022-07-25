@@ -18,16 +18,25 @@ class Order extends StatefulWidget {
   }
 
   @override
-  State<Order> createState() => _OrderState();
+  State<Order> createState() =>
+      _OrderState(resturantName, price, imagePath, name);
 }
 
 class _OrderState extends State<Order> {
-  _OrderState(String resturantName, String price, String imagePath, String name){
+  String? resturantName;
+  String? price;
+  String? name;
+  String? imagePath;
 
+  _OrderState(
+      String? resturantName, String? price, String? imagePath, String? name) {
+    this.resturantName = resturantName;
+    this.price = price;
+    this.imagePath = imagePath;
+    this.name = name;
   }
   @override
   Widget build(BuildContext context) {
-    
     return Container();
   }
 }
