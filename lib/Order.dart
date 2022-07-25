@@ -96,10 +96,10 @@ class _OrderState extends State<Order> {
                                 color: Colors.green),
                           ),
                         ),
-                        Text(
-                            'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup')
                       ],
                     ),
+                    Text(
+                        'a few shots of espresso \n with steamed milk and\n a dollop of frothed milk, \n flavored with \na ribbon of vanilla syrup')
                   ],
                 ),
               ],
