@@ -88,17 +88,20 @@ class _OrderState extends State<Order> {
             ),
             Column(
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  ),
-                  child: Text(
-                    'Not Delivered',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        color: Colors.green),
+                Padding(
+                  padding: const EdgeInsets.only(top: 5),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.green.withOpacity(0.2),
+                      borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                    ),
+                    child: Text(
+                      'Not Delivered',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 10,
+                          color: Colors.green),
+                    ),
                   ),
                 ),
                 Spacer(),
