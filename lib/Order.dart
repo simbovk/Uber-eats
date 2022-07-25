@@ -63,17 +63,13 @@ class _OrderState extends State<Order> {
                 ),
                  Text(
                   name,
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                 Text(
-                  name,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 20 ,right: 10),
+            padding: const EdgeInsets.only(top: 20 ,right: 0),
             child: Column(
               children: [
                 Text(
