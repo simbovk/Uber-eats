@@ -39,6 +39,9 @@ class _OrderState extends State<Order> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+      ),
       color: Colors.grey.withOpacity(0.1),
       height: 200,
       width: MediaQuery.of(context).size.width,
@@ -49,10 +52,10 @@ class _OrderState extends State<Order> {
             padding: const EdgeInsets.only(left: 0),
             child: Container(
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(imagePath),
-                      fit: BoxFit.fill),
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),),
+                image: DecorationImage(
+                    image: AssetImage(imagePath), fit: BoxFit.fill),
+                borderRadius: BorderRadius.all(Radius.circular(8.0)),
+              ),
               height: 150,
               width: 150,
             ),
