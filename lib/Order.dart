@@ -39,15 +39,19 @@ class _OrderState extends State<Order> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black.withOpacity(0.1),
-      height: 100,
+      color: Colors.grey.withOpacity(0.1),
+      height: 200,
       width: MediaQuery.of(context).size.width,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Container(
-            height: 100,
-            width: 100,
-            child: Image.asset(imagePath),
+          Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: Container(
+              height: 100,
+              width: 100,
+              child: Image.asset(imagePath),
+            ),
           ),
           const SizedBox(width: 10),
           Column(
