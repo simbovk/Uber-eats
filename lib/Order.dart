@@ -52,74 +52,78 @@ class _OrderState extends State<Order> {
           color: Colors.grey.withOpacity(0.2),
           borderRadius: BorderRadius.all(Radius.circular(8.0)),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+        child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 10, left: 10),
-              child: Column(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage(imagePath), fit: BoxFit.fill),
-                      borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    ),
-                    height: 120,
-                    width: 120,
-                  ),
-                  Text(
-                    name,
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 10, right: 10),
-              child: Column(
-                children: [
-                  Text(
-                    resturantName,
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 22,
-                        color: Colors.green),
-                  ),
-                ],
-              ),
-            ),
-            Column(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 5),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.green.withOpacity(0.2),
-                      borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                    ),
-                    child: Text(
-                      'Not Delivered',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 10,
-                          color: Colors.green),
-                    ),
-                  ),
-                ),
-                Spacer(),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 5),
-                      child: Text(
-                        'Ship:' + r'$' + '0.00',
+                  padding: const EdgeInsets.only(top: 10, left: 10),
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage(imagePath), fit: BoxFit.fill),
+                          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                        ),
+                        height: 120,
+                        width: 120,
+                      ),
+                      Text(
+                        resturantName,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic),
                       ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10, right: 10),
+                  child: Column(
+                    children: [
+                      Text(
+                        resturantName,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22,
+                            color: Colors.green),
+                      ),
+                    ],
+                  ),
+                ),
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 5),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.green.withOpacity(0.2),
+                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                        ),
+                        child: Text(
+                          'Not Delivered',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 10,
+                              color: Colors.green),
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 5),
+                          child: Text(
+                            'Ship:' + r'$' + '0.00',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

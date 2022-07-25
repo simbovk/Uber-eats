@@ -28,7 +28,7 @@ class _OrdersState extends State<Orders> {
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Order(
-                'Star Bucks',
+                'Star Bucks(la,orange county)',
                 '3.99',
                 'assets/images/skinnylattestarbucks.png',
                 'Skinny Latte',
