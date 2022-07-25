@@ -21,7 +21,10 @@ class _OrdersState extends State<Orders> {
         SizedBox(
           height: 10,
         ),
-        Order('Star Bucks' , '3.99' , 'assets/images/skinnylattestarbucks.png' , 'Skinny Latte'),
+        Padding(
+          padding: const EdgeInsets.only(left: 10),
+          child: Order('Star Bucks' , '3.99' , 'assets/images/skinnylattestarbucks.png' , 'Skinny Latte'),
+        ),
       ],
     );
   }
