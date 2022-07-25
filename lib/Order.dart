@@ -8,10 +8,13 @@ class Order extends StatefulWidget {
   late String price;
   late String name;
   late String imagePath;
+  late String recipie;
 
   Order(String resturantName, String price, String imagePath, String name,
+      String recipie,
       {Key? key})
       : super(key: key) {
+    this.recipie = recipie;
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
@@ -20,7 +23,7 @@ class Order extends StatefulWidget {
 
   @override
   State<Order> createState() =>
-      _OrderState(resturantName, price, imagePath, name);
+      _OrderState(resturantName, price, imagePath, name , recipie);
 }
 
 class _OrderState extends State<Order> {
@@ -28,9 +31,11 @@ class _OrderState extends State<Order> {
   late String price;
   late String name;
   late String imagePath;
+   late String recipie;
 
   _OrderState(
-      String resturantName, String price, String imagePath, String name) {
+      String resturantName, String price, String imagePath, String name , String recipie) {
+        this.recipie = recipie;
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
@@ -105,14 +110,15 @@ class _OrderState extends State<Order> {
                   ),
                 ),
                 Spacer(),
-                Divider(color: Colors.black),
                 Row(
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(bottom: 5),
                       child: Text(
-                       'Ship:' + r'$' + '0.00',
-                        style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
+                        'Ship:' + r'$' + '0.00',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic),
                       ),
                     ),
                   ],

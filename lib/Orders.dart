@@ -16,19 +16,26 @@ class _OrdersState extends State<Orders> {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 10 , top: 5),
-            child: Text('New Orders' , style: TextStyle(fontWeight: FontWeight.bold , fontSize: 25),),
+            padding: const EdgeInsets.only(left: 10, top: 5),
+            child: Text(
+              'New Orders',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+            ),
           ),
           SizedBox(
             height: 10,
           ),
-          Padding( 
-            padding: const EdgeInsets.only(left: 10 , right: 10),
-            child: Order('Star Bucks' , '3.99' , 'assets/images/skinnylattestarbucks.png' , 'Skinny Latte'),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Order(
+                'Star Bucks',
+                '3.99',
+                'assets/images/skinnylattestarbucks.png',
+                'Skinny Latte',
+                'a few shots of espresso with steamed milk and a dollop of frothed milk, flavored with a ribbon of vanilla syrup'),
           ),
         ],
       ),
     );
   }
 }
-
