@@ -42,7 +42,7 @@ class _OrderState extends State<Order> {
       height: 200,
       width: MediaQuery.of(context).size.width,
        decoration: BoxDecoration(
-        color: Colors.grey.withOpacity(0.5),
+        color: Colors.grey.withOpacity(0.2),
         borderRadius: BorderRadius.all(Radius.circular(8.0)),
       ),
       child: Row(
@@ -60,21 +60,20 @@ class _OrderState extends State<Order> {
               width: 150,
             ),
           ),
-          Column(
-            children: [
-              Text(
-                resturantName,
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              Text(
-                name,
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              Text(
-                price,
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(top: 20 ,right: 20),
+            child: Column(
+              children: [
+                Text(
+                  resturantName,
+                  style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20 , color: Colors.green),
+                ),
+                Text(
+                  name,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ),
         ],
       ),
