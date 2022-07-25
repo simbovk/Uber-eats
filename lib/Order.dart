@@ -105,9 +105,12 @@ class _OrderState extends State<Order> {
                   ),
                 ),
                 Spacer(),
-                Text(
-                  price,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 5),
+                  child: Text(
+                    r'$' + price,
+                    style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
+                  ),
                 ),
               ],
             ),
