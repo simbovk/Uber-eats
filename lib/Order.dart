@@ -79,50 +79,30 @@ class _OrderState extends State<Order> {
                     ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10, right: 10),
-                  child: Column(
-                    children: [
-                      Text(
-                        resturantName,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 22,
-                            color: Colors.green),
-                      ),
-                    ],
-                  ),
-                ),
                 Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 5),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.green.withOpacity(0.2),
-                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                        ),
-                        child: Text(
-                          'Not Delivered',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 10,
-                              color: Colors.green),
-                        ),
-                      ),
-                    ),
-                    Spacer(),
                     Row(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 5),
-                          child: Text(
-                            'Ship:' + r'$' + '0.00',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontStyle: FontStyle.italic),
-                          ),
+                        Text(
+                          resturantName,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 22,
+                              color: Colors.green),
                         ),
+                         Container(
+                           decoration: BoxDecoration(
+                             color: Colors.green.withOpacity(0.2),
+                             borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                           ),
+                           child: Text(
+                             'Not Delivered',
+                             style: TextStyle(
+                                 fontWeight: FontWeight.bold,
+                                 fontSize: 10,
+                                 color: Colors.green),
+                           ),
+                         ),
                       ],
                     ),
                   ],
