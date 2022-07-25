@@ -108,7 +108,7 @@ class _OrderState extends State<Order> {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 5),
                   child: Text(
-                    r'$' + price,
+                   'Ship:' + r'$' + '0.00',
                     style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
                   ),
                 ),
