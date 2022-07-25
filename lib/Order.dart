@@ -43,7 +43,7 @@ class _OrderState extends State<Order> {
       child: Container(
         height: 170,
         width: MediaQuery.of(context).size.width - 50,
-         decoration: BoxDecoration(
+        decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.2),
           borderRadius: BorderRadius.all(Radius.circular(8.0)),
         ),
@@ -51,7 +51,7 @@ class _OrderState extends State<Order> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10 , left: 10),
+              padding: const EdgeInsets.only(top: 10, left: 10),
               child: Column(
                 children: [
                   Container(
@@ -63,39 +63,51 @@ class _OrderState extends State<Order> {
                     height: 120,
                     width: 120,
                   ),
-                   Text(
+                  Text(
                     name,
-                    style: TextStyle(fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 10 ,right: 10),
+              padding: const EdgeInsets.only(top: 10, right: 10),
               child: Column(
                 children: [
                   Text(
                     resturantName,
-                    style: TextStyle(fontWeight: FontWeight.bold , fontSize: 22 , color: Colors.green),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                        color: Colors.green),
                   ),
                 ],
               ),
             ),
-             Column(
-               children: [
-                 Container(
-                   child: Text(
-                     'Not Delivered',
-                     style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20 , color: Colors.green),
-                   ),
-                 ),
-                 Spacer(),
-                 Text(
-                   price,
-                   style: TextStyle(fontWeight: FontWeight.bold),
-                 ),
-               ],
-             ),
+            Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey.withOpacity(0.2),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  ),
+                  child: Text(
+                    'Not Delivered',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.green),
+                  ),
+                ),
+                Spacer(),
+                Text(
+                  price,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ],
         ),
       ),
