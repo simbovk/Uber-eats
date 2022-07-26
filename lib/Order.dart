@@ -42,7 +42,7 @@ class _OrderState extends State<Order> {
         width: MediaQuery.of(context).size.width - 50,
         decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.2),
-          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+          borderRadius: BorderRadius.all(Radius.circular(12.0)),
         ),
         child: Column(
           children: [
@@ -76,6 +76,9 @@ class _OrderState extends State<Order> {
                               fontSize: 18,
                               color: Colors.black),
                         ),
+                        SizedBox(
+                          width: 55,
+                        ),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.green.withOpacity(0.2),
@@ -91,6 +94,9 @@ class _OrderState extends State<Order> {
                           ),
                         ),
                       ],
+                    ),
+                    SizedBox(
+                      height: 10,
                     ),
                     Text(
                         'a few shots of espresso \n with steamed milk and\n a dollop of frothed milk, \n flavored with \na ribbon of vanilla syrup')
