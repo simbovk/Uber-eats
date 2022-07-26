@@ -5,19 +5,21 @@ class Order extends StatefulWidget {
   late String price;
   late String name;
   late String imagePath;
+  late bool deliverd;
 
-  Order(String resturantName, String price, String imagePath, String name,
+  Order(String resturantName, String price, String imagePath, String name, bool deliverd ,
       {Key? key})
       : super(key: key) {
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
     this.name = name;
+    this.deliverd = deliverd;
   }
 
   @override
   State<Order> createState() =>
-      _OrderState(resturantName, price, imagePath, name);
+      _OrderState(resturantName, price, imagePath, name , deliverd);
 }
 
 class _OrderState extends State<Order> {
@@ -25,13 +27,15 @@ class _OrderState extends State<Order> {
   late String price;
   late String name;
   late String imagePath;
+   late bool deliverd;
 
   _OrderState(
-      String resturantName, String price, String imagePath, String name) {
+      String resturantName, String price, String imagePath, String name , bool deliverd) {
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
     this.name = name;
+    this.deliverd = deliverd;
   }
   @override
   Widget build(BuildContext context) {
@@ -99,7 +103,7 @@ class _OrderState extends State<Order> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 8 , right: 60),
+                      padding: const EdgeInsets.only(bottom: 8, right: 60),
                       child: Text(
                           '200g meat,regular Bun,\nketchup,pickle Slices,\nonions and mustard '),
                     )
@@ -118,8 +122,9 @@ class _OrderState extends State<Order> {
                   child: Text(
                     resturantName,
                     style: TextStyle(
-                      color: Colors.black.withOpacity(0.7),
-                        fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+                        color: Colors.black.withOpacity(0.7),
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic),
                   ),
                 ),
                 Spacer(),

@@ -33,6 +33,7 @@ class _OrdersState extends State<Orders> {
                 '3.99',
                 'assets/images/skinnylattestarbucks.png',
                 'Skinny Latte',
+                false
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
@@ -44,6 +45,7 @@ class _OrdersState extends State<Orders> {
                 '8.99',
                 'assets/images/hamburgermc.png',
                 'Hamburger',
+                false
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
@@ -55,6 +57,7 @@ class _OrdersState extends State<Orders> {
                 '10.99',
                 'assets/images/mcdoublemc.png',
                 'McDouble',
+                false
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
@@ -77,6 +80,7 @@ class _OrdersState extends State<Orders> {
                 '3.99',
                 'assets/images/skinnylattestarbucks.png',
                 'Skinny Latte',
+                true
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
@@ -88,6 +92,7 @@ class _OrdersState extends State<Orders> {
                 '8.99',
                 'assets/images/hamburgermc.png',
                 'Hamburger',
+                true
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
@@ -99,10 +104,11 @@ class _OrdersState extends State<Orders> {
                 '10.99',
                 'assets/images/mcdoublemc.png',
                 'McDouble',
+                true
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
-          SizedBox()
+          SizedBox(height: 15,)
         ],
       ),
     );
