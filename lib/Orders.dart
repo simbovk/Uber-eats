@@ -36,6 +36,19 @@ class _OrdersState extends State<Orders> {
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
+          SizedBox(
+            height: 25,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Order(
+                'Star Bucks\n(la,orange county)',
+                '3.99',
+                'assets/images/skinnylattestarbucks.png',
+                'Skinny Latte',
+                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
+            ),
+          ),
         ],
       ),
     );
