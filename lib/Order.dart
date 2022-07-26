@@ -98,6 +98,9 @@ class _OrderState extends State<Order> {
                 ),
               ],
             ),
+            SizedBox(
+              height: 5,
+            ),
             Divider(color: Colors.black),
             Row(
               children: [
