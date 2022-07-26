@@ -101,21 +101,28 @@ class _OrderState extends State<Order> {
             SizedBox(
               height: 5,
             ),
-            Divider(color: Colors.black),
+            Divider(color: Colors.black.withOpacity(0.5)),
             Row(
               children: [
-                Text(
-                  resturantName,
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+                Padding(
+                  padding: const EdgeInsets.only(left: 10),
+                  child: Text(
+                    resturantName,
+                    style: TextStyle(
+                      color: Colors.black.withOpacity(0.8),
+                        fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+                  ),
                 ),
                 Spacer(),
-                Text(
-                  r'$' + price,
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                      fontStyle: FontStyle.italic),
+                Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: Text(
+                    r'$' + price,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic),
+                  ),
                 ),
               ],
             )
