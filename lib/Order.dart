@@ -39,6 +39,7 @@ class _OrderState extends State<Order> {
   }
   @override
   Widget build(BuildContext context) {
+    String deliverdText = deliverd ? 'Delivered' : 'Not Delivered';
     return Padding(
       padding: const EdgeInsets.only(left: 15),
       child: Container(
@@ -92,7 +93,7 @@ class _OrderState extends State<Order> {
                                   BorderRadius.all(Radius.circular(32.0)),
                             ),
                             child: Text(
-                              'Not Delivered',
+                              deliverdText,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 10,
