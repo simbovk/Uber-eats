@@ -98,13 +98,17 @@ class _OrderState extends State<Order> {
                 ),
               ],
             ),
-            Divider(),
+            Divider(color: Colors.black),
             Row(
               children: [
                 Text(
                   resturantName,
                   style: TextStyle(
                       fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+                ),
+                Spacer(),
+                Text(
+                  r'$' + price,
                 ),
               ],
             )
