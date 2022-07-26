@@ -68,7 +68,7 @@ class _OrderState extends State<Order> {
                 Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 20),
+                      padding: const EdgeInsets.only(bottom: 25),
                       child: Row(
                         children: [
                           Text(
@@ -98,9 +98,6 @@ class _OrderState extends State<Order> {
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
                     Padding(
                       padding: const EdgeInsets.only(bottom: 8 , right: 60),
                       child: Text(
@@ -121,7 +118,7 @@ class _OrderState extends State<Order> {
                   child: Text(
                     resturantName,
                     style: TextStyle(
-                      color: Colors.black.withOpacity(0.8),
+                      color: Colors.black.withOpacity(0.7),
                         fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                   ),
                 ),
