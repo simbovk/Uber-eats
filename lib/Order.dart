@@ -101,7 +101,7 @@ class _OrderState extends State<Order> {
                     Padding(
                       padding: const EdgeInsets.only(bottom: 8 , right: 60),
                       child: Text(
-                          'a few shots of espresso \n with steamed milk and\n a dollop of frothed milk, \n flavored with \na ribbon of vanilla syrup'),
+                          'a few shots of espresso\nwith steamed milk and\na dollop of frothed milk,\nflavored with\na ribbon of vanilla syrup'),
                     )
                   ],
                 ),
