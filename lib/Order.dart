@@ -5,9 +5,10 @@ class Order extends StatefulWidget {
   late String price;
   late String name;
   late String imagePath;
-  late bool deliverd;
+  late bool? deliverd;
 
-  Order(String resturantName, String price, String imagePath, String name, bool deliverd ,
+  Order(String resturantName, String price, String imagePath, String name,
+      bool? deliverd,
       {Key? key})
       : super(key: key) {
     this.resturantName = resturantName;
@@ -19,7 +20,7 @@ class Order extends StatefulWidget {
 
   @override
   State<Order> createState() =>
-      _OrderState(resturantName, price, imagePath, name , deliverd);
+      _OrderState(resturantName, price, imagePath, name, deliverd);
 }
 
 class _OrderState extends State<Order> {
@@ -27,10 +28,10 @@ class _OrderState extends State<Order> {
   late String price;
   late String name;
   late String imagePath;
-   late bool deliverd;
+  late bool? deliverd;
 
-  _OrderState(
-      String resturantName, String price, String imagePath, String name , bool deliverd) {
+  _OrderState(String resturantName, String price, String imagePath, String name,
+      bool? deliverd) {
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
@@ -39,7 +40,7 @@ class _OrderState extends State<Order> {
   }
   @override
   Widget build(BuildContext context) {
-    String deliverdText = deliverd ? 'Delivered' : 'Not Delivered';
+    String deliverdText = deliverd == true ? 'Delivered' : 'Not Delivered';
     return Padding(
       padding: const EdgeInsets.only(left: 15),
       child: Container(
