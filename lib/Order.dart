@@ -94,7 +94,7 @@ class _OrderState extends State<Order> {
                                   BorderRadius.all(Radius.circular(32.0)),
                             ),
                             child: Text(
-                              deliverdText,
+                              deliverdText != null ? deliverdText : '',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 10,
