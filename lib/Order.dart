@@ -98,8 +98,11 @@ class _OrderState extends State<Order> {
                     SizedBox(
                       height: 10,
                     ),
-                    Text(
-                        'a few shots of espresso \n with steamed milk and\n a dollop of frothed milk, \n flavored with \na ribbon of vanilla syrup')
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8 , right: 60),
+                      child: Text(
+                          'a few shots of espresso \n with steamed milk and\n a dollop of frothed milk, \n flavored with \na ribbon of vanilla syrup'),
+                    )
                   ],
                 ),
               ],
