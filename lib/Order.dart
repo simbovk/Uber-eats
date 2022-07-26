@@ -38,10 +38,10 @@ class _OrderState extends State<Order> {
     return Padding(
       padding: const EdgeInsets.only(left: 15),
       child: Container(
-        height: 200,
+        height: 190,
         width: MediaQuery.of(context).size.width - 50,
         decoration: BoxDecoration(
-          color: Colors.grey.withOpacity(0.2),
+          color: Colors.green.withOpacity(0.2),
           borderRadius: BorderRadius.all(Radius.circular(12.0)),
         ),
         child: Column(
@@ -57,7 +57,7 @@ class _OrderState extends State<Order> {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(imagePath), fit: BoxFit.fill),
-                          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                          borderRadius: BorderRadius.all(Radius.circular(12.0)),
                         ),
                         height: 120,
                         width: 120,
@@ -110,7 +110,7 @@ class _OrderState extends State<Order> {
             SizedBox(
               height: 5,
             ),
-            Divider(color: Colors.black.withOpacity(0.5)),
+            Divider(color: Colors.black.withOpacity(0.3)),
             Row(
               children: [
                 Padding(
