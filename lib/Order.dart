@@ -50,7 +50,7 @@ class _OrderState extends State<Order> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 10, left: 10),
+                  padding: const EdgeInsets.only(top: 10, left: 0),
                   child: Column(
                     children: [
                       Container(
