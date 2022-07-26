@@ -112,6 +112,10 @@ class _OrderState extends State<Order> {
                 Spacer(),
                 Text(
                   r'$' + price,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      fontStyle: FontStyle.italic),
                 ),
               ],
             )
