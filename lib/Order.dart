@@ -67,33 +67,36 @@ class _OrderState extends State<Order> {
                 ),
                 Column(
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          name,
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                              color: Colors.black),
-                        ),
-                        SizedBox(
-                          width: 55,
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.green.withOpacity(0.2),
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(32.0)),
-                          ),
-                          child: Text(
-                            'Not Delivered',
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Row(
+                        children: [
+                          Text(
+                            name,
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 10,
-                                color: Colors.green),
+                                fontSize: 18,
+                                color: Colors.black),
                           ),
-                        ),
-                      ],
+                          SizedBox(
+                            width: 55,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.green.withOpacity(0.2),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(32.0)),
+                            ),
+                            child: Text(
+                              'Not Delivered',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 10,
+                                  color: Colors.green),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 10,
