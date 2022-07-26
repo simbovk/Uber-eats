@@ -62,12 +62,6 @@ class _OrderState extends State<Order> {
                         height: 120,
                         width: 120,
                       ),
-                      Text(
-                        resturantName,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontStyle: FontStyle.italic),
-                      ),
                     ],
                   ),
                 ),
@@ -104,6 +98,16 @@ class _OrderState extends State<Order> {
                 ),
               ],
             ),
+            Divider(),
+            Row(
+              children: [
+                Text(
+                  resturantName,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+                ),
+              ],
+            )
           ],
         ),
       ),
