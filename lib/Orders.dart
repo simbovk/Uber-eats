@@ -58,6 +58,51 @@ class _OrdersState extends State<Orders> {
                 // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
             ),
           ),
+          SizedBox(height: 12),
+           Padding(
+            padding: const EdgeInsets.only(top: 15 , right: 175 ),
+            child: Text(
+              'Recent Orders',
+              textAlign: TextAlign.left,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+            ),
+          ),
+           SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Order(
+                'Star Bucks\n(la,orange county)',
+                '3.99',
+                'assets/images/skinnylattestarbucks.png',
+                'Skinny Latte',
+                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
+            ),
+          ),
+          SizedBox(height: 20,),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Order(
+                'McDonalds\n(la,orange county)',
+                '8.99',
+                'assets/images/hamburgermc.png',
+                'Hamburger',
+                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
+            ),
+          ),
+          SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Order(
+                'McDonalds\n(la,orange county)',
+                '10.99',
+                'assets/images/mcdoublemc.png',
+                'McDouble',
+                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
+            ),
+          ),
+          SizedBox()
         ],
       ),
     );
