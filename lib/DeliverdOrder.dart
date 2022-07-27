@@ -10,8 +10,8 @@ class DeliverdOrder extends StatefulWidget {
   late String? month;
   late String? watch;
 
-  DeliverdOrder(String resturantName, String price, String imagePath, String name,
-      bool? deliverd, String? date, String? month, String? watch,
+  DeliverdOrder(String resturantName, String price, String imagePath,
+      String name, bool? deliverd, String? date, String? month, String? watch,
       {Key? key})
       : super(key: key) {
     this.resturantName = resturantName;
@@ -133,23 +133,32 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                       ),
                     ),
                     SizedBox(
+                      height: 20,
+                    ),
+                    SizedBox(
                       height: 30,
                       width: 130,
                       child: ElevatedButton.icon(
                           onPressed: () {},
                           style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all(Colors.green.withOpacity(0.2)),
-                            shape:
-                                MaterialStateProperty.all<RoundedRectangleBorder>(
+                            backgroundColor: MaterialStateProperty.all(
+                                Colors.green.withOpacity(0.5)),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8.0),
-                                side: const BorderSide(color: Colors.green),
+                                side: const BorderSide(color: Colors.white),
                               ),
                             ),
                           ),
-                          icon: Icon(Icons.change_circle_outlined ,size: 18,),
-                          label: Text('Order Again' , style: TextStyle(color: Colors.black),)),
+                          icon: Icon(
+                            Icons.change_circle_outlined,
+                            size: 18,
+                          ),
+                          label: Text(
+                            'Order Again',
+                            style: TextStyle(color: Colors.black),
+                          )),
                     )
                   ],
                 ),
