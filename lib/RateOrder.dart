@@ -17,7 +17,8 @@ class RateOrder extends StatefulWidget {
   }
 
   @override
-  State<RateOrder> createState() => _RateOrderState();
+  State<RateOrder> createState() =>
+      _RateOrderState(resturantName, name, date, month, watch);
 }
 
 class _RateOrderState extends State<RateOrder> {
@@ -32,7 +33,13 @@ class _RateOrderState extends State<RateOrder> {
     String? date,
     String? month,
     String? watch,
-  ) {}
+  ) {
+    this.resturantName = resturantName;
+    this.name = name;
+    this.date = date;
+    this.month = month;
+    this.watch = watch;
+  }
 
   @override
   Widget build(BuildContext context) {
