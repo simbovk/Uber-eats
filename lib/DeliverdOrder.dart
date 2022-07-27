@@ -169,7 +169,14 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                           height: 38,
                           width: 90,
                           child: ElevatedButton.icon(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Home(),
+                      ),
+                    );
+                              },
                               style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(
                                     Colors.white),
