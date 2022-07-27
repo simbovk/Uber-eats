@@ -132,32 +132,25 @@ class _OrderState extends State<Order> {
                         style: TextStyle(color: Colors.black.withOpacity(0.7)),
                       ),
                     ),
-                    FlatButton(
-                      onPressed: () => {},
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(
-                        children: <Widget>[
-                          Icon(
-                            Icons.payment_rounded,
-                            color: Colors.green,
-                            size: 25,
+                    SizedBox(
+                      height: 30,
+                      width: 130,
+                      child: ElevatedButton.icon(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.green),
+                            shape:
+                                MaterialStateProperty.all<RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0),
+                                side: const BorderSide(color: Colors.green),
+                              ),
+                            ),
                           ),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          const Text(
-                            "Uber Vallet",
-                            style: const TextStyle(fontSize: 18),
-                          ),
-                          const Spacer(),
-                          const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 30,
-                            color: Colors.green,
-                          ),
-                        ],
-                      ),
-                    ),
+                          icon: Icon(Icons.change_circle_outlined ,size: 18,),
+                          label: Text('Order Again')),
+                    )
                   ],
                 ),
               ],
