@@ -16,7 +16,7 @@ class _OrdersState extends State<Orders> {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 15 , right: 210 ),
+            padding: const EdgeInsets.only(top: 15, right: 210),
             child: Text(
               'New Orders',
               textAlign: TextAlign.left,
@@ -33,11 +33,14 @@ class _OrdersState extends State<Orders> {
                 '3.99',
                 'assets/images/skinnylattestarbucks.png',
                 'Skinny Latte',
-                false
-                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
-            ),
+                false,
+                'Saturday',
+                'june',
+                '12:43'),
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Order(
@@ -45,9 +48,10 @@ class _OrdersState extends State<Orders> {
                 '8.99',
                 'assets/images/hamburgermc.png',
                 'Hamburger',
-                false
-                
-            ),
+                false,
+                'sunday',
+                'june',
+                '12:54'),
           ),
           SizedBox(height: 20),
           Padding(
@@ -57,20 +61,21 @@ class _OrdersState extends State<Orders> {
                 '10.99',
                 'assets/images/mcdoublemc.png',
                 'McDouble',
-                false
-                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
-            ),
+                false,
+                'monday',
+                'june',
+                '13:08'),
           ),
           SizedBox(height: 12),
-           Padding(
-            padding: const EdgeInsets.only(top: 15 , right: 175 ),
+          Padding(
+            padding: const EdgeInsets.only(top: 15, right: 175),
             child: Text(
               'Recent Orders',
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
             ),
           ),
-           SizedBox(
+          SizedBox(
             height: 15,
           ),
           Padding(
@@ -80,11 +85,14 @@ class _OrdersState extends State<Orders> {
                 '3.99',
                 'assets/images/skinnylattestarbucks.png',
                 'Skinny Latte',
-                true
-                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
-            ),
+                true,
+                'monday',
+                'july',
+                '13:08'),
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Order(
@@ -92,9 +100,10 @@ class _OrdersState extends State<Orders> {
                 '8.99',
                 'assets/images/hamburgermc.png',
                 'Hamburger',
-                true
-                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
-            ),
+                true,
+                'monday',
+                'june',
+                '13:08'),
           ),
           SizedBox(height: 20),
           Padding(
@@ -104,11 +113,14 @@ class _OrdersState extends State<Orders> {
                 '10.99',
                 'assets/images/mcdoublemc.png',
                 'McDouble',
-                true
-                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
-            ),
+                true,
+                'monday',
+                'june',
+                '13:08'),
           ),
-          SizedBox(height: 15,)
+          SizedBox(
+            height: 15,
+          )
         ],
       ),
     );
