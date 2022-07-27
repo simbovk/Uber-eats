@@ -10,6 +10,14 @@ class RateOrder extends StatefulWidget {
 class _RateOrderState extends State<RateOrder> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Rate Order'),
+          leading: Icon(Icons.arrow_back , color: Colors.green,),
+        ),
+      ),
+    );
   }
 }

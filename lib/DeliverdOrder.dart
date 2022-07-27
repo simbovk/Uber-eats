@@ -138,14 +138,14 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                     ),
                     Row(
                       children: [
-                       SizedBox(
+                        SizedBox(
                           height: 38,
                           width: 90,
                           child: ElevatedButton.icon(
                               onPressed: () {},
                               style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
-                                    Colors.white),
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.white),
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
@@ -160,7 +160,10 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                               ),
                               label: Text(
                                 'Order Again',
-                                style: TextStyle(color: Colors.black , fontSize: 8 , fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 8,
+                                    fontWeight: FontWeight.bold),
                               )),
                         ),
                         SizedBox(
@@ -172,15 +175,15 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                           child: ElevatedButton.icon(
                               onPressed: () {
                                 Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const RateOrder(),
-                      ),
-                    );
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const RateOrder(),
+                                  ),
+                                );
                               },
                               style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
-                                    Colors.white),
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.white),
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
@@ -195,7 +198,10 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                               ),
                               label: Text(
                                 'Comment',
-                                style: TextStyle(color: Colors.black , fontSize: 8 , fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 8,
+                                    fontWeight: FontWeight.bold),
                               )),
                         ),
                       ],
