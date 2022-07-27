@@ -133,11 +133,11 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                     SizedBox(
-                      height: 30,
-                      width: 130,
+                      height: 40,
+                      width: 100,
                       child: ElevatedButton.icon(
                           onPressed: () {},
                           style: ButtonStyle(
