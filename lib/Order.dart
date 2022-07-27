@@ -127,7 +127,7 @@ class _OrderState extends State<Order> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 8, right: 60),
+                      padding: const EdgeInsets.only(bottom: 8, right: 54),
                       child: Text(
                         deliverdTime != null ? deliverdTime : '',
                         style: TextStyle(color: Colors.black.withOpacity(0.7)),
@@ -171,8 +171,11 @@ class _OrderState extends State<Order> {
                       shape: new RoundedRectangleBorder(
                         borderRadius: new BorderRadius.circular(30.0),
                       ),
-                      color: pressCancel ? Colors.grey : Colors.blue,
+                      color: pressCancel ? Colors.white : Colors.blue,
+                      highlightColor: Colors.green,
                       onPressed: () =>
+                          setState(() => pressCancel = !pressCancel),
+                          onLongPress: () =>
                           setState(() => pressCancel = !pressCancel),
                     ),
                   ],
