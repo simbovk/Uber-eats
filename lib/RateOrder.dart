@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 
 class RateOrder extends StatefulWidget {
-  const RateOrder({Key? key}) : super(key: key);
+  late String resturantName;
+  late String price;
+  late String name;
+  late String imagePath;
+  late bool? deliverd;
+  late String? date;
+  late String? month;
+  late String? watch;
+  RateOrder(String resturantName,
+    String name,
+    String? date,
+    String? month,
+    String? watch,{Key? key}) : super(key: key);
+  
 
   @override
   State<RateOrder> createState() => _RateOrderState();

@@ -177,7 +177,12 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => const RateOrder(),
+                                    builder: (context) => RateOrder(
+                                        resturantName,
+                                        name,
+                                        date,
+                                        month,
+                                        watch),
                                   ),
                                 );
                               },
