@@ -167,12 +167,12 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                         ),
                         SizedBox(
                           height: 38,
-                          width: 100,
+                          width: 90,
                           child: ElevatedButton.icon(
                               onPressed: () {},
                               style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(
-                                    Colors.green.withOpacity(0.5)),
+                                    Colors.white),
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
@@ -182,11 +182,12 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                               ),
                               icon: Icon(
                                 Icons.rate_review_outlined,
-                                size: 18,
+                                size: 16,
+                                color: Colors.green,
                               ),
                               label: Text(
                                 'Comment',
-                                style: TextStyle(color: Colors.black),
+                                style: TextStyle(color: Colors.black , fontSize: 9 , fontWeight: FontWeight.bold),
                               )),
                         ),
                       ],
