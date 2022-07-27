@@ -42,8 +42,13 @@ class _OrderState extends State<Order> {
   Widget build(BuildContext context) {
     String deliverdText = deliverd == true ? 'Delivered' : 'Not Delivered';
     return GestureDetector(
-      onTap: (){
-        
+      onTap: () {
+        // Navigator.push(
+        //               context,
+        //               MaterialPageRoute(
+        //                 builder: (context) => const Home(),
+        //               ),
+        //             );
       },
       child: Padding(
         padding: const EdgeInsets.only(left: 15),
@@ -67,7 +72,8 @@ class _OrderState extends State<Order> {
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(imagePath), fit: BoxFit.fill),
-                            borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(12.0)),
                           ),
                           height: 120,
                           width: 120,
