@@ -46,7 +46,7 @@ class _OrdersState extends State<Orders> {
                 'assets/images/hamburgermc.png',
                 'Hamburger',
                 false
-                // 'a few shots of espresso \n with steamed milk and a dollop of frothed milk, \n flavored with a ribbon of vanilla syrup'),
+                
             ),
           ),
           SizedBox(height: 20),

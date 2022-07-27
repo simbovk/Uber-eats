@@ -6,9 +6,12 @@ class Order extends StatefulWidget {
   late String name;
   late String imagePath;
   late bool? deliverd;
+  late String? date;
+  late String? month;
+  late String? watch;
 
   Order(String resturantName, String price, String imagePath, String name,
-      bool? deliverd,
+      bool? deliverd, String? date, String? month, String? watch,
       {Key? key})
       : super(key: key) {
     this.resturantName = resturantName;
