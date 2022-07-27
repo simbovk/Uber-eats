@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Order extends StatefulWidget {
+class DeliverdOrder extends StatefulWidget {
   late String resturantName;
   late String price;
   late String name;
@@ -10,7 +10,7 @@ class Order extends StatefulWidget {
   late String? month;
   late String? watch;
 
-  Order(String resturantName, String price, String imagePath, String name,
+  DeliverdOrder(String resturantName, String price, String imagePath, String name,
       bool? deliverd, String? date, String? month, String? watch,
       {Key? key})
       : super(key: key) {
@@ -25,11 +25,11 @@ class Order extends StatefulWidget {
   }
 
   @override
-  State<Order> createState() => _OrderState(
+  State<DeliverdOrder> createState() => _DeliverdOrderState(
       resturantName, price, imagePath, name, deliverd, date, month, watch);
 }
 
-class _OrderState extends State<Order> {
+class _DeliverdOrderState extends State<DeliverdOrder> {
   late String resturantName;
   late String price;
   late String name;
@@ -39,7 +39,7 @@ class _OrderState extends State<Order> {
   late String? month;
   late String? watch;
 
-  _OrderState(
+  _DeliverdOrderState(
     String resturantName,
     String price,
     String imagePath,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'Order.dart';
+import 'DeliverdOrder.dart';
+
 
 class Orders extends StatefulWidget {
   const Orders({Key? key}) : super(key: key);
@@ -108,7 +110,7 @@ class _OrdersState extends State<Orders> {
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Order(
+            child: DeliverdOrder(
                 'McDonalds\n(la,orange county)',
                 '10.99',
                 'assets/images/mcdoublemc.png',
