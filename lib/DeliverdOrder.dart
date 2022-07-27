@@ -126,7 +126,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 8, right: 60),
+                      padding: const EdgeInsets.only(bottom: 0, right: 40),
                       child: Text(
                         deliverdTime != null ? deliverdTime : '',
                         style: TextStyle(color: Colors.black.withOpacity(0.7)),
