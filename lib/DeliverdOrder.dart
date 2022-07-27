@@ -149,7 +149,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8.0),
-                                    side: const BorderSide(color: Colors.white),
+                                    
                                   ),
                                 ),
                               ),
@@ -177,16 +177,15 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8.0),
-                                    side: const BorderSide(color: Colors.white),
                                   ),
                                 ),
                               ),
                               icon: Icon(
-                                Icons.change_circle_outlined,
+                                Icons.rate_review_outlined,
                                 size: 18,
                               ),
                               label: Text(
-                                'Order Again',
+                                'Comment',
                                 style: TextStyle(color: Colors.black),
                               )),
                         ),
