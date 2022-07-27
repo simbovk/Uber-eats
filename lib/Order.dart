@@ -132,25 +132,34 @@ class _OrderState extends State<Order> {
                         style: TextStyle(color: Colors.black.withOpacity(0.7)),
                       ),
                     ),
-                    // SizedBox(
-                    //   height: 30,
-                    //   width: 130,
-                    //   child: ElevatedButton.icon(
-                    //       onPressed: () {},
-                    //       style: ButtonStyle(
-                    //         backgroundColor:
-                    //             MaterialStateProperty.all(Colors.green),
-                    //         shape:
-                    //             MaterialStateProperty.all<RoundedRectangleBorder>(
-                    //           RoundedRectangleBorder(
-                    //             borderRadius: BorderRadius.circular(8.0),
-                    //             side: const BorderSide(color: Colors.green),
-                    //           ),
-                    //         ),
-                    //       ),
-                    //       icon: Icon(Icons.change_circle_outlined ,size: 18,),
-                    //       label: Text('Order Again')),
-                    // )
+                    SizedBox(
+                      height: 38,
+                      width: 90,
+                      child: ElevatedButton.icon(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.white),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                            ),
+                          ),
+                          icon: Icon(
+                            Icons.rate_review_outlined,
+                            size: 18,
+                            color: Colors.green,
+                          ),
+                          label: Text(
+                            'Comment',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 8,
+                                fontWeight: FontWeight.bold),
+                          )),
+                    ),
                   ],
                 ),
               ],
