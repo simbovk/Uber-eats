@@ -153,12 +153,12 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                 ),
                               ),
                               icon: Icon(
-                                Icons.rate_review_outlined,
+                                Icons.cached_rounded,
                                 size: 18,
                                 color: Colors.green,
                               ),
                               label: Text(
-                                'Your Rate',
+                                'Order Again',
                                 style: TextStyle(color: Colors.black , fontSize: 8 , fontWeight: FontWeight.bold),
                               )),
                         ),
