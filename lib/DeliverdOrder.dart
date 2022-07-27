@@ -162,31 +162,33 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                 style: TextStyle(color: Colors.black),
                               )),
                         ),
-                        FlatButton(
-                          onPressed: () => {},
-                          padding: const EdgeInsets.all(15.0),
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.payment_rounded,
-                                color: Colors.green,
-                                size: 25,
+                        SizedBox(
+                          width: 10,
+                        ),
+                        SizedBox(
+                          height: 38,
+                          width: 100,
+                          child: ElevatedButton.icon(
+                              onPressed: () {},
+                              style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Colors.green.withOpacity(0.5)),
+                                shape: MaterialStateProperty.all<
+                                    RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    side: const BorderSide(color: Colors.white),
+                                  ),
+                                ),
                               ),
-                              SizedBox(
-                                width: 5,
+                              icon: Icon(
+                                Icons.change_circle_outlined,
+                                size: 18,
                               ),
-                              const Text(
-                                "Uber Vallet",
-                                style: const TextStyle(fontSize: 18),
-                              ),
-                              const Spacer(),
-                              const Icon(
-                                Icons.arrow_forward_ios_rounded,
-                                size: 30,
-                                color: Colors.green,
-                              ),
-                            ],
-                          ),
+                              label: Text(
+                                'Order Again',
+                                style: TextStyle(color: Colors.black),
+                              )),
                         ),
                       ],
                     )
