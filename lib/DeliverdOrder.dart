@@ -135,30 +135,34 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                     SizedBox(
                       height: 30,
                     ),
-                    SizedBox(
-                      height: 40,
-                      width: 100,
-                      child: ElevatedButton.icon(
-                          onPressed: () {},
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(
-                                Colors.green.withOpacity(0.5)),
-                            shape: MaterialStateProperty.all<
-                                RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8.0),
-                                side: const BorderSide(color: Colors.white),
+                    Row(
+                      children: [
+                        SizedBox(
+                          height: 38,
+                          width: 100,
+                          child: ElevatedButton.icon(
+                              onPressed: () {},
+                              style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Colors.green.withOpacity(0.5)),
+                                shape: MaterialStateProperty.all<
+                                    RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    side: const BorderSide(color: Colors.white),
+                                  ),
+                                ),
                               ),
-                            ),
-                          ),
-                          icon: Icon(
-                            Icons.change_circle_outlined,
-                            size: 18,
-                          ),
-                          label: Text(
-                            'Order Again',
-                            style: TextStyle(color: Colors.black),
-                          )),
+                              icon: Icon(
+                                Icons.change_circle_outlined,
+                                size: 18,
+                              ),
+                              label: Text(
+                                'Order Again',
+                                style: TextStyle(color: Colors.black),
+                              )),
+                        ),
+                      ],
                     )
                   ],
                 ),
