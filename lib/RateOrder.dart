@@ -14,7 +14,7 @@ class _RateOrderState extends State<RateOrder> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Rate Order'),
+          backgroundColor: Colors.white,
           leading: Icon(Icons.arrow_back , color: Colors.green,),
         ),
       ),
