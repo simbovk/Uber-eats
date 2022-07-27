@@ -139,7 +139,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                           onPressed: () {},
                           style: ButtonStyle(
                             backgroundColor:
-                                MaterialStateProperty.all(Colors.green),
+                                MaterialStateProperty.all(Colors.green.withOpacity(0.2)),
                             shape:
                                 MaterialStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
@@ -149,7 +149,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                             ),
                           ),
                           icon: Icon(Icons.change_circle_outlined ,size: 18,),
-                          label: Text('Order Again')),
+                          label: Text('Order Again' , style: TextStyle(color: Colors.black),)),
                     )
                   ],
                 ),

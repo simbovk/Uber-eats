@@ -82,7 +82,7 @@ class _OrdersState extends State<Orders> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Order(
+            child: DeliverdOrder(
                 'Star Bucks\n(la,orange county)',
                 '3.99',
                 'assets/images/skinnylattestarbucks.png',
@@ -97,7 +97,7 @@ class _OrdersState extends State<Orders> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Order(
+            child: DeliverdOrder(
                 'McDonalds\n(la,orange county)',
                 '8.99',
                 'assets/images/hamburgermc.png',
