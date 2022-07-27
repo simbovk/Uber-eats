@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_fluuter/RateOrder.dart';
 
 class DeliverdOrder extends StatefulWidget {
   late String resturantName;
@@ -173,7 +174,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                 Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Home(),
+                        builder: (context) => const RateOrder(),
                       ),
                     );
                               },
