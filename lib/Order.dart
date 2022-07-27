@@ -30,6 +30,7 @@ class Order extends StatefulWidget {
 }
 
 class _OrderState extends State<Order> {
+  bool pressCancel = false;
   late String resturantName;
   late String price;
   late String name;
@@ -135,34 +136,44 @@ class _OrderState extends State<Order> {
                     SizedBox(
                       height: 30,
                     ),
-                    SizedBox(
-                      height: 38,
-                      width: 180,
-                      child: ElevatedButton.icon(
-                          onPressed: () {},
-                          onLongPress: () {},
-                          style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all(Colors.white),
-                            shape: MaterialStateProperty.all<
-                                RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                            ),
-                          ),
-                          icon: Icon(
-                            Icons.cancel_outlined,
-                            size: 25,
-                            color: Colors.green,
-                          ),
-                          label: Text(
-                            'Cancel Order',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18,
-                            ),
-                          )),
+                    // SizedBox(
+                    //   height: 38,
+                    //   width: 180,
+                    //   child: ElevatedButton.icon(
+                    //       onPressed: () {},
+                    //       onLongPress: () {},
+                    //       style: ButtonStyle(
+                    //         backgroundColor:
+                    //             MaterialStateProperty.all(Colors.white),
+                    //         shape: MaterialStateProperty.all<
+                    //             RoundedRectangleBorder>(
+                    //           RoundedRectangleBorder(
+                    //             borderRadius: BorderRadius.circular(8.0),
+                    //           ),
+                    //         ),
+                    //       ),
+                    //       icon: Icon(
+                    //         Icons.cancel_outlined,
+                    //         size: 25,
+                    //         color: Colors.green,
+                    //       ),
+                    //       label: Text(
+                    //         'Cancel Order',
+                    //         style: TextStyle(
+                    //           color: Colors.black,
+                    //           fontSize: 18,
+                    //         ),
+                    //       )),
+                    // ),
+                    new RaisedButton(
+                      child: new Text('Attention'),
+                      textColor: Colors.white,
+                      shape: new RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(30.0),
+                      ),
+                      color: pressCancel ? Colors.grey : Colors.blue,
+                      onPressed: () =>
+                          setState(() => pressCancel = !pressCancel),
                     ),
                   ],
                 ),
