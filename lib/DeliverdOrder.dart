@@ -137,29 +137,29 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                     ),
                     Row(
                       children: [
-                        SizedBox(
+                       SizedBox(
                           height: 38,
-                          width: 100,
+                          width: 90,
                           child: ElevatedButton.icon(
                               onPressed: () {},
                               style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(
-                                    Colors.green.withOpacity(0.5)),
+                                    Colors.white),
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8.0),
-                                    
                                   ),
                                 ),
                               ),
                               icon: Icon(
-                                Icons.change_circle_outlined,
+                                Icons.rate_review_outlined,
                                 size: 18,
+                                color: Colors.green,
                               ),
                               label: Text(
-                                'Order Again',
-                                style: TextStyle(color: Colors.black),
+                                'Your Rate',
+                                style: TextStyle(color: Colors.black , fontSize: 8 , fontWeight: FontWeight.bold),
                               )),
                         ),
                         SizedBox(
@@ -182,12 +182,12 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                               ),
                               icon: Icon(
                                 Icons.rate_review_outlined,
-                                size: 16,
+                                size: 18,
                                 color: Colors.green,
                               ),
                               label: Text(
                                 'Comment',
-                                style: TextStyle(color: Colors.black , fontSize: 9 , fontWeight: FontWeight.bold),
+                                style: TextStyle(color: Colors.black , fontSize: 8 , fontWeight: FontWeight.bold),
                               )),
                         ),
                       ],
