@@ -49,15 +49,21 @@ class _RateOrderState extends State<RateOrder> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           leading: IconButton(
-              icon: Icon(Icons.arrow_back_ios),
+              icon: Icon(Icons.arrow_back_ios , color: Colors.green,),
               onPressed: () {
                 Navigator.pop(context);
               }),
         ),
-        body: Column(
-          children: [
-            Text('Rate To'),
-          ],
+        body: Center(
+          child: Column(
+            children: [
+              Text('Rate To $name in $resturantName',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black)),
+            ],
+          ),
         ),
       ),
     );
