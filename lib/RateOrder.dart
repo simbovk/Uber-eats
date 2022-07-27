@@ -49,7 +49,7 @@ class _RateOrderState extends State<RateOrder> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           leading: IconButton(
-              icon: Icon(Icons.arrow_back_ios , color: Colors.green,),
+              icon: Icon(Icons.arrow_back , color: Colors.green,),
               onPressed: () {
                 Navigator.pop(context);
               }),
