@@ -17,6 +17,11 @@ class _RateOrderState extends State<RateOrder> {
           backgroundColor: Colors.white,
           leading: Icon(Icons.arrow_back , color: Colors.green,),
         ),
+        body: Column(
+          children: [
+            
+          ],
+        ),
       ),
     );
   }
