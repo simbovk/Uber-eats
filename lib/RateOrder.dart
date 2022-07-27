@@ -15,11 +15,15 @@ class _RateOrderState extends State<RateOrder> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          leading: Icon(Icons.arrow_back , color: Colors.green,),
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back_ios),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
         ),
         body: Column(
           children: [
-            
+            Text('Rate To'),
           ],
         ),
       ),
