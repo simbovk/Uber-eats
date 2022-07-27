@@ -133,10 +133,14 @@ class _OrderState extends State<Order> {
                       ),
                     ),
                     SizedBox(
+                      height: 30,
+                    ),
+                    SizedBox(
                       height: 38,
-                      width: 90,
+                      width: 180,
                       child: ElevatedButton.icon(
                           onPressed: () {},
+                          onLongPress: () {},
                           style: ButtonStyle(
                             backgroundColor:
                                 MaterialStateProperty.all(Colors.white),
@@ -148,16 +152,16 @@ class _OrderState extends State<Order> {
                             ),
                           ),
                           icon: Icon(
-                            Icons.rate_review_outlined,
-                            size: 18,
+                            Icons.cancel_outlined,
+                            size: 25,
                             color: Colors.green,
                           ),
                           label: Text(
-                            'Comment',
+                            'Cancel Order',
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 8,
-                                fontWeight: FontWeight.bold),
+                              color: Colors.black,
+                              fontSize: 18,
+                            ),
                           )),
                     ),
                   ],
