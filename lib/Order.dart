@@ -19,11 +19,14 @@ class Order extends StatefulWidget {
     this.imagePath = imagePath;
     this.name = name;
     this.deliverd = deliverd;
+    this.date = date;
+    this.month = month;
+    this.watch = watch;
   }
 
   @override
-  State<Order> createState() =>
-      _OrderState(resturantName, price, imagePath, name, deliverd);
+  State<Order> createState() => _OrderState(
+      resturantName, price, imagePath, name, deliverd, date, month, watch);
 }
 
 class _OrderState extends State<Order> {
@@ -32,9 +35,20 @@ class _OrderState extends State<Order> {
   late String name;
   late String imagePath;
   late bool? deliverd;
+  late String? date;
+  late String? month;
+  late String? watch;
 
-  _OrderState(String resturantName, String price, String imagePath, String name,
-      bool? deliverd) {
+  _OrderState(
+    String resturantName,
+    String price,
+    String imagePath,
+    String name,
+    bool? deliverd,
+    String? date,
+    String? month,
+    String? watch,
+  ) {
     this.resturantName = resturantName;
     this.price = price;
     this.imagePath = imagePath;
