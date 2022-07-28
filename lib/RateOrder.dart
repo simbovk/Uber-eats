@@ -55,7 +55,7 @@ class _RateOrderState extends State<RateOrder> {
                 Row(
                   children: [
                     IconButton(
-                      padding: const EdgeInsets.only(right: 330),
+                      padding: const EdgeInsets.only(right: 380),
                       icon: const Icon(
                         Icons.arrow_back,
                         color: Colors.green,
@@ -84,11 +84,11 @@ class _RateOrderState extends State<RateOrder> {
           child: Column(
             children: [
               SizedBox(
-                height: 10,
+                height: 0,
               ),
               Text('Rate To $name in $resturantName',
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 15,
                       fontWeight: FontWeight.bold,
                       color: Colors.black)),
             ],

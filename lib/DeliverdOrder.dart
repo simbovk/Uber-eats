@@ -63,6 +63,8 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
   Widget build(BuildContext context) {
     String deliverdTime = '$date,$month  $watch';
     String deliverdText = deliverd == true ? 'Delivered' : 'Not Delivered';
+    List<String> splittedName = resturantName.split('\n');
+    String resturantSplittedName = splittedName[0] + splittedName[1];
     return Padding(
       padding: const EdgeInsets.only(left: 15),
       child: Container(
@@ -178,7 +180,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) => RateOrder(
-                                        resturantName,
+                                        resturantSplittedName,
                                         name,
                                         date,
                                         month,
