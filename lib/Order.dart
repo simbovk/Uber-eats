@@ -165,8 +165,13 @@ class _OrderState extends State<Order> {
                     //         ),
                     //       )),
                     // ),
-                    ElevatedButton(onPressed: (){}, child: Text('Cancel Order'),
-                    style: ButtonStyle(),),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Cancel Order'),
+                      style: ButtonStyle(
+                        overlayColor: getColor(),
+                      ),
+                    ),
                   ],
                 ),
               ],
@@ -204,5 +209,14 @@ class _OrderState extends State<Order> {
         ),
       ),
     );
+  }
+
+  MaterialStateProperty<Color>? getColor(Color color, Color colorPressed) {
+    final getColor = (Set<MaterialState> states) {
+      if (states.contains(MaterialState.pressed)) {
+        return colorPressed;
+      }
+      return color;
+    };
   }
 }
