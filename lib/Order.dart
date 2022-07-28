@@ -227,5 +227,7 @@ class _OrderState extends State<Order> {
         return color;
       }
     };
+
+    return MaterialStateProperty.resolveWith(getColor);
   }
 }
