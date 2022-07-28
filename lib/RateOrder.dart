@@ -98,23 +98,51 @@ class _RateOrderState extends State<RateOrder> {
                 padding: const EdgeInsets.only(left: 70),
                 child: Row(
                   children: [
-                    Icon(Icons.calendar_today_outlined , color: Colors.black.withOpacity(0.5),size: 15,),
-                    SizedBox(width: 5,),
-                    Text('$date,$month' , style: TextStyle(color: Colors.black.withOpacity(1)),),
-                    SizedBox(width: 40,),
-                     Icon(Icons.watch_later_outlined , color: Colors.black.withOpacity(0.5),size: 15,),
-                    SizedBox(width: 5,),
-                    Text( '$watch' , style: TextStyle(color: Color.fromARGB(255, 43, 39, 39).withOpacity(1)),),
+                    Icon(
+                      Icons.calendar_today_outlined,
+                      color: Colors.black.withOpacity(0.5),
+                      size: 15,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      '$date,$month',
+                      style: TextStyle(color: Colors.black.withOpacity(1)),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Icon(
+                      Icons.watch_later_outlined,
+                      color: Colors.black.withOpacity(0.5),
+                      size: 15,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      '$watch',
+                      style: TextStyle(
+                          color:
+                              Color.fromARGB(255, 43, 39, 39).withOpacity(1)),
+                    ),
                   ],
                 ),
               ),
+              SizedBox(height: 20,),
               Container(
-                child:Column(
-                  children: [
+                  height: 190,
+                  width: MediaQuery.of(context).size.width - 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.green.withOpacity(0.4) , width: 2),
+                  ),
+                  child: Column(
+                    children: [
 
-                  ],
-                )
-              )
+                    ],
+                  ))
             ],
           ),
         ),
