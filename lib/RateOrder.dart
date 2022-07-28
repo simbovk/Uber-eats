@@ -23,7 +23,7 @@ class RateOrder extends StatefulWidget {
 }
 
 class _RateOrderState extends State<RateOrder> {
-  var rating = 0.0;
+  double rating = 0;
   late String resturantName;
   late String name;
   late String? date;
@@ -154,11 +154,16 @@ class _RateOrderState extends State<RateOrder> {
                               fontWeight: FontWeight.bold,
                               color: Colors.black)),
                       RatingBar.builder(
-                          itemBuilder: (context, _) => Icon(
-                                Icons.star_border_outlined,
-                                color: Colors.green,
-                              ),
-                          onRatingUpdate: (raiting) {}),
+                        itemBuilder: (context, _) => Icon(
+                          Icons.star_border_outlined,
+                          color: Colors.green,
+                        ),
+                        onRatingUpdate: (raiting) {
+                          setState(() {
+                            rating = raiting;
+                          });
+                        },
+                      )
                     ],
                   ))
             ],
