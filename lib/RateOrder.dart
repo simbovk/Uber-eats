@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_star_rating/smooth_star_rating.dart';
 
 class RateOrder extends StatefulWidget {
   late String resturantName;
@@ -140,6 +141,7 @@ class _RateOrderState extends State<RateOrder> {
                   ),
                   child: Column(
                     children: [
+                      SizedBox(height: 10,),
                       Text('How was the delivery of your order?',
                           style: TextStyle(
                               fontSize: 14,
