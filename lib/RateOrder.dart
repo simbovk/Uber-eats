@@ -169,6 +169,41 @@ class _RateOrderState extends State<RateOrder> {
                         },
                       )
                     ],
+                  )),
+              Container(
+                  height: 190,
+                  width: MediaQuery.of(context).size.width - 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                        color: Colors.green.withOpacity(0.4), width: 2),
+                  ),
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Text('How was the delivery of your order?',
+                          style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black)),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      RatingBar.builder(
+                        itemSize: 35,
+                        itemBuilder: (context, _) => Icon(
+                          Icons.star,
+                          color: Colors.green,
+                        ),
+                        onRatingUpdate: (raiting) {
+                          setState(() {
+                            rating = raiting;
+                          });
+                        },
+                      )
+                    ],
                   ))
             ],
           ),
