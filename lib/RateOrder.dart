@@ -48,16 +48,44 @@ class _RateOrderState extends State<RateOrder> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          leading: IconButton(
-              icon: Icon(Icons.arrow_back , color: Colors.green,),
-              onPressed: () {
-                Navigator.pop(context);
-              }),
+          elevation: 0,
+          actions: [
+            Column(
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                      padding: const EdgeInsets.only(right: 330),
+                      icon: const Icon(
+                        Icons.arrow_back,
+                        color: Colors.green,
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                    // IconButton(
+                    //   // padding: ,
+                    //   icon: const Icon(
+                    //     Icons.shopping_basket_rounded,
+                    //     color: Colors.green,
+                    //   ),
+                    //   onPressed: () {
+                    //     // like drawer
+                    //   },
+                    // ),
+                  ],
+                )
+              ],
+            )
+          ],
         ),
         body: Center(
           child: Column(
             children: [
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               Text('Rate To $name in $resturantName',
                   style: TextStyle(
                       fontSize: 18,
