@@ -98,20 +98,20 @@ class _RateOrderState extends State<RateOrder> {
                 padding: const EdgeInsets.only(left: 70),
                 child: Row(
                   children: [
-                    Icon(Icons.calendar_today_outlined , color: Colors.black.withOpacity(0.6),size: 15,),
+                    Icon(Icons.calendar_today_outlined , color: Colors.black.withOpacity(0.5),size: 15,),
                     SizedBox(width: 5,),
-                    Text('$date,$month' , style: TextStyle(color: Colors.black.withOpacity(0.6)),),
+                    Text('$date,$month' , style: TextStyle(color: Colors.black.withOpacity(1)),),
                     SizedBox(width: 40,),
-                     Icon(Icons.watch_later_outlined , color: Colors.black.withOpacity(0.6),size: 15,),
+                     Icon(Icons.watch_later_outlined , color: Colors.black.withOpacity(0.5),size: 15,),
                     SizedBox(width: 5,),
-                    Text( '$watch' , style: TextStyle(color: Color.fromARGB(255, 43, 39, 39).withOpacity(0.6)),),
+                    Text( '$watch' , style: TextStyle(color: Color.fromARGB(255, 43, 39, 39).withOpacity(1)),),
                   ],
                 ),
               ),
               Container(
                 child:Column(
                   children: [
-                    
+
                   ],
                 )
               )
