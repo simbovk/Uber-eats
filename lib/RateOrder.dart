@@ -98,7 +98,8 @@ class _RateOrderState extends State<RateOrder> {
                 padding: const EdgeInsets.only(left: 20),
                 child: Row(
                   children: [
-                    Icon(Icons.calendar_today_outlined , color: Colors.black.withOpacity(0.6),),
+                    Icon(Icons.calendar_today_outlined , color: Colors.black.withOpacity(0.6),size: 15,),
+                    SizedBox(width: 5,),
                     Text('$date,$month' , style: TextStyle(color: Colors.black.withOpacity(0.6)),)
                   ],
                 ),
