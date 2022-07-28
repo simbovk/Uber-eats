@@ -165,19 +165,8 @@ class _OrderState extends State<Order> {
                     //         ),
                     //       )),
                     // ),
-                    new RaisedButton(
-                      child: new Text('Attention'),
-                      textColor: Colors.white,
-                      shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0),
-                      ),
-                      color: pressCancel ? Colors.white : Colors.blue,
-                      highlightColor: Colors.green,
-                      onPressed: () =>
-                          setState(() => pressCancel = !pressCancel),
-                          onLongPress: () =>
-                          setState(() => pressCancel = !pressCancel),
-                    ),
+                    ElevatedButton(onPressed: (){}, child: Text('Cancel Order'),
+                    style: ButtonStyle(),),
                   ],
                 ),
               ],
