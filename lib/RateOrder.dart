@@ -170,6 +170,7 @@ class _RateOrderState extends State<RateOrder> {
                       )
                     ],
                   )),
+                  SizedBox(height: 20,),
               Container(
                   height: 190,
                   width: MediaQuery.of(context).size.width - 50,
@@ -183,11 +184,13 @@ class _RateOrderState extends State<RateOrder> {
                       SizedBox(
                         height: 50,
                       ),
-                      Text('How was the delivery of your order?',
-                          style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black)),
+                      Center(
+                        child: Text('How was your order?',
+                            style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black)),
+                      ),
                       SizedBox(
                         height: 10,
                       ),
