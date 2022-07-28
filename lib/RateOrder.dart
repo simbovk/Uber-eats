@@ -107,6 +107,13 @@ class _RateOrderState extends State<RateOrder> {
                     Text( '$watch' , style: TextStyle(color: Color.fromARGB(255, 43, 39, 39).withOpacity(0.6)),),
                   ],
                 ),
+              ),
+              Container(
+                child:Column(
+                  children: [
+                    
+                  ],
+                )
               )
             ],
           ),
