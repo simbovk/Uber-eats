@@ -153,16 +153,12 @@ class _RateOrderState extends State<RateOrder> {
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                               color: Colors.black)),
-                      // SmoothStarRating(
-                      //   rating: rating,
-                      //   size: 45,
-                      //   starCount: 5,
-                      //   onRated: (value) {
-                      //     setState(() {
-                      //       rating = value;
-                      //     });
-                      //   },
-                      // )
+                      RatingBar.builder(
+                          itemBuilder: (context, _) => Icon(
+                                Icons.star_border_outlined,
+                                color: Colors.green,
+                              ),
+                          onRatingUpdate: (raiting) {}),
                     ],
                   ))
             ],
