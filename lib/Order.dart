@@ -61,6 +61,9 @@ class _OrderState extends State<Order> {
   }
   @override
   Widget build(BuildContext context) {
+    Color? colorCanceledText = Colors.green;
+    String? textCanceled = "Cancel Order";
+    Color? cancelBUttonColor = Colors.white;
     String deliverdTime = '$date,$month  $watch';
     String deliverdText = deliverd == true ? 'Delivered' : 'Not Delivered';
     return Padding(
@@ -134,7 +137,7 @@ class _OrderState extends State<Order> {
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
                     // SizedBox(
                     //   height: 38,
@@ -165,19 +168,29 @@ class _OrderState extends State<Order> {
                     //         ),
                     //       )),
                     // ),
-                    new RaisedButton(
-                      child: new Text('Attention'),
-                      textColor: Colors.white,
-                      shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0),
+                    SizedBox(
+                      child: ElevatedButton(
+                        child: Text(
+                          textCanceled,
+                          style: TextStyle(color: Colors.black),
+                        ),
+                        style: ButtonStyle(
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                          ),
+                          backgroundColor:
+                              MaterialStateProperty.all(cancelBUttonColor),
+                          overlayColor: getColor(
+                            Colors.white,
+                            Colors.teal,
+                          ),
+                        ),
+                        onPressed: () {},
                       ),
-                      color: pressCancel ? Colors.white : Colors.blue,
-                      highlightColor: Colors.green,
-                      onPressed: () =>
-                          setState(() => pressCancel = !pressCancel),
-                          onLongPress: () =>
-                          setState(() => pressCancel = !pressCancel),
-                    ),
+                    )
                   ],
                 ),
               ],
@@ -215,5 +228,17 @@ class _OrderState extends State<Order> {
         ),
       ),
     );
+  }
+
+  MaterialStateProperty<Color>? getColor(Color color, Color colorPressed) {
+    final getColor = (Set<MaterialState> states) {
+      if (states.contains(MaterialState.pressed)) {
+        return colorPressed;
+      } else {
+        return color;
+      }
+    };
+
+    return MaterialStateProperty.resolveWith(getColor);
   }
 }
