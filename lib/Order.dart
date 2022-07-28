@@ -61,6 +61,9 @@ class _OrderState extends State<Order> {
   }
   @override
   Widget build(BuildContext context) {
+    Color? colorCanceledText = Colors.green;
+    String? textCanceled = "Cancel Order";
+    Color? cancelBUttonColor = Colors.white;
     String deliverdTime = '$date,$month  $watch';
     String deliverdText = deliverd == true ? 'Delivered' : 'Not Delivered';
     return Padding(
@@ -165,26 +168,23 @@ class _OrderState extends State<Order> {
                     //         ),
                     //       )),
                     // ),
-                    ElevatedButton(
-                      child: Text(
-                        'Cancel Order',
+                    SizedBox(
+                      child: ElevatedButton(
+                        child: Text(
+                          textCanceled,
+                          style: TextStyle(color: Colors.black),
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(cancelBUttonColor),
+                          overlayColor: getColor(
+                            Colors.white,
+                            Colors.teal,
+                          ),
+                        ),
+                        onPressed: () {
+                        },
                       ),
-                      style: ButtonStyle(
-                        backgroundColor: getColor(
-                          Colors.white,
-                          Colors.teal,
-                        ),
-                        foregroundColor: getColor(
-                           Colors.teal,
-                          Colors.white
-                        ),
-                        overlayColor: getColor(
-                          Colors.white,
-                          Colors.teal,
-                        ),
-                      ),
-                      onPressed: () {
-                      },
                     )
                   ],
                 ),
