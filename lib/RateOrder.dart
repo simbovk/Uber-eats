@@ -154,8 +154,9 @@ class _RateOrderState extends State<RateOrder> {
                               fontWeight: FontWeight.bold,
                               color: Colors.black)),
                       RatingBar.builder(
+                        itemSize: 35,
                         itemBuilder: (context, _) => Icon(
-                          Icons.star_border_outlined,
+                          Icons.star,
                           color: Colors.green,
                         ),
                         onRatingUpdate: (raiting) {
