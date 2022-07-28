@@ -175,6 +175,12 @@ class _OrderState extends State<Order> {
                           style: TextStyle(color: Colors.black),
                         ),
                         style: ButtonStyle(
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                          ),
                           backgroundColor:
                               MaterialStateProperty.all(cancelBUttonColor),
                           overlayColor: getColor(
@@ -182,8 +188,7 @@ class _OrderState extends State<Order> {
                             Colors.teal,
                           ),
                         ),
-                        onPressed: () {
-                        },
+                        onPressed: () {},
                       ),
                     )
                   ],
