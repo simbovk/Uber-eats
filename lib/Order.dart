@@ -61,7 +61,6 @@ class _OrderState extends State<Order> {
   }
   @override
   Widget build(BuildContext context) {
-    MaterialStateProperty<Color>? overlay;
     String deliverdTime = '$date,$month  $watch';
     String deliverdText = deliverd == true ? 'Delivered' : 'Not Delivered';
     return Padding(
@@ -167,14 +166,25 @@ class _OrderState extends State<Order> {
                     //       )),
                     // ),
                     ElevatedButton(
-                      child: Text('Cancel Order'),
+                      child: Text(
+                        'Cancel Order',
+                      ),
                       style: ButtonStyle(
+                        backgroundColor: getColor(
+                          Colors.white,
+                          Colors.teal,
+                        ),
+                        foregroundColor: getColor(
+                           Colors.teal,
+                          Colors.white
+                        ),
                         overlayColor: getColor(
                           Colors.white,
                           Colors.teal,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                      },
                     )
                   ],
                 ),
