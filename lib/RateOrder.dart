@@ -133,7 +133,7 @@ class _RateOrderState extends State<RateOrder> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 40,
               ),
               Container(
                   height: 190,
@@ -146,13 +146,16 @@ class _RateOrderState extends State<RateOrder> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: 10,
+                        height: 50,
                       ),
                       Text('How was the delivery of your order?',
                           style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                               color: Colors.black)),
+                      SizedBox(
+                        height: 10,
+                      ),
                       RatingBar.builder(
                         itemSize: 35,
                         itemBuilder: (context, _) => Icon(
