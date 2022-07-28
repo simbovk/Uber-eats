@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class RateOrder extends StatefulWidget {
@@ -140,7 +142,11 @@ class _RateOrderState extends State<RateOrder> {
                   ),
                   child: Column(
                     children: [
-
+                      Text('How was the delivery of your order?',
+                          style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black)),
                     ],
                   ))
             ],
