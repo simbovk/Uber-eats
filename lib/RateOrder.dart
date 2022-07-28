@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smooth_star_rating/smooth_star_rating.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class RateOrder extends StatefulWidget {
   late String resturantName;
@@ -153,16 +153,16 @@ class _RateOrderState extends State<RateOrder> {
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                               color: Colors.black)),
-                      SmoothStarRating(
-                        rating: rating,
-                        size: 45,
-                        starCount: 5,
-                        onRated: (value) {
-                          setState(() {
-                            rating = value;
-                          });
-                        },
-                      )
+                      // SmoothStarRating(
+                      //   rating: rating,
+                      //   size: 45,
+                      //   starCount: 5,
+                      //   onRated: (value) {
+                      //     setState(() {
+                      //       rating = value;
+                      //     });
+                      //   },
+                      // )
                     ],
                   ))
             ],
