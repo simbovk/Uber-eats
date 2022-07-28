@@ -94,10 +94,14 @@ class _RateOrderState extends State<RateOrder> {
               SizedBox(
                 height: 10,
               ),
-              Row(
-                children: [
-                  
-                ],
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Row(
+                  children: [
+                    Icon(Icons.calendar_today_outlined , color: Colors.black.withOpacity(0.6),),
+                    Text('$date,$month' , style: TextStyle(color: Colors.black.withOpacity(0.6)),)
+                  ],
+                ),
               )
             ],
           ),
