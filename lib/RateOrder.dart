@@ -88,9 +88,17 @@ class _RateOrderState extends State<RateOrder> {
               ),
               Text('Rate To $name in $resturantName',
                   style: TextStyle(
-                      fontSize: 15,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                       color: Colors.black)),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  
+                ],
+              )
             ],
           ),
         ),
