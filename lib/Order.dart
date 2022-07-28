@@ -169,16 +169,12 @@ class _OrderState extends State<Order> {
                     ElevatedButton(
                       child: Text('Cancel Order'),
                       style: ButtonStyle(
-                        overlayColor: overlay,
+                        overlayColor: getColor(
+                          Colors.white,
+                          Colors.teal,
+                        ),
                       ),
-                      onPressed: () {
-                        setState(() {
-                          overlay = getColor(
-                            Colors.white,
-                            Colors.teal,
-                          );
-                        });
-                      },
+                      onPressed: () {},
                     )
                   ],
                 ),
