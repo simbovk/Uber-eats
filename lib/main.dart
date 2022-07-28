@@ -156,7 +156,7 @@ class SignUpState extends State<SignUp> {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
                       builder: (context) => const Home(),
@@ -176,55 +176,8 @@ class SignUpState extends State<SignUp> {
               ),
             ),
             const SizedBox(height: 20),
-            Center(
-              child: SizedBox(
-                height: 32,
-                width: 130,
-                child: ElevatedButton(
-                  // sendInfoToServer(
-                  //     _controllerFirstName.text,
-                  //     _controllerLastName.text,
-                  //     _controllerPassword.text,
-                  //     _controllerPhoneNumber.text,
-                  //     _controllerEmail.text);
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.green),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: const BorderSide(color: Colors.green),
-                      ),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SignIn(),
-                      ),
-                    );
-                  },
-                  // sendInfoToServer(
-                  //     _controllerFirstName.text,
-                  //     _controllerLastName.text,
-                  //     _controllerPassword.text,
-                  //     _controllerPhoneNumber.text,
-                  //     _controllerEmail.text);
-                  child: const Text(
-                    'Sign in',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ),
-              ),
-            ),
-            TextButton(
-              child: Text(
-                'Sign in',
-                style: TextStyle(
-                  color: Colors.green.withOpacity(0.6),
-                ),
-              ),
-              onPressed: () {
+            InkWell(
+              onTap: () {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
@@ -232,6 +185,13 @@ class SignUpState extends State<SignUp> {
                   ),
                 );
               },
+              child: const Text(
+                "Have an account?",
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 15,
+                ),
+              ),
             ),
           ],
         ),

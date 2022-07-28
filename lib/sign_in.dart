@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'Home.dart';
+import 'main.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
   @override
-  State<SignIn> createState() => _SignInPageState();
+  State<SignIn> createState() => SignInPageState();
 }
 
-class _SignInPageState extends State<SignIn> {
+class SignInPageState extends State<SignIn> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   bool circular = false, showPass = true;
@@ -21,15 +22,19 @@ class _SignInPageState extends State<SignIn> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
-                "Sign In",
-                style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.green,
-                  fontWeight: FontWeight.bold,
+              Container(
+                height: 100,
+                width: 250,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    opacity: 0.6,
+                    image: AssetImage("assets/images/uber_eats_logo.png"),
+                    fit: BoxFit.fill,
+                  ),
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Center(
                 child: SizedBox(
                   width: 300,
@@ -77,9 +82,7 @@ class _SignInPageState extends State<SignIn> {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 40,
-              ),
+              const SizedBox(height: 40),
               Center(
                 child: SizedBox(
                   height: 32,
@@ -101,7 +104,7 @@ class _SignInPageState extends State<SignIn> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const Home(),
@@ -121,23 +124,41 @@ class _SignInPageState extends State<SignIn> {
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
-              InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SignIn(),
+              const SizedBox(height: 15),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      // ToDo : forgot password page
+                    },
+                    child: const Text(
+                      "Forgot password?",
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 15,
+                      ),
                     ),
-                  );
-                },
-                child: const Text(
-                  "Forgot Password?",
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 15,
                   ),
-                ),
+                  const SizedBox(width: 20),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignUp(),
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      "Don't have an account?",
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
