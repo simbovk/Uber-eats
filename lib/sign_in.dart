@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart';
-import 'main.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -11,7 +10,7 @@ class SignIn extends StatefulWidget {
 class _SignInPageState extends State<SignIn> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-  bool circular = false, passwordObscure = true;
+  bool circular = false, showPass = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,12 +73,14 @@ class _SignInPageState extends State<SignIn> {
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText: "         Password",
                     ),
-                     obscureText: showPass,
+                    obscureText: showPass,
                   ),
                 ),
               ),
-              SizedBox(height: 40,),
-               Center(
+              const SizedBox(
+                height: 40,
+              ),
+              Center(
                 child: SizedBox(
                   height: 32,
                   width: 130,
@@ -113,7 +114,10 @@ class _SignInPageState extends State<SignIn> {
                     //     _controllerPassword.text,
                     //     _controllerPhoneNumber.text,
                     //     _controllerEmail.text);
-                    child: const Text('Sign in' , style: TextStyle(fontSize: 16),),
+                    child: const Text(
+                      'Sign in',
+                      style: TextStyle(fontSize: 16),
+                    ),
                   ),
                 ),
               ),
