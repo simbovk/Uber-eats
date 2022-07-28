@@ -23,6 +23,7 @@ class RateOrder extends StatefulWidget {
 }
 
 class _RateOrderState extends State<RateOrder> {
+  var rating = 0.0;
   late String resturantName;
   late String name;
   late String? date;
@@ -131,22 +132,37 @@ class _RateOrderState extends State<RateOrder> {
                   ],
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                   height: 190,
                   width: MediaQuery.of(context).size.width - 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.green.withOpacity(0.4) , width: 2),
+                    border: Border.all(
+                        color: Colors.green.withOpacity(0.4), width: 2),
                   ),
                   child: Column(
                     children: [
-                      SizedBox(height: 10,),
+                      SizedBox(
+                        height: 10,
+                      ),
                       Text('How was the delivery of your order?',
                           style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                               color: Colors.black)),
+                      SmoothStarRating(
+                        rating: rating,
+                        size: 45,
+                        starCount: 5,
+                        onRated: (value) {
+                          setState(() {
+                            rating = value;
+                          });
+                        },
+                      )
                     ],
                   ))
             ],
