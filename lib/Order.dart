@@ -98,76 +98,52 @@ class _OrderState extends State<Order> {
                 ),
                 Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
-                      child: Row(
-                        children: [
-                          Text(
-                            name,
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
-                                color: Colors.black),
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 0),
+                          child: Row(
+                            children: [
+                              Text(
+                                name,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                    color: Colors.black),
+                              ),
+                              SizedBox(
+                                width: 55,
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.green.withOpacity(0.2),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(32.0)),
+                                ),
+                                child: Text(
+                                  deliverdText != null ? deliverdText : '',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 10,
+                                      color: Colors.green),
+                                ),
+                              ),
+                            ],
                           ),
-                          SizedBox(
-                            width: 55,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.green.withOpacity(0.2),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(32.0)),
-                            ),
-                            child: Text(
-                              deliverdText != null ? deliverdText : '',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 10,
-                                  color: Colors.green),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 8, right: 54),
+                        ),
+                        SizedBox(height: 10,),
+                        Padding(
+                      padding: const EdgeInsets.only(bottom: 0, right: 50),
                       child: Text(
                         deliverdTime != null ? deliverdTime : '',
                         style: TextStyle(color: Colors.black.withOpacity(0.7)),
                       ),
                     ),
+                      ],
+                    ),
                     SizedBox(
                       height: 20,
                     ),
-                    // SizedBox(
-                    //   height: 38,
-                    //   width: 180,
-                    //   child: ElevatedButton.icon(
-                    //       onPressed: () {},
-                    //       onLongPress: () {},
-                    //       style: ButtonStyle(
-                    //         backgroundColor:
-                    //             MaterialStateProperty.all(Colors.white),
-                    //         shape: MaterialStateProperty.all<
-                    //             RoundedRectangleBorder>(
-                    //           RoundedRectangleBorder(
-                    //             borderRadius: BorderRadius.circular(8.0),
-                    //           ),
-                    //         ),
-                    //       ),
-                    //       icon: Icon(
-                    //         Icons.cancel_outlined,
-                    //         size: 25,
-                    //         color: Colors.green,
-                    //       ),
-                    //       label: Text(
-                    //         'Cancel Order',
-                    //         style: TextStyle(
-                    //           color: Colors.black,
-                    //           fontSize: 18,
-                    //         ),
-                    //       )),
-                    // ),
                     SizedBox(
                       child: ElevatedButton(
                         child: Text(
