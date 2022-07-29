@@ -100,7 +100,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                     Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 10),
+                          padding: const EdgeInsets.only(bottom: 5),
                           child: Row(
                             children: [
                               Text(
@@ -130,11 +130,8 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                             ],
                           ),
                         ),
-                        SizedBox(
-                          height: 30,
-                        ),
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 0, right: 40),
+                          padding: const EdgeInsets.only(bottom: 20, right: 45),
                           child: Text(
                             deliverdTime != null ? deliverdTime : '',
                             style:
