@@ -97,46 +97,51 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                 ),
                 Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
-                      child: Row(
-                        children: [
-                          Text(
-                            name,
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
-                                color: Colors.black),
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: Row(
+                            children: [
+                              Text(
+                                name,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                    color: Colors.black),
+                              ),
+                              SizedBox(
+                                width: 60,
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.green.withOpacity(0.2),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(32.0)),
+                                ),
+                                child: Text(
+                                  deliverdText != null ? deliverdText : '',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 10,
+                                      color: Colors.green),
+                                ),
+                              ),
+                            ],
                           ),
-                          SizedBox(
-                            width: 55,
+                        ),
+                        SizedBox(
+                          height: 30,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 0, right: 40),
+                          child: Text(
+                            deliverdTime != null ? deliverdTime : '',
+                            style:
+                                TextStyle(color: Colors.black.withOpacity(0.7)),
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.green.withOpacity(0.2),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(32.0)),
-                            ),
-                            child: Text(
-                              deliverdText != null ? deliverdText : '',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 10,
-                                  color: Colors.green),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 0, right: 40),
-                      child: Text(
-                        deliverdTime != null ? deliverdTime : '',
-                        style: TextStyle(color: Colors.black.withOpacity(0.7)),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 30,
+                        ),
+                      ],
                     ),
                     Row(
                       children: [
