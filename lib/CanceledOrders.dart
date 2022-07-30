@@ -144,7 +144,7 @@ class _CanceledOrdersState extends State<CanceledOrders> {
                       children: [
                         SizedBox(
                           height: 38,
-                          width: 90,
+                          width: 140,
                           child: ElevatedButton.icon(
                               onPressed: () {},
                               style: ButtonStyle(
@@ -159,14 +159,14 @@ class _CanceledOrdersState extends State<CanceledOrders> {
                               ),
                               icon: Icon(
                                 Icons.cached_rounded,
-                                size: 18,
+                                size: 25,
                                 color: Colors.green,
                               ),
                               label: Text(
                                 'Order Again',
                                 style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 8,
+                                    fontSize: 13,
                                     fontWeight: FontWeight.bold),
                               )),
                         ),
