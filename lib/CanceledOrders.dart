@@ -170,49 +170,6 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
                                     fontWeight: FontWeight.bold),
                               )),
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        SizedBox(
-                          height: 38,
-                          width: 90,
-                          child: ElevatedButton.icon(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => RateOrder(
-                                        resturantSplittedName,
-                                        name,
-                                        date,
-                                        month,
-                                        watch),
-                                  ),
-                                );
-                              },
-                              style: ButtonStyle(
-                                backgroundColor:
-                                    MaterialStateProperty.all(Colors.white),
-                                shape: MaterialStateProperty.all<
-                                    RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                  ),
-                                ),
-                              ),
-                              icon: Icon(
-                                Icons.rate_review_outlined,
-                                size: 18,
-                                color: Colors.green,
-                              ),
-                              label: Text(
-                                'Comment',
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 8,
-                                    fontWeight: FontWeight.bold),
-                              )),
-                        ),
                       ],
                     )
                   ],
