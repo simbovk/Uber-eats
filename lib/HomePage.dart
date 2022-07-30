@@ -188,7 +188,7 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                       );
                                     },
-                                  ),,
+                                  ),
                                     decoration: const BoxDecoration(
                                         image: DecorationImage(
                                             image: AssetImage(
