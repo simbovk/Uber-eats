@@ -179,6 +179,16 @@ class _HomePageState extends State<HomePage> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 15),
                                   child: Container(
+                                    child:  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const ,
+                                        ),
+                                      );
+                                    },
+                                  ),,
                                     decoration: const BoxDecoration(
                                         image: DecorationImage(
                                             image: AssetImage(
