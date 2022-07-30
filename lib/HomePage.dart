@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:test_fluuter/Categories.dart';
 
+import 'SearchBar.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
