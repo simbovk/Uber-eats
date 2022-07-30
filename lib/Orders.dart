@@ -125,10 +125,10 @@ class _OrdersState extends State<Orders> {
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: CanceledOrders(
-                'McDonalds\n(la,orange county)',
-                '10.99',
-                'assets/images/mcdoublemc.png',
-                'McDouble',
+                'Star Bucks\n(la,orange county)',
+                '2.99',
+                'assets/images/icedcoffeewithsyrupstarbucks.png',
+                'iced coffee',
                 false,
                 'monday',
                 'june(1th)',
