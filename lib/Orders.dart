@@ -69,7 +69,7 @@ class _OrdersState extends State<Orders> {
                 'june(23th)',
                 '13:08'),
           ),
-          SizedBox(height: 12),
+          SizedBox(height: 5),
           Padding(
             padding: const EdgeInsets.only(top: 15, right: 175),
             child: Text(
@@ -79,7 +79,7 @@ class _OrdersState extends State<Orders> {
             ),
           ),
           SizedBox(
-            height: 15,
+            height: 12,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
