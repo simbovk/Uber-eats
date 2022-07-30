@@ -120,6 +120,19 @@ class _OrdersState extends State<Orders> {
                 'june(1th)',
                 '13:08'),
           ),
+          SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: DeliverdOrder(
+                'McDonalds\n(la,orange county)',
+                '10.99',
+                'assets/images/mcdoublemc.png',
+                'McDouble',
+                true,
+                'monday',
+                'june(1th)',
+                '13:08'),
+          ),
           SizedBox(
             height: 15,
           )

@@ -62,7 +62,7 @@ class _DeliverdOrderState extends State<DeliverdOrder> {
   @override
   Widget build(BuildContext context) {
     String deliverdTime = '$date,$month  $watch';
-    String deliverdText = deliverd == true ? 'Delivered' : 'Not Delivered';
+    String deliverdText = deliverd == true ? 'Delivered' : 'Canceled';
     List<String> splittedName = resturantName.split('\n');
     String resturantSplittedName = splittedName[0] + splittedName[1];
     return Padding(
