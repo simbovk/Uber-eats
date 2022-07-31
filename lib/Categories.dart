@@ -52,20 +52,32 @@ class _CategoriesState extends State<Categories> {
         body: SingleChildScrollView(
             child: Column(
           children: [
-            Row(children: [
-              Text(resturantCount , style:TextStyle(),),
-              Spacer(),
-              Container(
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: Text(
+                    '$resturantCount Resturant Available',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Spacer(),
+                Container(
                   height: 25,
-                  width: 100,
+                  width: 130,
                   child: DropdownButton(
                     hint: Text(
-                      'Select',
-                      style: TextStyle(color: Colors.black),
+                      'Select Order',
+                      style: TextStyle(color: Colors.green),
                     ),
                     icon: IconTheme(
-                      data: new IconThemeData(color: Colors.black),
-                      child: new Icon(Icons.arrow_drop_down , size: 25,),
+                      data: new IconThemeData(color: Colors.green),
+                      child: new Icon(
+                        Icons.list_outlined,
+                        size: 25,
+                      ),
                     ),
                     value: _selectedCategory,
                     items: [
@@ -133,7 +145,8 @@ class _CategoriesState extends State<Categories> {
                     iconEnabledColor: Colors.white, //Icon color
                   ),
                 ),
-            ],)
+              ],
+            )
           ],
         )),
       ),
