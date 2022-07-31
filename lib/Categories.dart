@@ -149,7 +149,7 @@ class _CategoriesState extends State<Categories> {
               ],
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             ResturantInfo('star bucks', '5', 'koon','gooz')
           ],
