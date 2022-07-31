@@ -53,7 +53,7 @@ class _ResturantInfoState extends State<ResturantInfo> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
+      height: 235,
       width: MediaQuery.of(context).size.width - 50,
       decoration: BoxDecoration(
         color: Colors.green.withOpacity(0.2),
