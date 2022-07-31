@@ -65,85 +65,87 @@ class _CategoriesState extends State<Categories> {
                   ),
                 ),
                 Spacer(),
-                Container(
-                  height: 25,
-                  width: 150,
-                  child: DropdownButton(
-                    hint: Text(
-                      'According to...',
-                      style: TextStyle(color: Colors.green),
+                Padding(
+                  padding: const EdgeInsets.only(right: 15),
+                  child: Container(
+                    height: 25,
+                    width: 150,
+                    child: DropdownButton(
+                      hint: Text(
+                        'According to...',
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      icon: IconTheme(
+                        data: new IconThemeData(color: Colors.green),
+                        child: new Icon(
+                          Icons.text_rotate_vertical_sharp,
+                          size: 25,
+                        ),
+                      ),
+                      value: _selectedCategory,
+                      items: [
+                        DropdownMenuItem(
+                          child: Container(
+                              height: 25,
+                              width: 75,
+                              child: Center(child: const Text("Most rated" ,style: TextStyle(), ))),
+                          value: 'Most Rated',
+                        ),
+                        DropdownMenuItem(
+                          child: Container(
+                              height: 25,
+                              width: 75,
+                              color: Colors.white,
+                              child: Center(
+                                child: const Text(
+                                  "white",
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              )),
+                          value: 'white',
+                        ),
+                        DropdownMenuItem(
+                          child: Container(
+                              height: 25,
+                              width: 75,
+                              color: Color.fromARGB(255, 4, 36, 52),
+                              child: Center(child: const Text("blue"))),
+                          value: 'blue',
+                        ),
+                        DropdownMenuItem(
+                          child: Container(
+                              height: 25,
+                              width: 75,
+                              color: const Color.fromARGB(255, 207, 37, 25),
+                              child: Center(child: const Text("red"))),
+                          value: 'red',
+                        ),
+                        DropdownMenuItem(
+                          child: Container(
+                              height: 25,
+                              width: 75,
+                              color: const Color.fromARGB(255, 255, 122, 166),
+                              child: Center(child: const Text("pink"))),
+                          value: 'pink',
+                        ),
+                        DropdownMenuItem(
+                          child: Container(
+                              height: 25,
+                              width: 75,
+                              color: const Color.fromARGB(255, 1, 46, 18),
+                              child: Center(child: const Text("green"))),
+                          value: 'green',
+                        ),
+                      ],
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          _selectedCategory = newValue;
+                        });
+                      }, //make true to take width of parent widget
+                      underline: Container(), //empty line
+                      style: const TextStyle(fontSize: 18, color: Colors.white),
+                      iconEnabledColor: Colors.white, //Icon color
                     ),
-                    icon: IconTheme(
-                      data: new IconThemeData(color: Colors.green),
-                      child: new Icon(
-                        Icons.list_outlined,
-                        size: 25,
-                      ),
-                    ),
-                    value: _selectedCategory,
-                    items: [
-                      DropdownMenuItem(
-                        child: Container(
-                            height: 25,
-                            width: 75,
-                            color: Colors.black,
-                            child: Center(child: const Text("black"))),
-                        value: 'black',
-                      ),
-                      DropdownMenuItem(
-                        child: Container(
-                            height: 25,
-                            width: 75,
-                            color: Colors.white,
-                            child: Center(
-                              child: const Text(
-                                "white",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                            )),
-                        value: 'white',
-                      ),
-                      DropdownMenuItem(
-                        child: Container(
-                            height: 25,
-                            width: 75,
-                            color: Color.fromARGB(255, 4, 36, 52),
-                            child: Center(child: const Text("blue"))),
-                        value: 'blue',
-                      ),
-                      DropdownMenuItem(
-                        child: Container(
-                            height: 25,
-                            width: 75,
-                            color: const Color.fromARGB(255, 207, 37, 25),
-                            child: Center(child: const Text("red"))),
-                        value: 'red',
-                      ),
-                      DropdownMenuItem(
-                        child: Container(
-                            height: 25,
-                            width: 75,
-                            color: const Color.fromARGB(255, 255, 122, 166),
-                            child: Center(child: const Text("pink"))),
-                        value: 'pink',
-                      ),
-                      DropdownMenuItem(
-                        child: Container(
-                            height: 25,
-                            width: 75,
-                            color: const Color.fromARGB(255, 1, 46, 18),
-                            child: Center(child: const Text("green"))),
-                        value: 'green',
-                      ),
-                    ],
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        _selectedCategory = newValue;
-                      });
-                    }, //make true to take width of parent widget
-                    underline: Container(), //empty line
-                    style: const TextStyle(fontSize: 18, color: Colors.white),
-                    iconEnabledColor: Colors.white, //Icon color
                   ),
                 ),
               ],
