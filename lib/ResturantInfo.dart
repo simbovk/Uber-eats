@@ -6,19 +6,21 @@ class ResturantInfo extends StatefulWidget {
   late String resturantImagePath;
   late String resturantLabelImagePath;
   late String branch;
+  late String categories;
   ResturantInfo(String resturantName, String rate, String resturantImagePath,
-      String resturantLabelImagePath, String branch,
+      String resturantLabelImagePath, String branch,String categories,
       {Key? key}) {
     this.resturantName = resturantName;
     this.rate = rate;
     this.resturantImagePath = resturantImagePath;
     this.resturantLabelImagePath = resturantLabelImagePath;
     this.branch = branch;
+    this.categories = categories;
   }
 
   @override
   State<ResturantInfo> createState() => _ResturantInfoState(
-      resturantName, rate, resturantImagePath, resturantLabelImagePath , branch);
+      resturantName, rate, resturantImagePath, resturantLabelImagePath, branch , categories);
 }
 
 class _ResturantInfoState extends State<ResturantInfo> {
@@ -27,17 +29,19 @@ class _ResturantInfoState extends State<ResturantInfo> {
   late String resturantImagePath;
   late String resturantLabelImagePath;
   late String branch;
+  late String categories;
   _ResturantInfoState(
       String resturantName,
       String rate,
       String resturantImagePath,
       String resturantLabelImagePath,
-      String branch) {
+      String branch , String categories) {
     this.resturantName = resturantName;
     this.rate = rate;
     this.resturantImagePath = resturantImagePath;
     this.resturantLabelImagePath = resturantLabelImagePath;
     this.branch = branch;
+    this.categories = categories;
   }
 
   @override
@@ -74,7 +78,11 @@ class _ResturantInfoState extends State<ResturantInfo> {
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                 ),
               ),
-              Text(branch == null ? '' : branch , style: TextStyle(fontSize: 16 , color: Colors.black.withOpacity(0.6)),),
+              Text(
+                branch == null ? '' : branch,
+                style: TextStyle(
+                    fontSize: 16, color: Colors.black.withOpacity(0.6)),
+              ),
               Spacer(),
               Padding(
                 padding: const EdgeInsets.only(right: 6),
@@ -87,7 +95,10 @@ class _ResturantInfoState extends State<ResturantInfo> {
                     ),
                     Text(
                       rate,
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic),
                     ),
                   ],
                 ),
