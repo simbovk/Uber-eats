@@ -8,7 +8,7 @@ class ResturantInfo extends StatefulWidget {
   late String branch;
   late String categories;
   ResturantInfo(String resturantName, String rate, String resturantImagePath,
-      String resturantLabelImagePath, String branch,String categories,
+      String resturantLabelImagePath, String branch, String categories,
       {Key? key}) {
     this.resturantName = resturantName;
     this.rate = rate;
@@ -19,8 +19,8 @@ class ResturantInfo extends StatefulWidget {
   }
 
   @override
-  State<ResturantInfo> createState() => _ResturantInfoState(
-      resturantName, rate, resturantImagePath, resturantLabelImagePath, branch , categories);
+  State<ResturantInfo> createState() => _ResturantInfoState(resturantName, rate,
+      resturantImagePath, resturantLabelImagePath, branch, categories);
 }
 
 class _ResturantInfoState extends State<ResturantInfo> {
@@ -35,7 +35,8 @@ class _ResturantInfoState extends State<ResturantInfo> {
       String rate,
       String resturantImagePath,
       String resturantLabelImagePath,
-      String branch , String categories) {
+      String branch,
+      String categories) {
     this.resturantName = resturantName;
     this.rate = rate;
     this.resturantImagePath = resturantImagePath;
@@ -105,18 +106,24 @@ class _ResturantInfoState extends State<ResturantInfo> {
               ),
             ],
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 5),
           Padding(
             padding: const EdgeInsets.only(left: 6),
             child: Row(
               children: [
                 Text((categories == null ? " " : categories),
                     style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.black.withOpacity( 1))),
+                        fontSize: 16, color: Colors.black.withOpacity(1))),
               ],
             ),
           ),
+          SizedBox(height: 5),
+          Divider(color: Colors.black.withOpacity(0.3)),
+          Row(
+            children: [
+              Text()
+            ],
+          )
         ],
       ),
     );
