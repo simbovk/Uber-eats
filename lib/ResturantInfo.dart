@@ -15,10 +15,23 @@ class ResturantInfo extends StatefulWidget {
   }
 
   @override
-  State<ResturantInfo> createState() => _ResturantInfoState();
+  State<ResturantInfo> createState() => _ResturantInfoState(
+      resturantName, rate, resturantImagePath, resturantLabelImagePath);
 }
 
 class _ResturantInfoState extends State<ResturantInfo> {
+  late String resturantName;
+  late String rate;
+  late String resturantImagePath;
+  late String resturantLabelImagePath;
+  _ResturantInfoState(String resturantName, String rate,
+      String resturantImagePath, String resturantLabelImagePath) {
+    this.resturantName = resturantName;
+    this.rate = rate;
+    this.resturantImagePath = resturantImagePath;
+    this.resturantLabelImagePath = resturantLabelImagePath;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
