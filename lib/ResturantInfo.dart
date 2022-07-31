@@ -67,11 +67,31 @@ class _ResturantInfoState extends State<ResturantInfo> {
           SizedBox(height: 10),
           Row(
             children: [
-              Text(
-                resturantName,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              Padding(
+                padding: const EdgeInsets.only(left: 6),
+                child: Text(
+                  resturantName,
+                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                ),
               ),
-              
+              Text(branch == null ? '' : branch , style: TextStyle(fontSize: 16 , color: Colors.black.withOpacity(0.6)),),
+              Spacer(),
+              Padding(
+                padding: const EdgeInsets.only(right: 6),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow,
+                      size: 20,
+                    ),
+                    Text(
+                      rate,
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold , fontStyle: FontStyle.italic),
+                    ),
+                  ],
+                ),
+              )
             ],
           )
         ],
