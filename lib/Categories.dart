@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:test_fluuter/ResturantInfo.dart';
 
+import 'SearchBar.dart';
+
 class Categories extends StatefulWidget {
   const Categories({Key? key}) : super(key: key);
 
@@ -147,6 +149,42 @@ class _CategoriesState extends State<Categories> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Center(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey.withOpacity(0.4),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+                width: 390,
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Text(
+                        'Search for Resturant',
+                        style: TextStyle(
+                            color: Colors.black.withOpacity(0.3),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17),
+                      ),
+                    ),
+                    Spacer(),
+                    IconButton(
+                        onPressed: () {
+                          showSearch(
+                              context: context, delegate: MySearchDelegate());
+                        },
+                        icon: Icon(
+                          Icons.search,
+                          color: Colors.green,
+                        )),
+                  ],
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
