@@ -102,9 +102,15 @@ class _ResturantInfoState extends State<ResturantInfo> {
                     ),
                   ],
                 ),
-              )
+              ),
             ],
-          )
+          ),
+          SizedBox(height: 10),
+          Text('Categories : ' + categories == null ? " " : categories,
+              style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black.withOpacity(0.6))),
         ],
       ),
     );
