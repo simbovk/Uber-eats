@@ -106,11 +106,17 @@ class _ResturantInfoState extends State<ResturantInfo> {
             ],
           ),
           SizedBox(height: 10),
-          Text('Categories : ' + categories == null ? " " : categories,
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black.withOpacity(0.6))),
+          Padding(
+            padding: const EdgeInsets.only(left: 6),
+            child: Row(
+              children: [
+                Text((categories == null ? " " : categories),
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black.withOpacity( 1))),
+              ],
+            ),
+          ),
         ],
       ),
     );
