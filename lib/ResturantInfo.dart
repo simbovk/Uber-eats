@@ -5,18 +5,20 @@ class ResturantInfo extends StatefulWidget {
   late String rate;
   late String resturantImagePath;
   late String resturantLabelImagePath;
+  late String branch;
   ResturantInfo(String resturantName, String rate, String resturantImagePath,
-      String resturantLabelImagePath,
+      String resturantLabelImagePath, String branch,
       {Key? key}) {
     this.resturantName = resturantName;
     this.rate = rate;
     this.resturantImagePath = resturantImagePath;
     this.resturantLabelImagePath = resturantLabelImagePath;
+    this.branch = branch;
   }
 
   @override
   State<ResturantInfo> createState() => _ResturantInfoState(
-      resturantName, rate, resturantImagePath, resturantLabelImagePath);
+      resturantName, rate, resturantImagePath, resturantLabelImagePath , branch);
 }
 
 class _ResturantInfoState extends State<ResturantInfo> {
@@ -25,8 +27,12 @@ class _ResturantInfoState extends State<ResturantInfo> {
   late String resturantImagePath;
   late String resturantLabelImagePath;
   late String branch;
-  _ResturantInfoState(String resturantName, String rate,
-      String resturantImagePath, String resturantLabelImagePath , String branch) {
+  _ResturantInfoState(
+      String resturantName,
+      String rate,
+      String resturantImagePath,
+      String resturantLabelImagePath,
+      String branch) {
     this.resturantName = resturantName;
     this.rate = rate;
     this.resturantImagePath = resturantImagePath;
@@ -65,6 +71,7 @@ class _ResturantInfoState extends State<ResturantInfo> {
                 resturantName,
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
+              
             ],
           )
         ],
