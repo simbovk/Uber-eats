@@ -53,6 +53,8 @@ class _CategoriesState extends State<Categories> {
             child: Column(
           children: [
             Row(children: [
+              Text(resturantCount , style:TextStyle(),),
+              Spacer(),
               Container(
                   height: 25,
                   width: 100,
