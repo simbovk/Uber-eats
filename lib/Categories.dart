@@ -223,7 +223,8 @@ class _CategoriesState extends State<Categories> {
                 'assets/images/mcdonaldswallpaper.png',
                 'assets/images/mdconald.png',
                 '(la,orange county)' , 
-                'fastfood burger...')
+                'fastfood burger...' , 
+                '0.0')
           ],
         )),
       ),

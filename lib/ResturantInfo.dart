@@ -7,8 +7,9 @@ class ResturantInfo extends StatefulWidget {
   late String resturantLabelImagePath;
   late String branch;
   late String categories;
+  late String shippingPrice;
   ResturantInfo(String resturantName, String rate, String resturantImagePath,
-      String resturantLabelImagePath, String branch, String categories,
+      String resturantLabelImagePath, String branch, String categories, String shippingPrice,
       {Key? key}) {
     this.resturantName = resturantName;
     this.rate = rate;
@@ -16,11 +17,12 @@ class ResturantInfo extends StatefulWidget {
     this.resturantLabelImagePath = resturantLabelImagePath;
     this.branch = branch;
     this.categories = categories;
+    this.shippingPrice = shippingPrice;
   }
 
   @override
   State<ResturantInfo> createState() => _ResturantInfoState(resturantName, rate,
-      resturantImagePath, resturantLabelImagePath, branch, categories);
+      resturantImagePath, resturantLabelImagePath, branch, categories , shippingPrice);
 }
 
 class _ResturantInfoState extends State<ResturantInfo> {
@@ -30,19 +32,22 @@ class _ResturantInfoState extends State<ResturantInfo> {
   late String resturantLabelImagePath;
   late String branch;
   late String categories;
+  late String shippingPrice;
   _ResturantInfoState(
       String resturantName,
       String rate,
       String resturantImagePath,
       String resturantLabelImagePath,
       String branch,
-      String categories) {
+      String categories
+      , String shippingPrice) {
     this.resturantName = resturantName;
     this.rate = rate;
     this.resturantImagePath = resturantImagePath;
     this.resturantLabelImagePath = resturantLabelImagePath;
     this.branch = branch;
     this.categories = categories;
+    this.shippingPrice = shippingPrice;
   }
 
   @override
