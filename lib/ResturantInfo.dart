@@ -123,11 +123,15 @@ class _ResturantInfoState extends State<ResturantInfo> {
             ),
           ),
           SizedBox(height: 5),
-          Divider(color: Colors.black.withOpacity(0.3)),
-          Row(
-            children: [
-              Text()
-            ],
+          Padding(
+            padding: const EdgeInsets.only(left: 6),
+            child: Row(
+              children: [
+                Text('Shipping price' , style: TextStyle(fontSize: 16, color: Colors.black.withOpacity(0.6))),
+                SizedBox(width: 5,),
+                Text(r'$' + (shippingPrice == null ? '' : shippingPrice) )
+              ],
+            ),
           )
         ],
       ),
