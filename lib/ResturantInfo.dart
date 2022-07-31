@@ -41,9 +41,19 @@ class _ResturantInfoState extends State<ResturantInfo> {
         color: Colors.green.withOpacity(0.2),
         borderRadius: BorderRadius.all(Radius.circular(12.0)),
       ),
-      child: Column(children: [
-        
-      ],),
+      child: Column(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(resturantImagePath != null ? resturantImagePath : ''), fit: BoxFit.fill),
+              borderRadius: BorderRadius.only(topRight: Radius.circular(12.0), topLeft: Radius.circular(12.0)),
+            ),
+            height: 120,
+            width:362,
+          ),
+        ],
+      ),
     );
   }
 }
