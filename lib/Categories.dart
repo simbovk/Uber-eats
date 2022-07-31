@@ -98,14 +98,14 @@ class _CategoriesState extends State<Categories> {
                   child: Text(
                     '$resturantCount Resturant Available',
                     style: TextStyle(
-                      fontSize: 17,
+                        fontSize: 17,
                         // fontWeight: FontWeight.bold,
                         color: Colors.black.withOpacity(0.6)),
                   ),
                 ),
                 Spacer(),
                 Padding(
-                  padding: const EdgeInsets.only(right:5),
+                  padding: const EdgeInsets.only(right: 5),
                   child: Container(
                     height: 25,
                     width: 160,
@@ -127,49 +127,77 @@ class _CategoriesState extends State<Categories> {
                           child: Container(
                               height: 25,
                               width: 120,
-                              child: Center(child: const Text("Most rated" ,style: TextStyle(color: Colors.black), ))),
+                              child: Center(
+                                  child: const Text(
+                                "Most rated",
+                                style: TextStyle(color: Colors.black),
+                              ))),
                           value: 'Most Rated',
                         ),
                         DropdownMenuItem(
                           child: Container(
                               height: 25,
                               width: 120,
-                              child: Center(child: const Text("Most ordered" ,style: TextStyle(color: Colors.black), ))),
+                              child: Center(
+                                  child: const Text(
+                                "Most ordered",
+                                style: TextStyle(color: Colors.black),
+                              ))),
                           value: 'Most Ordered',
                         ),
                         DropdownMenuItem(
                           child: Container(
                               height: 25,
                               width: 130,
-                              child: Center(child: const Text("Most expensive" ,style: TextStyle(color: Colors.black), ))),
+                              child: Center(
+                                  child: const Text(
+                                "Most expensive",
+                                style: TextStyle(color: Colors.black),
+                              ))),
                           value: 'Most Expensive',
                         ),
                         DropdownMenuItem(
                           child: Container(
                               height: 25,
                               width: 130,
-                              child: Center(child: const Text("Least expensive" ,style: TextStyle(color: Colors.black), ))),
+                              child: Center(
+                                  child: const Text(
+                                "Least expensive",
+                                style: TextStyle(color: Colors.black),
+                              ))),
                           value: 'Least Expensive',
                         ),
-                         DropdownMenuItem(
+                        DropdownMenuItem(
                           child: Container(
                               height: 25,
                               width: 120,
-                              child: Center(child: const Text("Most popular" ,style: TextStyle(color: Colors.black), ))),
+                              child: Center(
+                                  child: const Text(
+                                "Most popular",
+                                style: TextStyle(color: Colors.black),
+                              ))),
                           value: 'Most popular',
                         ),
-                         DropdownMenuItem(
+                        DropdownMenuItem(
                           child: Container(
                               height: 25,
                               width: 120,
-                              child: Center(child: const Text("newest" ,style: TextStyle(color: Colors.black), ))),
+                              child: Center(
+                                  child: const Text(
+                                "newest",
+                                style: TextStyle(color: Colors.black),
+                              ))),
                           value: 'Newest',
                         ),
-                         DropdownMenuItem(
+                        DropdownMenuItem(
                           child: Container(
                               height: 25,
                               width: 120,
-                              child: Center(child: const Text("closest" ,style: TextStyle(color: Colors.black), ))),
+                              child: Center(
+                                  child: const Text(
+                                "closest",
+                                style: TextStyle(color: Colors.black),
+                              ))),
                           value: 'Closest',
                         ),
                       ],
@@ -189,7 +217,11 @@ class _CategoriesState extends State<Categories> {
             SizedBox(
               height: 20,
             ),
-            ResturantInfo('star bucks', '5', 'koon','gooz')
+            ResturantInfo(
+                'McDonalds',
+                '3.5',
+                'assets/images/mcdonaldswallpaper.png',
+                'assets/images/mdconald.png')
           ],
         )),
       ),
