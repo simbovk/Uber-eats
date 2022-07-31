@@ -59,7 +59,8 @@ class _CategoriesState extends State<Categories> {
                   child: Text(
                     '$resturantCount Resturant Available',
                     style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                        // fontWeight: FontWeight.bold,
                         color: Colors.black.withOpacity(0.6)),
                   ),
                 ),
@@ -69,7 +70,7 @@ class _CategoriesState extends State<Categories> {
                   width: 130,
                   child: DropdownButton(
                     hint: Text(
-                      'Select Order',
+                      'According to...',
                       style: TextStyle(color: Colors.green),
                     ),
                     icon: IconTheme(
