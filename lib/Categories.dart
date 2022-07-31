@@ -55,6 +55,42 @@ class _CategoriesState extends State<Categories> {
         body: SingleChildScrollView(
             child: Column(
           children: [
+            Center(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey.withOpacity(0.4),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+                width: 390,
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Text(
+                        'Search for Resturant',
+                        style: TextStyle(
+                            color: Colors.black.withOpacity(0.3),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17),
+                      ),
+                    ),
+                    Spacer(),
+                    IconButton(
+                        onPressed: () {
+                          showSearch(
+                              context: context, delegate: MySearchDelegate());
+                        },
+                        icon: Icon(
+                          Icons.search,
+                          color: Colors.green,
+                        )),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               children: [
                 Padding(
@@ -149,42 +185,6 @@ class _CategoriesState extends State<Categories> {
                   ),
                 ),
               ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Center(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey.withOpacity(0.4),
-                  borderRadius: BorderRadius.all(Radius.circular(12)),
-                ),
-                width: 390,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Text(
-                        'Search for Resturant',
-                        style: TextStyle(
-                            color: Colors.black.withOpacity(0.3),
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17),
-                      ),
-                    ),
-                    Spacer(),
-                    IconButton(
-                        onPressed: () {
-                          showSearch(
-                              context: context, delegate: MySearchDelegate());
-                        },
-                        icon: Icon(
-                          Icons.search,
-                          color: Colors.green,
-                        )),
-                  ],
-                ),
-              ),
             ),
             SizedBox(
               height: 20,
