@@ -25,7 +25,7 @@ class _ResturantInfoState extends State<ResturantInfo> {
       height: 190,
       width: MediaQuery.of(context).size.width - 50,
       decoration: BoxDecoration(
-        color: Colors.green.withOpacity(0.2),
+        color: Colors.black.withOpacity(0.5),
         borderRadius: BorderRadius.all(Radius.circular(12.0)),
       ),
     );

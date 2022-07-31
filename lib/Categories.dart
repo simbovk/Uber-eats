@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_fluuter/ResturantInfo.dart';
 
 class Categories extends StatefulWidget {
   const Categories({Key? key}) : super(key: key);
@@ -146,7 +147,11 @@ class _CategoriesState extends State<Categories> {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            ResturantInfo('star bucks', '5', 'koon','gooz')
           ],
         )),
       ),
