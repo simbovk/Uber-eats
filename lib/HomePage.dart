@@ -218,6 +218,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
+                                   child:  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const Categories(),
+                                        ),
+                                      );
+                                    },
+                                  ),
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
@@ -243,6 +253,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
+                                   child:  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const Categories(),
+                                        ),
+                                      );
+                                    },
+                                  ),
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
@@ -268,6 +288,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
+                                   child:  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const Categories(),
+                                        ),
+                                      );
+                                    },
+                                  ),
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
@@ -293,6 +323,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
+                                   child:  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const Categories(),
+                                        ),
+                                      );
+                                    },
+                                  ),
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
@@ -318,6 +358,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
+                                   child:  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const Categories(),
+                                        ),
+                                      );
+                                    },
+                                  ),
                                   decoration: const BoxDecoration(
                                       image: DecorationImage(
                                           image: AssetImage(
