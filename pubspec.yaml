@@ -89,6 +89,9 @@ flutter:
   - assets/images/fiftyShades.jpg
   - assets/images/uberEatsLogo.jpeg
   - assets/images/mcdonaldswallpaper.png
+  - assets/images/burgerkingwallpaper.png
+  - assets/images/kfcwallpaper.png
+  - assets/images/jowallpaper.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
