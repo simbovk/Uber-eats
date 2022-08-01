@@ -218,13 +218,49 @@ class _CategoriesState extends State<Categories> {
               height: 20,
             ),
             ResturantInfo(
-                'McDonalds',
-                '3.5',
+                'McDonald',
+                '3.8',
                 'assets/images/mcdonaldswallpaper.png',
                 'assets/images/mdconald.png',
                 '(la,orange county)' , 
                 'fastfood burger...' , 
-                '0.0')
+                '0.0'),
+                 SizedBox(
+              height: 20,
+            ),
+            ResturantInfo(
+                'Burger king',
+                '3.5',
+                'assets/images/burgerkingwallpaper.png',
+                'assets/images/burgerking.png',
+                '(la,orange county)' , 
+                'fastfood burger...' , 
+                '2.99'),
+                SizedBox(
+              height: 20,
+            ),
+            ResturantInfo(
+                'KFC',
+                '3.5',
+                'assets/images/kfcwallpaper.png',
+                'assets/images/kfc.png',
+                '(la,orange county)' , 
+                'fastfood burger...' , 
+                '2.99'),
+                 SizedBox(
+              height: 20,
+            ),
+            ResturantInfo(
+                'jo pizza',
+                '4',
+                'assets/images/jowallpaper.png',
+                'assets/images/jo.png',
+                '(tehran,Shahrak Gharb)' , 
+                'fastfood burger...' , 
+                '2.99'),
+                 SizedBox(
+              height: 10,
+            ),
           ],
         )),
       ),
