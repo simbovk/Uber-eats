@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Categories(),
+                                          builder: (context) => Categories("fastfood"),
                                         ),
                                       );
                                     },
@@ -223,7 +223,7 @@ class _HomePageState extends State<HomePage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Categories(),
+                                          builder: (context) => Categories("seafood"),
                                         ),
                                       );
                                     },
@@ -258,7 +258,7 @@ class _HomePageState extends State<HomePage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Categories(),
+                                          builder: (context) => Categories("pasta"),
                                         ),
                                       );
                                     },
@@ -293,7 +293,7 @@ class _HomePageState extends State<HomePage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Categories(),
+                                          builder: (context) => Categories("international"),
                                         ),
                                       );
                                     },
@@ -328,7 +328,7 @@ class _HomePageState extends State<HomePage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Categories(),
+                                          builder: (context) => Categories("fried"),
                                         ),
                                       );
                                     },
@@ -363,7 +363,7 @@ class _HomePageState extends State<HomePage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Categories(),
+                                          builder: (context) => Categories("other"),
                                         ),
                                       );
                                     },

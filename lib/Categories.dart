@@ -4,13 +4,18 @@ import 'package:test_fluuter/ResturantInfo.dart';
 import 'SearchBar.dart';
 
 class Categories extends StatefulWidget {
-  const Categories({Key? key}) : super(key: key);
+  String? category;
+  Categories(String category, {Key? key}) {
+    this.category = category;
+  }
 
   @override
-  State<Categories> createState() => _CategoriesState();
+  State<Categories> createState() => _CategoriesState(category);
 }
 
 class _CategoriesState extends State<Categories> {
+  String? category;
+  _CategoriesState(String? category) : this.category = category;
   String? _selectedCategory;
   String resturantCount = '4';
   @override
@@ -222,10 +227,10 @@ class _CategoriesState extends State<Categories> {
                 '3.8',
                 'assets/images/mcdonaldswallpaper.png',
                 'assets/images/mdconald.png',
-                '(la,orange county)' , 
-                'fastfood burger...' , 
+                '(la,orange county)',
+                'fastfood burger...',
                 '0.0'),
-                 SizedBox(
+            SizedBox(
               height: 20,
             ),
             ResturantInfo(
@@ -233,10 +238,10 @@ class _CategoriesState extends State<Categories> {
                 '3.5',
                 'assets/images/burgerkingwallpaper.png',
                 'assets/images/burgerking.png',
-                '(la,orange county)' , 
-                'fastfood burger...' , 
+                '(la,orange county)',
+                'fastfood burger...',
                 '2.99'),
-                SizedBox(
+            SizedBox(
               height: 20,
             ),
             ResturantInfo(
@@ -244,10 +249,10 @@ class _CategoriesState extends State<Categories> {
                 '3.5',
                 'assets/images/kfcwallpaper.png',
                 'assets/images/kfc.png',
-                '(la,orange county)' , 
-                'fastfood fried chicken...' , 
+                '(la,orange county)',
+                'fastfood fried chicken...',
                 '2.99'),
-                 SizedBox(
+            SizedBox(
               height: 20,
             ),
             ResturantInfo(
@@ -255,10 +260,10 @@ class _CategoriesState extends State<Categories> {
                 '4.1',
                 'assets/images/jowallpaper.png',
                 'assets/images/jo.png',
-                '(tehran,Shahrak Gharb)' , 
-                'fastfood burger pizza...' , 
+                '(tehran,Shahrak Gharb)',
+                'fastfood burger pizza...',
                 '2.99'),
-                 SizedBox(
+            SizedBox(
               height: 20,
             ),
           ],
