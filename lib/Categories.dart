@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_fluuter/ResturantInfo.dart';
+import 'package:test_fluuter/seafoodResturants.dart';
 
 import 'SearchBar.dart';
 import 'fastfoodResturants.dart';
@@ -17,14 +18,15 @@ class Categories extends StatefulWidget {
 class _CategoriesState extends State<Categories> {
   String? category;
   _CategoriesState(String? category) : this.category = category;
-  String? _selectedCategory;
-  String resturantCount = '4';
   @override
   Widget build(BuildContext context) {
     Widget? body;
     switch(category){
       case 'fastfood':
         body = fastFood();
+        break;
+      case 'seafood':
+        body = seaFood();
         break;
     }
     return MaterialApp(
