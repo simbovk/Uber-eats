@@ -181,11 +181,11 @@ class _seaFoodState extends State<seaFood> {
           height: 20,
         ),
         ResturantInfo(
-            'fish&chips uncle jack',
-            '3.8',
+            'fish&chips unclejack',
+            '4',
             'assets/images/fishandchipsunclejack.png',
             'assets/images/mdconald.png',
-            '(tehran,shhrakgharb)',
+            '(tehran,shahrakGharb)',
             'seafood fish...',
             '3.99'),
         SizedBox(
