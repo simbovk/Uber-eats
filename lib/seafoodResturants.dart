@@ -192,13 +192,13 @@ class _seaFoodState extends State<seaFood> {
           height: 20,
         ),
         ResturantInfo(
-            'Burger king',
+            'kenzo',
             '3.5',
-            'assets/images/burgerkingwallpaper.png',
+            'assets/images/kenzowallpaper.png',
             'assets/images/burgerking.png',
-            '(la,orange county)',
-            'fastfood burger...',
-            '2.99'),
+            '(tehran,vanak)',
+            'seafood fish...',
+            '4.99'),
         SizedBox(
           height: 20,
         ),
