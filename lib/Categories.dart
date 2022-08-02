@@ -20,6 +20,12 @@ class _CategoriesState extends State<Categories> {
   String resturantCount = '4';
   @override
   Widget build(BuildContext context) {
+    Widget body;
+    switch(category){
+      case 'fastfood':
+        body = FastFood();
+        break;
+    }
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
