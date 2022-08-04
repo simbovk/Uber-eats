@@ -14,7 +14,7 @@ class _pastaState extends State<pasta> {
   @override
   Widget build(BuildContext context) {
     String? _selectedCategory;
-    String resturantCount = '4';
+    String resturantCount = '3';
     return SingleChildScrollView(
         child: Column(
       children: [
@@ -181,46 +181,35 @@ class _pastaState extends State<pasta> {
           height: 20,
         ),
         ResturantInfo(
-            'fish&chips unclejack',
-            '4',
-            'assets/images/fishandchipsunclejack.png',
+            'blucasa',
+            '4.6',
+            'assets/images/blucasawallpaper.png',
             'assets/images/mdconald.png',
-            '(tehran,shahrakGharb)',
-            'seafood fish...',
-            '3.99'),
-        SizedBox(
-          height: 20,
-        ),
-        ResturantInfo(
-            'kenzo',
-            '3.5',
-            'assets/images/kenzowallpaper.png',
-            'assets/images/burgerking.png',
-            '(tehran,vanak)',
-            'seafood fish...',
-            '4.99'),
-        SizedBox(
-          height: 20,
-        ),
-        ResturantInfo(
-            'white fish',
-            '3.5',
-            'assets/images/whitefishwallpaper.png',
-            'assets/images/kfc.png',
-            '(tehran,zaferanie)',
-            'seafood fish...',
+            '(tehran,Dolat)',
+            'pasta...',
             '2.99'),
         SizedBox(
           height: 20,
         ),
         ResturantInfo(
-            'Gabgo',
-            '2.2',
-            'assets/images/gabgowallpaper.png',
-            'assets/images/jo.png',
-            '(tehran,Shahrak Gharb)',
-            'seafood fish lobster...',
-            '1.99'),
+            'viuna cafe',
+            '4',
+            'assets/images/viunacafewallpaper.png',
+            'assets/images/burgerking.png',
+            '(tehran,Saadat abad)',
+            'coffee pasta sandwich...',
+            '0.0'),
+        SizedBox(
+          height: 20,
+        ),
+        ResturantInfo(
+            'artist cafe',
+            '5',
+            'assets/images/artistcafewallpaper.png',
+            'assets/images/kfc.png',
+            '(tehran,Saadat abad)',
+            'coffee pasta sandwich...',
+            '4.99'),
         SizedBox(
           height: 20,
         ),
