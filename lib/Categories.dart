@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_fluuter/ResturantInfo.dart';
+import 'package:test_fluuter/pastaResturants.dart';
 import 'package:test_fluuter/seafoodResturants.dart';
 
 import 'SearchBar.dart';
@@ -21,12 +22,15 @@ class _CategoriesState extends State<Categories> {
   @override
   Widget build(BuildContext context) {
     Widget? body;
-    switch(category){
+    switch (category) {
       case 'fastfood':
         body = fastFood();
         break;
       case 'seafood':
         body = seaFood();
+        break;
+      case 'pasta':
+        body = pasta();
         break;
     }
     return MaterialApp(
