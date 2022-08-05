@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'ResturantInfo.dart';
 import 'SearchBar.dart';
-
-class international extends StatefulWidget {
-  const international({Key? key}) : super(key: key);
+class fried extends StatefulWidget {
+  const fried({Key? key}) : super(key: key);
 
   @override
-  State <international> createState() =>  internationalState();
+  State<fried> createState() => _friedState();
 }
 
-class  internationalState extends State <international> {
+class _friedState extends State<fried> {
   @override
   Widget build(BuildContext context) {
     String? _selectedCategory;
