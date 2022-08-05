@@ -5,6 +5,7 @@ import 'package:test_fluuter/seafoodResturants.dart';
 
 import 'SearchBar.dart';
 import 'fastfoodResturants.dart';
+import 'internationalResturant.dart';
 
 class Categories extends StatefulWidget {
   String? category;
@@ -31,6 +32,9 @@ class _CategoriesState extends State<Categories> {
         break;
       case 'pasta':
         body = pasta();
+        break;
+      case 'international':
+        body = international();
         break;
     }
     return MaterialApp(
