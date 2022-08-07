@@ -240,6 +240,10 @@ class _HomeState extends State<Home> {
         ),
         body: _currentPage,
         bottomNavigationBar: CurvedNavigationBar(
+          backgroundColor: Colors.white.withOpacity(0.0),
+          buttonBackgroundColor: Colors.green,
+          color: Colors.green,
+          height: 50,
           onTap: (index) {
             _changeTab(index);
           },
