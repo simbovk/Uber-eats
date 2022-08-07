@@ -50,6 +50,7 @@ class _HomeState extends State<Home> {
         extendBody: true,
         appBar: AppBar(
           backgroundColor: Colors.green,
+          // shadowColor: Colors.white,
           actions: <Widget>[
             //   Padding(
             //     padding: const EdgeInsets.only(right: 100),
@@ -260,7 +261,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.black.withOpacity(0.6),
             onPressed: () => {}, child: Icon(Icons.location_on)),
       ),
     );
