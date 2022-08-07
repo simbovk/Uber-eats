@@ -247,19 +247,20 @@ class _HomeState extends State<Home> {
             backgroundColor: Colors.white.withOpacity(0.0),
             buttonBackgroundColor: Colors.green,
             color: Colors.green,
-            height: 50,
+            height: 60,
             onTap: (index) {
               _changeTab(index);
             },
             index: _currentIndex,
             items: const [
-              Icon(Icons.home),
+              Icon(Icons.home,),
               Icon(Icons.menu_book_outlined),
               Icon(Icons.person),
             ],
           ),
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.green,
             onPressed: () => {}, child: Icon(Icons.location_on)),
       ),
     );
