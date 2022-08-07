@@ -73,7 +73,16 @@ class _HomePageState extends State<HomePage> {
                             // );
                           },
                         ),
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 5), // changes position of shadow
+                              ),
+                            ],
                             image: DecorationImage(
                                 image: AssetImage(
                                     "assets/images/supermarkets.png"),
@@ -124,7 +133,7 @@ class _HomePageState extends State<HomePage> {
                                 spreadRadius: 5,
                                 blurRadius: 7,
                                 offset:
-                                    Offset(0, 3), // changes position of shadow
+                                    Offset(0, 5), // changes position of shadow
                               ),
                             ],
                             image: DecorationImage(
