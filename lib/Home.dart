@@ -49,52 +49,52 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         extendBody: true,
         appBar: AppBar(
-          backgroundColor: Colors.green.withOpacity(0.8),
+          backgroundColor: Colors.green,
           actions: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(right: 100),
-              child: Center(
-                child: SizedBox(
-                  height: 25,
-                  width: 105,
-                  child: ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.black.withOpacity(0.3),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                      ),
-                    ),
-                    label: const Text(
-                      'Address',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 12
-                      ),
-                    ),
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_drop_down_rounded,
-                      color: Colors.white,
-                      semanticLabel: 'Address',
-                    ),
-                  ),
-                ),
-              ),
-              // Padding(
-              //   padding: const EdgeInsets.only(right: 30),
-              //   child: Container(
-              //     height: 50,
-              //     width: 160,
-              //     decoration: const BoxDecoration(
-              //       image: DecorationImage(
-              //           // opacity: 0.6,
-              //           image: AssetImage("assets/images/uberEatsLogo.jpeg"),
-              //           fit: BoxFit.fill),
-              //       // borderRadius: BorderRadius.all(Radius.circular(8.0)),
-              //     ),
-              //   ),
-              // ),
-            ),
+            //   Padding(
+            //     padding: const EdgeInsets.only(right: 100),
+            //     child: Center(
+            //       child: SizedBox(
+            //         height: 25,
+            //         width: 105,
+            //         child: ElevatedButton.icon(
+            //           style: ElevatedButton.styleFrom(
+            //             primary: Colors.black.withOpacity(0.3),
+            //             shape: RoundedRectangleBorder(
+            //               borderRadius: BorderRadius.circular(30.0),
+            //             ),
+            //           ),
+            //           label: const Text(
+            //             'Address',
+            //             style: TextStyle(
+            //               color: Colors.white,
+            //               fontSize: 12
+            //             ),
+            //           ),
+            //           onPressed: () {},
+            //           icon: const Icon(
+            //             Icons.arrow_drop_down_rounded,
+            //             color: Colors.white,
+            //             semanticLabel: 'Address',
+            //           ),
+            //         ),
+            //       ),
+            //     ),
+            //     // Padding(
+            //     //   padding: const EdgeInsets.only(right: 30),
+            //     //   child: Container(
+            //     //     height: 50,
+            //     //     width: 160,
+            //     //     decoration: const BoxDecoration(
+            //     //       image: DecorationImage(
+            //     //           // opacity: 0.6,
+            //     //           image: AssetImage("assets/images/uberEatsLogo.jpeg"),
+            //     //           fit: BoxFit.fill),
+            //     //       // borderRadius: BorderRadius.all(Radius.circular(8.0)),
+            //     //     ),
+            //     //   ),
+            //     // ),
+            //   ),
             IconButton(
               icon: const Icon(Icons.shopping_basket_sharp),
               onPressed: () {},
@@ -241,9 +241,8 @@ class _HomeState extends State<Home> {
         ),
         body: _currentPage,
         bottomNavigationBar: Theme(
-          data: Theme.of(context).copyWith(
-            iconTheme: IconThemeData(color: Colors.white)
-          ),
+          data: Theme.of(context)
+              .copyWith(iconTheme: IconThemeData(color: Colors.white)),
           child: CurvedNavigationBar(
             backgroundColor: Colors.white.withOpacity(0.0),
             buttonBackgroundColor: Colors.green,
@@ -260,6 +259,8 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+            onPressed: () => {}, child: Icon(Icons.location_on)),
       ),
     );
   }
