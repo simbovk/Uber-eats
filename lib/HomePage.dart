@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black.withOpacity(0.4)),
+                              color: Colors.black.withOpacity(1)),
                         ),
                       ),
                     )
@@ -117,7 +117,16 @@ class _HomePageState extends State<HomePage> {
                             // );
                           },
                         ),
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
                             image: DecorationImage(
                                 image:
                                     AssetImage("assets/images/resturants.png"),
@@ -137,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black.withOpacity(0.4)),
+                              color: Colors.black.withOpacity(1)),
                         ),
                       ),
                     )
@@ -182,16 +191,17 @@ class _HomePageState extends State<HomePage> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 15),
                                   child: Container(
-                                    child:  GestureDetector(
-                                    onTap: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Categories("fastfood"),
-                                        ),
-                                      );
-                                    },
-                                  ),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                Categories("fastfood"),
+                                          ),
+                                        );
+                                      },
+                                    ),
                                     decoration: const BoxDecoration(
                                         image: DecorationImage(
                                             image: AssetImage(
@@ -218,12 +228,13 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                   child:  GestureDetector(
+                                  child: GestureDetector(
                                     onTap: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Categories("seafood"),
+                                          builder: (context) =>
+                                              Categories("seafood"),
                                         ),
                                       );
                                     },
@@ -253,12 +264,13 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                   child:  GestureDetector(
+                                  child: GestureDetector(
                                     onTap: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Categories("pasta"),
+                                          builder: (context) =>
+                                              Categories("pasta"),
                                         ),
                                       );
                                     },
@@ -288,12 +300,13 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                   child:  GestureDetector(
+                                  child: GestureDetector(
                                     onTap: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Categories("international"),
+                                          builder: (context) =>
+                                              Categories("international"),
                                         ),
                                       );
                                     },
@@ -323,12 +336,13 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                   child:  GestureDetector(
+                                  child: GestureDetector(
                                     onTap: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Categories("fried"),
+                                          builder: (context) =>
+                                              Categories("fried"),
                                         ),
                                       );
                                     },
@@ -358,12 +372,13 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                   child:  GestureDetector(
+                                  child: GestureDetector(
                                     onTap: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => Categories("other"),
+                                          builder: (context) =>
+                                              Categories("other"),
                                         ),
                                       );
                                     },
@@ -921,4 +936,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
