@@ -186,7 +186,7 @@ class _friedState extends State<fried> {
             'assets/images/kfc.png',
             '(la,orange county)',
             'fastfood fried chicken...',
-            '2.99'),
+            '0.99'),
         SizedBox(
           height: 20,
         ),
@@ -202,12 +202,12 @@ class _friedState extends State<fried> {
           height: 20,
         ),
         ResturantInfo(
-            'chop chop',
-            '3.5',
-            'assets/images/chopchopwallpaper.png',
+            'Albaik',
+            '4',
+            'assets/images/albeikwallpaper.png',
             'assets/images/kfc.png',
-            '(tehran,Jordan)',
-            'international east asian...',
+            '(tehran,Keshavarz Blvd)',
+            'fastfood fried...',
             '2.99'),
         SizedBox(
           height: 20,
