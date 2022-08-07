@@ -240,20 +240,25 @@ class _HomeState extends State<Home> {
           ),
         ),
         body: _currentPage,
-        bottomNavigationBar: CurvedNavigationBar(
-          // backgroundColor: Colors.white.withOpacity(0.0),
-          buttonBackgroundColor: Colors.green,
-          color: Colors.green,
-          height: 50,
-          onTap: (index) {
-            _changeTab(index);
-          },
-          index: _currentIndex,
-          items: const [
-            Icon(Icons.home),
-            Icon(Icons.menu_book_outlined),
-            Icon(Icons.person),
-          ],
+        bottomNavigationBar: Theme(
+          data: Theme.of(context).copyWith(
+            iconTheme: IconThemeData(color: Colors.white)
+          ),
+          child: CurvedNavigationBar(
+            backgroundColor: Colors.white.withOpacity(0.0),
+            buttonBackgroundColor: Colors.green,
+            color: Colors.green,
+            height: 50,
+            onTap: (index) {
+              _changeTab(index);
+            },
+            index: _currentIndex,
+            items: const [
+              Icon(Icons.home),
+              Icon(Icons.menu_book_outlined),
+              Icon(Icons.person),
+            ],
+          ),
         ),
       ),
     );
