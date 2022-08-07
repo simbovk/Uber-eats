@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'HomePage.dart';
 import 'Account.dart';
 import 'Orders.dart';
@@ -238,25 +239,15 @@ class _HomeState extends State<Home> {
           ),
         ),
         body: _currentPage,
-        bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.green,
+        bottomNavigationBar: CurvedNavigationBar(
           onTap: (index) {
             _changeTab(index);
           },
-          currentIndex: _currentIndex,
+          index: _currentIndex,
           items: const [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home),
-            ),
-            BottomNavigationBarItem(
-              label: 'Orders',
-              icon: Icon(Icons.menu_book_outlined),
-            ),
-            BottomNavigationBarItem(
-              label: 'Account',
-              icon: Icon(Icons.person),
-            ),
+            Icon(Icons.home),
+            Icon(Icons.menu_book_outlined),
+            Icon(Icons.person),
           ],
         ),
       ),
