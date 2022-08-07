@@ -220,11 +220,11 @@ class _HomePageState extends State<HomePage> {
                                     decoration: BoxDecoration(
                                         boxShadow: [
                                           BoxShadow(
-                                            color: Colors.grey.withOpacity(0.5),
-                                            spreadRadius: 5,
+                                            color: Colors.grey.withOpacity(0.8),
+                                            spreadRadius: 2,
                                             blurRadius: 7,
                                             offset: Offset(0,
-                                                5), // changes position of shadow
+                                                3), // changes position of shadow
                                           ),
                                         ],
                                         image: DecorationImage(
@@ -237,6 +237,9 @@ class _HomePageState extends State<HomePage> {
                                     height: 120,
                                     width: 120,
                                   ),
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 const Text(
                                   'fast food',
@@ -263,7 +266,16 @@ class _HomePageState extends State<HomePage> {
                                       );
                                     },
                                   ),
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/seafood.png"),
@@ -273,6 +285,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'Sea food',
@@ -299,7 +314,16 @@ class _HomePageState extends State<HomePage> {
                                       );
                                     },
                                   ),
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/pasta.png"),
@@ -309,6 +333,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'Pasta',
@@ -335,7 +362,16 @@ class _HomePageState extends State<HomePage> {
                                       );
                                     },
                                   ),
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/internationalfood.png"),
@@ -345,6 +381,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'International',
@@ -371,7 +410,16 @@ class _HomePageState extends State<HomePage> {
                                       );
                                     },
                                   ),
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/fried.png"),
@@ -381,6 +429,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'fried',
@@ -407,7 +458,16 @@ class _HomePageState extends State<HomePage> {
                                       );
                                     },
                                   ),
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/other.png"),
@@ -417,6 +477,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'Other',
