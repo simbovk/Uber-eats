@@ -175,7 +175,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             height: MediaQuery.of(context).size.height - 18,
-            color: Colors.grey.withOpacity(0.15),
+            color: Colors.white.withOpacity(0.15),
             child: Column(
               children: [
                 Padding(
@@ -185,7 +185,7 @@ class _HomePageState extends State<HomePage> {
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black.withOpacity(0.8),
+                        color: Colors.black.withOpacity(1),
                         fontSize: 22),
                   ),
                 ),
@@ -816,7 +816,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             height: MediaQuery.of(context).size.height - 370,
-            color: Colors.grey.withOpacity(0.15),
+            color: Colors.white.withOpacity(0.15),//might be grey
             child: Column(children: [
               Padding(
                 padding: const EdgeInsets.only(right: 270, top: 10),
