@@ -94,6 +94,9 @@ class _HomePageState extends State<HomePage> {
                         width: 150,
                       ),
                     ),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Center(
                       child: Padding(
                         padding: const EdgeInsets.only(left: 25),
@@ -146,6 +149,9 @@ class _HomePageState extends State<HomePage> {
                         height: 150,
                         width: 150,
                       ),
+                    ),
+                    SizedBox(
+                      height: 5,
                     ),
                     Center(
                       child: Padding(
@@ -211,7 +217,16 @@ class _HomePageState extends State<HomePage> {
                                         );
                                       },
                                     ),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(0.5),
+                                            spreadRadius: 5,
+                                            blurRadius: 7,
+                                            offset: Offset(0,
+                                                5), // changes position of shadow
+                                          ),
+                                        ],
                                         image: DecorationImage(
                                             image: AssetImage(
                                                 "assets/images/fastfood.png"),
