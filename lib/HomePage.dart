@@ -512,7 +512,15 @@ class _HomePageState extends State<HomePage> {
                       // );
                     },
                   ),
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.green.withOpacity(0.8),
+                          spreadRadius: 5,
+                          blurRadius: 10,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
+                      ],
                       image: DecorationImage(
                           image: AssetImage("assets/images/adv1.png"),
                           fit: BoxFit.fill),
@@ -786,7 +794,15 @@ class _HomePageState extends State<HomePage> {
                 // );
               },
             ),
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.red.withOpacity(0.5),
+                    spreadRadius: 3,
+                    blurRadius: 10,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
                 image: DecorationImage(
                     image: AssetImage("assets/images/adv2.png"),
                     fit: BoxFit.fill),
