@@ -47,6 +47,7 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        extendBody: true,
         appBar: AppBar(
           backgroundColor: Colors.green.withOpacity(0.8),
           actions: <Widget>[
@@ -240,7 +241,7 @@ class _HomeState extends State<Home> {
         ),
         body: _currentPage,
         bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.white.withOpacity(0.0),
+          // backgroundColor: Colors.white.withOpacity(0.0),
           buttonBackgroundColor: Colors.green,
           color: Colors.green,
           height: 50,
