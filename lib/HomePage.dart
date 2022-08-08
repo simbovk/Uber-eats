@@ -560,16 +560,16 @@ class _HomePageState extends State<HomePage> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 15),
                                   child: Container(
-                                    decoration:BoxDecoration(
-                                       boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey.withOpacity(0.8),
-                                          spreadRadius: 2,
-                                          blurRadius: 7,
-                                          offset: Offset(0,
-                                              3), // changes position of shadow
-                                        ),
-                                      ],
+                                    decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(0.8),
+                                            spreadRadius: 2,
+                                            blurRadius: 7,
+                                            offset: Offset(0,
+                                                3), // changes position of shadow
+                                          ),
+                                        ],
                                         image: DecorationImage(
                                             image: AssetImage(
                                                 "assets/images/nookcafe.png"),
@@ -581,7 +581,7 @@ class _HomePageState extends State<HomePage> {
                                     width: 120,
                                   ),
                                 ),
-                                 SizedBox(
+                                SizedBox(
                                   height: 3,
                                 ),
                                 const Text(
@@ -598,8 +598,8 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                  decoration:BoxDecoration(
-                                     boxShadow: [
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
                                         BoxShadow(
                                           color: Colors.grey.withOpacity(0.8),
                                           spreadRadius: 2,
@@ -618,7 +618,7 @@ class _HomePageState extends State<HomePage> {
                                   height: 120,
                                   width: 120,
                                 ),
-                                 SizedBox(
+                                SizedBox(
                                   height: 3,
                                 ),
                                 Text(
@@ -635,8 +635,8 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                  decoration:BoxDecoration(
-                                     boxShadow: [
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
                                         BoxShadow(
                                           color: Colors.grey.withOpacity(0.8),
                                           spreadRadius: 2,
@@ -655,7 +655,7 @@ class _HomePageState extends State<HomePage> {
                                   height: 120,
                                   width: 120,
                                 ),
-                                 SizedBox(
+                                SizedBox(
                                   height: 3,
                                 ),
                                 Text(
@@ -706,7 +706,16 @@ class _HomePageState extends State<HomePage> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 15),
                                   child: Container(
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(0.8),
+                                            spreadRadius: 2,
+                                            blurRadius: 7,
+                                            offset: Offset(0,
+                                                3), // changes position of shadow
+                                          ),
+                                        ],
                                         image: DecorationImage(
                                             image: AssetImage(
                                                 "assets/images/mcdonald.png"),
@@ -717,6 +726,9 @@ class _HomePageState extends State<HomePage> {
                                     height: 120,
                                     width: 120,
                                   ),
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 const Text(
                                   'Mc Donalds',
@@ -732,7 +744,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/kfc.png"),
@@ -742,6 +763,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'KFC',
@@ -757,7 +781,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/starbucks.png"),
@@ -767,6 +800,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'starbucks',
@@ -782,7 +818,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/jo.png"),
@@ -792,6 +837,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'Jo pizza',
@@ -852,7 +900,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             height: MediaQuery.of(context).size.height - 370,
-            color: Colors.white.withOpacity(0.15),//might be grey
+            color: Colors.white.withOpacity(0.15), //might be grey
             child: Column(children: [
               Padding(
                 padding: const EdgeInsets.only(right: 270, top: 10),
