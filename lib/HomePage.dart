@@ -560,7 +560,16 @@ class _HomePageState extends State<HomePage> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 15),
                                   child: Container(
-                                    decoration: const BoxDecoration(
+                                    decoration:BoxDecoration(
+                                       boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                         image: DecorationImage(
                                             image: AssetImage(
                                                 "assets/images/nookcafe.png"),
@@ -571,6 +580,9 @@ class _HomePageState extends State<HomePage> {
                                     height: 120,
                                     width: 120,
                                   ),
+                                ),
+                                 SizedBox(
+                                  height: 3,
                                 ),
                                 const Text(
                                   'nook cafe',
@@ -586,7 +598,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                  decoration: const BoxDecoration(
+                                  decoration:BoxDecoration(
+                                     boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/artistcafe.png"),
@@ -596,6 +617,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                 SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'artist cafe',
@@ -611,7 +635,16 @@ class _HomePageState extends State<HomePage> {
                             Column(
                               children: <Widget>[
                                 Container(
-                                  decoration: const BoxDecoration(
+                                  decoration:BoxDecoration(
+                                     boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(0.8),
+                                          spreadRadius: 2,
+                                          blurRadius: 7,
+                                          offset: Offset(0,
+                                              3), // changes position of shadow
+                                        ),
+                                      ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/chaibarcafe.png"),
@@ -621,6 +654,9 @@ class _HomePageState extends State<HomePage> {
                                       color: Colors.white),
                                   height: 120,
                                   width: 120,
+                                ),
+                                 SizedBox(
+                                  height: 3,
                                 ),
                                 Text(
                                   'chaibar cafe',
