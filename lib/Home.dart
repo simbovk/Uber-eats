@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         extendBody: true,
         appBar: AppBar(
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.black.withOpacity(1),
           // shadowColor: Colors.white,
           actions: <Widget>[
             //   Padding(
@@ -243,11 +243,11 @@ class _HomeState extends State<Home> {
         body: _currentPage,
         bottomNavigationBar: Theme(
           data: Theme.of(context)
-              .copyWith(iconTheme: IconThemeData(color: Colors.white)),
+              .copyWith(iconTheme: IconThemeData(color: Colors.green)),
           child: CurvedNavigationBar(
             backgroundColor: Colors.white.withOpacity(0.0),
-            buttonBackgroundColor: Colors.green,
-            color: Colors.green,
+            buttonBackgroundColor: Colors.black.withOpacity(1),
+            color: Colors.black.withOpacity(0.5),
             height: 60,
             onTap: (index) {
               _changeTab(index);
@@ -261,8 +261,8 @@ class _HomeState extends State<Home> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black.withOpacity(0.6),
-            onPressed: () => {}, child: Icon(Icons.location_on)),
+          backgroundColor: Colors.black.withOpacity(1),
+            onPressed: () => {}, child: Icon(Icons.location_on , color: Colors.green,)),
       ),
     );
   }
