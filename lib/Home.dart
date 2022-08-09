@@ -49,6 +49,7 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         extendBody: true,
         appBar: AppBar(
+          toolbarHeight: 50,
           backgroundColor: Colors.black.withOpacity(1),
           // shadowColor: Colors.white,
           actions: <Widget>[
@@ -240,7 +241,9 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        body: _currentPage,
+        body: SizedBox(
+          height: MediaQuery.of(context).size.height - 80 - 60,
+          child: _currentPage),
         bottomNavigationBar: Theme(
           data: Theme.of(context)
               .copyWith(iconTheme: IconThemeData(color: Colors.green)),
