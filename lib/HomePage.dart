@@ -539,7 +539,7 @@ class _HomePageState extends State<HomePage> {
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black.withOpacity(0.8),
+                        color: Colors.black.withOpacity(1),
                         fontSize: 22),
                   ),
                 ),
@@ -685,7 +685,7 @@ class _HomePageState extends State<HomePage> {
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.black.withOpacity(0.8),
+                        color: Colors.black.withOpacity(1),
                         fontSize: 22),
                   ),
                 ),
@@ -909,7 +909,7 @@ class _HomePageState extends State<HomePage> {
                   textAlign: TextAlign.left,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.black.withOpacity(0.8),
+                      color: Colors.black.withOpacity(1),
                       fontSize: 22),
                 ),
               ),
@@ -1052,7 +1052,7 @@ class _HomePageState extends State<HomePage> {
                   textAlign: TextAlign.left,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.black.withOpacity(0.8),
+                      color: Colors.black.withOpacity(1),
                       fontSize: 22),
                 ),
               ),
@@ -1073,7 +1073,16 @@ class _HomePageState extends State<HomePage> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Container(
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.8),
+                                        spreadRadius: 2,
+                                        blurRadius: 7,
+                                        offset: Offset(
+                                            0, 3), // changes position of shadow
+                                      ),
+                                    ],
                                       image: DecorationImage(
                                           image: AssetImage(
                                               "assets/images/hamburgermc.png"),
@@ -1099,7 +1108,16 @@ class _HomePageState extends State<HomePage> {
                           Column(
                             children: <Widget>[
                               Container(
-                                decoration: const BoxDecoration(
+                                decoration: BoxDecoration(
+                                  boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.8),
+                                        spreadRadius: 2,
+                                        blurRadius: 7,
+                                        offset: Offset(
+                                            0, 3), // changes position of shadow
+                                      ),
+                                    ],
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/mcdoublemc.png"),
@@ -1124,7 +1142,16 @@ class _HomePageState extends State<HomePage> {
                           Column(
                             children: <Widget>[
                               Container(
-                                decoration: const BoxDecoration(
+                                decoration:BoxDecoration(
+                                  boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.8),
+                                        spreadRadius: 2,
+                                        blurRadius: 7,
+                                        offset: Offset(
+                                            0, 3), // changes position of shadow
+                                      ),
+                                    ],
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/cheeseburgermc.png"),
