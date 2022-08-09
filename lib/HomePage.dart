@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.grey.withOpacity(0.4),
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                 ),
-                width: 390,
+                width: 370,
                 child: Row(
                   children: [
                     Padding(
@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                 Column(
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(left: 30),
+                      padding: const EdgeInsets.only(left: 35),
                       child: Container(
                         child: GestureDetector(
                           onTap: () {
@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 SizedBox(
-                  width: 30,
+                  width: 40,
                 ),
                 Column(
                   children: <Widget>[
