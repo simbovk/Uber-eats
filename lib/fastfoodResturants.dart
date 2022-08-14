@@ -18,6 +18,9 @@ class _fastFoodState extends State<fastFood> {
     return SingleChildScrollView(
         child: Column(
       children: [
+        SizedBox(
+          height: 10,
+        ),
         Center(
           child: Container(
             decoration: BoxDecoration(
