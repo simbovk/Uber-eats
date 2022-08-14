@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_fluuter/menu.dart';
 
 import 'ResturantInfo.dart';
 import 'SearchBar.dart';
@@ -38,12 +39,12 @@ class _fastFoodState extends State<fastFood> {
             width: 390,
             child: GestureDetector(
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     // builder: (context) => ,
-                //   ),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Menu(),
+                  ),
+                );
               },
               child: Row(
                 children: [
