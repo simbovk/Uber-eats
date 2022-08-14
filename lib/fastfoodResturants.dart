@@ -39,12 +39,7 @@ class _fastFoodState extends State<fastFood> {
             width: 390,
             child: GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Menu(),
-                  ),
-                );
+                showSearch(context: context, delegate: MySearchDelegate());
               },
               child: Row(
                 children: [
