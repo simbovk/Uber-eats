@@ -24,7 +24,7 @@ class _fastFoodState extends State<fastFood> {
         Center(
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.grey.withOpacity(0.4),
+              color: Colors.grey.withOpacity(0.3),
               borderRadius: BorderRadius.all(Radius.circular(12)),
             ),
             width: 390,
