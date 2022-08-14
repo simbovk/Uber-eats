@@ -38,6 +38,7 @@ class _fastFoodState extends State<fastFood> {
             width: 390,
             child: Row(
               children: [
+                
                 Padding(
                   padding: const EdgeInsets.only(left: 10),
                   child: Text(
