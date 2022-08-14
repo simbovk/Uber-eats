@@ -70,7 +70,7 @@ class _ResturantInfoState extends State<ResturantInfo> {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
+            color: Colors.green.withOpacity(0.3),
             spreadRadius: 5,
             blurRadius: 7,
             offset: Offset(0, 5), // changes position of shadow
