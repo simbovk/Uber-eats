@@ -35,7 +35,7 @@ class _fastFoodState extends State<fastFood> {
                   child: Text(
                     'Search for Resturant',
                     style: TextStyle(
-                        color: Colors.black.withOpacity(0.3),
+                        color: Colors.black.withOpacity(0.2),
                         fontWeight: FontWeight.bold,
                         fontSize: 17),
                   ),
