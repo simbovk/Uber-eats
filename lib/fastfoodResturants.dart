@@ -197,14 +197,24 @@ class _fastFoodState extends State<fastFood> {
         SizedBox(
           height: 20,
         ),
-        ResturantInfo(
-            'McDonald',
-            '3.8',
-            'assets/images/mcdonaldswallpaper.png',
-            'assets/images/mdconald.png',
-            '(la,orange county)',
-            'fastfood burger...',
-            '0.0'),
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ,
+              ),
+            );
+          },
+          child: ResturantInfo(
+              'McDonald',
+              '3.8',
+              'assets/images/mcdonaldswallpaper.png',
+              'assets/images/mdconald.png',
+              '(la,orange county)',
+              'fastfood burger...',
+              '0.0'),
+        ),
         SizedBox(
           height: 20,
         ),
