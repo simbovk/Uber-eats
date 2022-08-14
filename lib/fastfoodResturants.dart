@@ -36,30 +36,39 @@ class _fastFoodState extends State<fastFood> {
               borderRadius: BorderRadius.all(Radius.circular(12)),
             ),
             width: 390,
-            child: Row(
-              children: [
-                
-                Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: Text(
-                    'Search for Resturant',
-                    style: TextStyle(
-                        color: Colors.black.withOpacity(0.2),
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17),
+            child: GestureDetector(
+              onTap: () {
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     // builder: (context) => ,
+                //   ),
+                // );
+              },
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Text(
+                      'Search for Resturant',
+                      style: TextStyle(
+                          color: Colors.black.withOpacity(0.2),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17),
+                    ),
                   ),
-                ),
-                Spacer(),
-                IconButton(
-                    onPressed: () {
-                      showSearch(
-                          context: context, delegate: MySearchDelegate());
-                    },
-                    icon: Icon(
-                      Icons.search,
-                      color: Colors.green,
-                    )),
-              ],
+                  Spacer(),
+                  IconButton(
+                      onPressed: () {
+                        showSearch(
+                            context: context, delegate: MySearchDelegate());
+                      },
+                      icon: Icon(
+                        Icons.search,
+                        color: Colors.green,
+                      )),
+                ],
+              ),
             ),
           ),
         ),
