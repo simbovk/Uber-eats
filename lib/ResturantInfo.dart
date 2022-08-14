@@ -8,8 +8,14 @@ class ResturantInfo extends StatefulWidget {
   late String branch;
   late String categories;
   late String shippingPrice;
-  ResturantInfo(String resturantName, String rate, String resturantImagePath,
-      String resturantLabelImagePath, String branch, String categories, String shippingPrice,
+  ResturantInfo(
+      String resturantName,
+      String rate,
+      String resturantImagePath,
+      String resturantLabelImagePath,
+      String branch,
+      String categories,
+      String shippingPrice,
       {Key? key}) {
     this.resturantName = resturantName;
     this.rate = rate;
@@ -21,8 +27,14 @@ class ResturantInfo extends StatefulWidget {
   }
 
   @override
-  State<ResturantInfo> createState() => _ResturantInfoState(resturantName, rate,
-      resturantImagePath, resturantLabelImagePath, branch, categories , shippingPrice);
+  State<ResturantInfo> createState() => _ResturantInfoState(
+      resturantName,
+      rate,
+      resturantImagePath,
+      resturantLabelImagePath,
+      branch,
+      categories,
+      shippingPrice);
 }
 
 class _ResturantInfoState extends State<ResturantInfo> {
@@ -39,8 +51,8 @@ class _ResturantInfoState extends State<ResturantInfo> {
       String resturantImagePath,
       String resturantLabelImagePath,
       String branch,
-      String categories
-      , String shippingPrice) {
+      String categories,
+      String shippingPrice) {
     this.resturantName = resturantName;
     this.rate = rate;
     this.resturantImagePath = resturantImagePath;
@@ -56,6 +68,14 @@ class _ResturantInfoState extends State<ResturantInfo> {
       height: 250,
       width: MediaQuery.of(context).size.width - 50,
       decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 5), // changes position of shadow
+          ),
+        ],
         color: Colors.green.withOpacity(0.2),
         borderRadius: BorderRadius.all(Radius.circular(12.0)),
       ),
@@ -127,9 +147,13 @@ class _ResturantInfoState extends State<ResturantInfo> {
             padding: const EdgeInsets.only(left: 6),
             child: Row(
               children: [
-                Text('Shipping price' , style: TextStyle(fontSize: 16, color: Colors.black.withOpacity(0.6))),
-                SizedBox(width: 5,),
-                Text(r'$' + (shippingPrice == null ? '' : shippingPrice) )
+                Text('Shipping price',
+                    style: TextStyle(
+                        fontSize: 16, color: Colors.black.withOpacity(0.6))),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(r'$' + (shippingPrice == null ? '' : shippingPrice))
               ],
             ),
           )

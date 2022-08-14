@@ -11,7 +11,7 @@ class fastFood extends StatefulWidget {
 }
 
 class _fastFoodState extends State<fastFood> {
-   String? _selectedCategory;
+  String? _selectedCategory;
   String resturantCount = '4';
   @override
   Widget build(BuildContext context) {
